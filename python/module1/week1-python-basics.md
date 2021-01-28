@@ -1,6 +1,7 @@
 ---
-# title : data-science-module1-week1-assignments
-# date :
+# title : "python-module1-week1-assignments"
+# date : "2021-01-25"
+# tags : [python, exemple]
 ---
 
 
