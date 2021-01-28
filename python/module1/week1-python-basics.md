@@ -7,84 +7,100 @@
 - source: https://dsft.code-data-ai.com/python-workshops/
 
 # beginner
-#Q1
+
+#Q1: write a function that returns the age of customers
 ```python
-list_year = [1999, 1995, 2005, 2010, 2007, 2006, 1994, 1996, 1979, 2008]
-out_year = []
+input = [1999, 1995, 2005, 2010, 2007, 2006, 1994, 1996, 1979, 2008]
 
-for x in list_year:
-    age = 2021 - x
-    out_year.append(age)
-
-print(out_year)
-```
-
-#Q2
-```python
-
-list_year = [20, 24, 14, 9, 12, 13, 25, 23, 40, 11]
-res = [] 
-
-for i in list_year:
-    out_old = max(list_year)
-    out_young = min(list_year)
-    if out_young < i < out_old:
-        res.append(i)
-
-print(res) 
-```
-
-```python
-list_year = [20, 24, 14, 9, 12, 13, 25, 23, 40, 11]
-res = [] 
-
-for i in list_year:
-    if min(list_year) < i < max(list_year) :
-        res.append(i)
-
-print(res) 
-```
-
-# Q3
-```python
-sample_list1 = [15, 13, 16, 18, 19, 10, 12 ]
-sample_list2 = [7, 13, 15, 20, 19, 18, 10, 16]
-out = set(sample_list1) & set(sample_list2)
-out 
-```
-
-```python
-res = []
-
-for i in sample_list1:
-    if i in sample_list2:
-        res.append(i)
-     
-print(res) 
-```
-
-# Q4
-```python
-sample_list = [15, 13, 16, 18, 19, 15, 10]
-res = [] 
-
-for i in sample_list: 
-    if i not in res: 
-        res.append(i) 
+def current_age(input):
+    current_age = []
+    
+    for x in input:
+        age = 2021 - x
+        current_age.append(age)
         
-print(res)
+    print(current_age)
 
-## another one line code: [res.append(x) for x in test_list if x not in res] 
 ```
 
-# Q5
-```python
-list_input =  [15,13,16,18,19,15,10]
-tar_age = [15, 28]
+#Q2: write a function that removes the outliers (the oldest and youngest person’s age) and return the new list with age of 8 persons (in this case which contains data for 10 customers initially).
 
-for i in tar_age:
-    if i in list_input:
-        print('True')
-    else:
-        print('False')
+```python
+##A1
+input = [20, 24, 14, 9, 12, 13, 25, 23, 40, 11]
+
+def age_middle(input):
+    res = [] 
+    for i in input:
+        if min(input) < i < max(input) :
+            res.append(i)
+    print(res)
+
+age_middle(input)
+```
+
+#Q3: write a function that takes these 2 lists as input and returns the common age values.
+```python
+
+a = [15, 13, 16, 18, 19, 10, 12 ]
+b = [7, 13, 15, 20, 19, 18, 10, 16]
+
+##A1
+def comm_age(a,b):
+    out = set(a) & set(b)
+    print(out)
+
+##A2
+def comm_age2(a,b):
+    res = []
+
+    for i in a:
+            if i in b:
+                res.append(i)
+    print(res) 
+```
+
+#Q4: write a function that takes the list with duplicate values as input and return the list with unique age values. 
+
+```python
+input = [15, 13, 16, 18, 19, 15, 10]
+
+##A1
+def unique_age(input):
+    res = [] 
+
+    for i in input: 
+        if i not in res: 
+            res.append(i) 
+    print(res)
+
+unique_age(input)
+
+##A2
+def unique_age2(input):
+    [res.append(x) for x in input if x not in res] 
+    print(res)
+
+##A3
+def unique_age2(input):
+    out = set(input)
+    print(list(out))
+    
+```
+
+#Q5: write a function that takes an input list and value of age to find as input and return true or false if the age value is present or not.
+
+```python
+input_list = [15,13,16,18,19,15,10]
+input = [15, 28]
+
+def target_age(input):    
+    for i in tar_age:
+        if i in input_list:
+            print('True')
+        else:
+            print('False')
+            
+target_age(input)
+
 ```
