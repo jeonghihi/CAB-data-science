@@ -323,3 +323,5 @@ input = ['Ryan', 'Kieran', 'Jason', 'Yous']
     [(1, 11, 111)]
     ```
 - examples of list comprehension: https://stackoverflow.com/questions/4260280/if-else-in-a-list-comprehension
+- sets: https://www.datacamp.com/community/tutorials/sets-in-python, https://www.quora.com/What-is-Python-set-union, https://www.python-course.eu/sets_frozensets.php
+- visualizations: https://python-graph-gallery.com/ 

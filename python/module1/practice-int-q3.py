@@ -1,102 +1,81 @@
 # === Q3 ===================================================
-
 namelist = ([ {'name': 'Bart'}, {'name': 'Lisa'}, {'name': 'Maggie'} ])
 namelist = ([ {'name': 'Bart'}, {'name': 'Lisa'} ])
 namelist = ([ {'name': 'Bart'} ])
+namelist = ([])
 
-n = len(namelist)
-res = []
-
-for x in range(0, n):
-    my_dic = namelist[x]
-    my_key = 'name'
-    val = my_dic[my_key]
-
-    if n == 1:
-        res.append(val)
-
-    if n == 2:
-        while x < n-1:
+def list_names(input):
+    n = len(input)
+    res = []
+    for x in range(0, n):
+        my_dic = input[x]
+        my_key = 'name'
+        val = my_dic[my_key]
+    
+        if n == 1:
             res.append(val)
 
-        if x == n-1:
-            out1 = str(val)
-            con1 = '& ' 
-            res.append(out1 + con1)   
+        elif n == 2:
+            if x < n-1:
+                res.append(val)
+            if x == n-1:
+                res.append('& ' + str(val))   
 
-if x == n:
-    break
+        else:
+            if x < n-2:
+                res.append(str(val) + ',')
+            elif x == n-2:
+                res.append(str(val))
+            elif x == n-1:
+                res.append('& ' + str(val))  
+            else:
+                break 
+    output = str(' '.join(res))
+    return output
 
-    if n > 2:
-        while x < n-1:
-            out1 = str(val)
-            con1 = ', '
-            res.append(out1 + con1)
+# Is there a more efficient way? if I want to use 'while-break', how could the codes be written?
+# Q3-A2 (on going):
+names = []
+res = []
+for i in range(0,len(namelist)):
+    name = namelist[i]['name']
+    names.append(name)
 
-        if x == n-1:
-            out1 = str(val)
-            con1 = '& ' 
-            res.append(con1 + out1)  
-            break   
+if len(names) < 2:   
+    res = names    
+    output = str(' '.join(res))
 
-return str(','.join(res))
+elif len(names) == 2:
+    res = names
+    output = str('&'.join(res))
 
-output = str(','.join(res))
-output 
-
-
-
-    
-# === old
-
-    if n = 2:
-        while x < n-1:
-            out = val
-            res.append(out)
-            x = x + 1
-        if x = n-1:
-            out = str(val)
-            con1 = '& ' 
-            res.append(con1 + out)
-        output = str()
-
-output
+else: 
+    for i in names:
+        ...
 
 
-# === old
-    if n > 2:
-        while x < n-1:
-            out = val
-            res.append(out)
-            x = x + 1
-        if x = n-1:
-            out = str(val)
-            con1 = ',& ' 
-            res.append(con1 + out)
-
-    if n = 2:
-        out = str(my_dic[my_key])
-        con2 = '& '
-        res.append(con2 + out)
-
-    if n < 2:
-        out = my_dic[my_key]
-        res.append(out)
-
-    ''.join(res)
-
-# returns ‘Bart, Lisa & Maggie‘
-
-
-# Q3-A2:
-for k,v in namelist.items():
-    if k == 'names'
-        print(v)
-
-
-# === Q 6  ===================================================
+# Q6 : if the amount of X and O is same, or if  there is no X or O, give true
 # 2021-01-26-16.30 ~ 17.00 (not done)
+# 2021-01-29-11:50 (done?)
 
+input = 'ooxx'
+
+def XO(input):
+    import re 
+
+    string = input.casefold()
+    if len(re.findall('x', string)) == len(re.findall('o', string)):
+        out = print('true')
+    else:
+        out = print('false')
+    return out
+
+XO(input)
+
+
+
+
+# === old ================================================
 input = 'ooxx'
 # output = true
 
@@ -114,15 +93,7 @@ for i in range(0,len(data)):
 data_all
 data_part
 
-if the amount of X and O is same, or if  there is no X or O
-give true
 
-if data.count['x'] == data.count['o']
-    print('True')
-
-
-
-#
 # write a method that takes an array of consecutive (increasing) letters 
 # as input and that returns the missing letter in the array.
 
