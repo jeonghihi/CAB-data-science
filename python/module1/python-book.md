@@ -1,0 +1,44 @@
+
+---
+# title : "python-module1-book-exercises"
+# date : "2021-01-29"
+# tags : [python, exemple]
+---
+
+- source: https://www.openbookproject.net/books/bpp4awd/exercises/ch01/ch01s00.html#ch01s00
+
+# ch1. why program?
+
+- Python is a high-level language. like, C++, PHP, and Java.
+- Python evaluates the expression, displays the result, and then shows another prompt.
+- 
+- 1.12. Exercises
+```python
+
+1 + 2
+# sum :3 
+1 * 2
+# multiplication : 2
+1 ** 2
+# exponentiation : 1
+1 2 
+# error
+
+print("hello")
+# print string "hello"
+print (hello)
+# error 
+
+print(6 + 4 * 9)
+
+```
+
+- Write a program named using_print1.py that displays the following then run from the command prompt (with python3 using_print1.py):
+
+```python
+#out 
+# This is line 1.
+# 
+# This is line 2, with a blank line above it.
+
+```

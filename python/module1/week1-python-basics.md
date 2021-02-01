@@ -11,16 +11,29 @@
 
 #Q1: write a function that returns the age of customers
 ```python
-input = [1999, 1995, 2005, 2010, 2007, 2006, 1994, 1996, 1979, 2008]
+#A1 - before review
 
-def current_age(input):
+def current_age(list_years):
     current_age = []
     
-    for x in input:
-        age = 2021 - x
+    for year in list_years:
+        age = 2021 - year
         current_age.append(age)
         
-    print(current_age)
+    return current_age
+
+list_years = [1999, 1995, 2005, 2010, 2007, 2006, 1994, 1996, 1979, 2008]
+print (current_age(list_years))
+
+#A2 - after review
+def current_age2(list_years):
+    current_age = []
+    [current_age.append(2021 - x) for x in list_years] 
+    return current_age
+
+def current_age3(list_years):
+    out = [(2021 - x) for x in list_years] 
+    return out
 
 ```
 
@@ -28,24 +41,24 @@ def current_age(input):
 
 ```python
 ##A1
-input = [20, 24, 14, 9, 12, 13, 25, 23, 40, 11]
-
-def age_middle(input):
+def age_middle(list_ages):
     res = [] 
-    for i in input:
-        if min(input) < i < max(input) :
+    for i in list_ages:
+        if min(list_ages) < i < max(list_ages) :
             res.append(i)
-    print(res)
+    return res
 
-age_middle(input)
+#A2
+def age_middle2(list_ages):
+    out = [i for i in list_ages if min(list_ages) < i < max(list_ages)]
+    return out
+
+list_ages = [20, 24, 14, 9, 12, 13, 25, 23, 40, 11]
+age_middle(list_ages)
 ```
 
 #Q3: write a function that takes these 2 lists as input and returns the common age values.
 ```python
-
-a = [15, 13, 16, 18, 19, 10, 12 ]
-b = [7, 13, 15, 20, 19, 18, 10, 16]
-
 ##A1
 def comm_age(a,b):
     out = set(a) & set(b)
@@ -54,55 +67,77 @@ def comm_age(a,b):
 ##A2
 def comm_age2(a,b):
     res = []
-
     for i in a:
             if i in b:
                 res.append(i)
     print(res) 
+
+##A3
+def comm_age3(a,b):
+    return [i for i in a if i in b]
+
+a = [15, 13, 16, 18, 19, 10, 12 ]
+b = [7, 13, 15, 20, 19, 18, 10, 16]
+#out =  [15,13,16,18,19,10]
+
 ```
 
 #Q4: write a function that takes the list with duplicate values as input and return the list with unique age values. 
 
 ```python
-input = [15, 13, 16, 18, 19, 15, 10]
-
 ##A1
-def unique_age(input):
+def unique_age(list_ages):
     res = [] 
 
-    for i in input: 
+    for i in list_ages: 
         if i not in res: 
             res.append(i) 
-    print(res)
+    return res
 
-unique_age(input)
+unique_age(list_ages)
 
 ##A2
-def unique_age2(input):
-    [res.append(x) for x in input if x not in res] 
-    print(res)
+def unique_age2(list_ages):
+    [res.append(x) for x in list_ages if x not in res] 
+    return res
 
 ##A3
-def unique_age2(input):
-    out = set(input)
-    print(list(out))
+def unique_age2(list_ages):
+    res = list(set(list_ages))
+    return res
     
+
+list_ages = [15, 13, 16, 18, 19, 15, 10]
 ```
 
 #Q5: write a function that takes an input list and value of age to find as input and return true or false if the age value is present or not.
 
 ```python
-input_list = [15,13,16,18,19,15,10]
-input = [15, 28]
-
-def target_age(input):    
-    for i in tar_age:
-        if i in input_list:
-            print('True')
+#A1 - before review (By accident, I changed the questions)
+def target_age(target_ages):    
+    for age in target_ages:
+        if age in list_ages:
+            return True
         else:
-            print('False')
+            return False
             
-target_age(input)
+list_ages = [15,13,16,18,19,15,10]
+target_ages = [15, 28]
+
+target_age(list_ages,target_ages)
+
+# A2 - after review
+def target_age(list_numbers, number):    
+        if number in list_numbers:
+            return True
+        return False
+            
+
+list_numbers = [15,13,16,18,19,15,10]
+number = 15
+
+target_age(list_numbers,number)
+target_age([15,13,16,18,19,15,10], 28)
 
 ```
 
@@ -130,7 +165,7 @@ def out_odd_or_even(input):
     else:
         out = list_even
 
-    print(out)
+    print(out[0])
 
 
 def out_odd_or_even2(input):
@@ -146,7 +181,6 @@ def out_odd_or_even2(input):
 
 #Q2: implement a difference function, which subtracts one list from another and returns the result.
 
-
 ```python
 def array_diff1(a,b):
     res = []
@@ -156,10 +190,12 @@ def array_diff1(a,b):
             res.append(i)
     return res 
 
-
 def array_diff2(a,b):
-    return list(set(a) - set(b))
+    return list(set(a) - set(b)) 
     # return list(set(a).difference(set(b)))
+
+def array_diff3(a,b):
+    return [i for i in a if i not in b]
 
 input: a = [1,2], b = [1]
 # output: [2]
@@ -167,9 +203,42 @@ input: a = [1,2,2], b = [2]
 # output: [1]
 ```
 
-#Q3: *on going*
+#Q3: Return a string formatted as a list of names separated by commas except for the last two names, which should be separated by an ampersand.
 
 ```python
+
+def print_names(namelist):
+    n = len(namelist)
+    res = []
+    for x in range(n):
+        my_dic = namelist[x]
+        my_key = 'name'
+        val = my_dic[my_key]
+    
+        if n == 1:
+            res.append(val)
+        elif n == 2:
+            if x < n-1:
+                res.append(val)
+            if x == n-1:
+                res.append('& ' + str(val))   
+        else:
+            if x < n-2:
+                res.append(str(val) + ',')
+            elif x == n-2:
+                res.append(str(val))
+            elif x == n-1:
+                res.append('& ' + str(val))  
+            else:
+                break 
+    output = str(' '.join(res))
+    return output
+
+
+namelist = ([ {'name': 'Bart'}, {'name': 'Lisa'}, {'name': 'Maggie'} ])
+namelist = ([ {'name': 'Bart'}, {'name': 'Lisa'} ])
+namelist = ([ {'name': 'Bart'} ])
+namelist = ([])
 
 ```
 
@@ -197,60 +266,96 @@ input = [1,2,'aasf','1','123',123]
 ```
 
 #Q5: Given an array, find the int that appears an odd number of times.
+
 ```python
-def find_it(input):
-    numbers = set(input)
+#A1 - before review
+def find_it(numbers):
     res = [] 
     for num in numbers:
-        val = input.count(num)
+        val = numbers.count(num)
         if (val % 2) != 0:
             res.append(num)
-    return res
+            return res 
+            
+#A2 - after review
+def find_it2(numbers):
+    return list(set([num for num in numbers if numbers.count(num) % 2 != 0]))
 
-
-def find_it2(input):
-    return [num for num in numbers if input.count(num) % 2 != 0]
-
-input = [20,1,-1,2,-2,3,3,5,5,1,2,4,20,4,-1,-2,5]
+numbers = [20,1,-1,2,-2,3,3,5,5,1,2,4,20,4,-1,-2,5]
 # ouput = [5]
 ```
 
-#Q6:  *on going*
+#Q6:if the amount of X and O is same, or if  there is no X or O, give true
 ```python
+# 2021-01-26-16.30 ~ 17.00 (not done)
+# 2021-01-29-11:50 (solved)
+import re 
+random_string = 'ooxx'
+
+def XO(random_string):
+    string = random_string.casefold()
+    if len(re.findall('x', string)) == len(re.findall('o', string)):
+        return True
+    return False
+
+# show results
+XO(random_string)
+
+# how to connect two functions
+def feedback(random_string):
+    if XO(random_string) == True:
+        return ("It is true")
+    return ("It is false")
 
 ```
 
 #Q7: 
 ```python
-def validate_pin(input):
-    if len(input) == 4 or len(input) == 6:
-        if input.isdigit():
+#A1 - before review
+def validate_pin(list_numbers):
+    if len(list_numbers) == 4 or len(list_numbers) == 6:
+        if list_numbers.isdigit():
             print ('True')
         else:
             print ('False')
     else: 
         print('False')
 
-input = "1234"
+#A2 - after review
+def validate_pin(list_numbers):
+    if (len(list_numbers) == 4 or len(list_numbers) == 6) and list_numbers.isdigit():
+        return True 
+
+    return False
+
+list_numbers = "1234"
 # True
-input = "12345"
+list_numbers = "12345"
 # False
-input = "a234"
+list_numbers = "a234"
 # False
 ```
 
 #Q8: given a string of words, return the length of the shortest word(s).
 ```python
-def find_word_short(input):
-    string = input.split(' ')
+#A1 - before review
+def find_word_short(list_words):
+    string = list_words.split(' ')
     res = []
     for word in string:
         count_letters = len(word) 
         res.append(count_letters)
     return min(res)
     
-input = 'Friday i am in love'
-#output = 2
+#A2 - after review
+def find_word_short(list_words):
+    string = list_words.split(' ')
+    res = [len(word) for word in string]
+    
+    return min(res)
+    
+list_words = 'Friday i am in love'
+find_word_short(list_words)
 
 # related: 
 # - https://stackoverflow.com/questions/2932511/letter-count-on-a-string
@@ -258,26 +363,41 @@ input = 'Friday i am in love'
 
 #Q9: write a method that takes an array of consecutive (increasing) letters as input and that returns the missing letter in the array.
 ```python
-def missing_letters(input):
+#A1
+def missing_letters(s):
     alphabet = 'abcdefghijklmnopqrstuvwxyz'
-    string = ''.join(input).casefold()
-    
+    string = ''.join(s).casefold()
+    missing_letter = []
+
     for i in range(0,len(alphabet)-1):
         if alphabet[i] == string[0]:
-            part = alphabet[i:i+len(string)+1]
-            target = str(part)
-            missing = []
-            for i in target:
+            string_to_compare = str(alphabet[i:i+len(string)+1])            
+            for i in string_to_compare:
                 while i not in string:
-                    missing.append(i)
+                    missing_letter.append(i)
                     break
+    return missing_letter
 
-            return missing
+# A2 - sample answer
+import string
+def find_missing_letter(s):
+  alp_lower = list(string.ascii_lowercase)
+  alp_upper = list(string.ascii_uppercase)
+  
+  s1 = ''.join(s)
+  
+  if s1.isupper():
+    x = set(alp_upper[alp_upper.index(s[0]):alp_upper.index(s[-1])+1]) - set(s)
+    return x.pop()
+  else: 
+    x = set(alp_lower[alp_lower.index(s[0]):alp_lower.index(s[-1]) + 1]) - set(s)
+    return x.pop()
 
-input = ['a','b','c','d','f'] 
+
+s = ['a','b','c','d','f'] 
 # output = 'e'
 
-input = ['O','Q','R','S']
+s = ['O','Q','R','S']
 # output = 'P'
 
 # find a string starting with a given letter in another string
@@ -291,15 +411,20 @@ input = ['O','Q','R','S']
 #Q10: Make a program that filters a list of strings and returns a list with only your friends name in it. If a name has exactly 4 letters in it, you can be sure that it has to be a friend of yours! Otherwise, you can be sure he /she is not.
 
 ```python
-def find_friends(input):
+#A1
+def find_friends(list_friends):
     friends = []
-    for i in range(0, len(input)):
-        val = input[i] 
-        if len(val) == 4:
-            friends.append(val)
+    for i in range(len(list_friends)):
+        if len(list_friends[i]) == 4:
+            friends.append(list_friends[i])
     return friends 
 
-input = ['Ryan', 'Kieran', 'Jason', 'Yous']
+#A2 
+def find_friends(list_friends):
+    return [friend for friend in list_friends if len(friend) == 4]
+    
+
+list_friends = ['Ryan', 'Kieran', 'Jason', 'Yous']
 # output = ['Ryan', 'Yous']
 
 ```
