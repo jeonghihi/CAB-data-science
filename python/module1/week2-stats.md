@@ -30,28 +30,32 @@
   - E) Both A and D
   - F) Both B and C
 
-> A3: A
-> - A positively skewed distribution is a result of unequal distribution of values in given data. In this distribution, the mean is usually greater than the median because a few values(datapoints) tend to shift the mean to the right and these datapoints would be considered as outliers.
+> A3: E
+> - A positively skewed distribution is a result of unequal distribution of values in given data. In this distribution, the mean is usually greater than the median because a few values(datapoints) tend to shift the mean to the right and these datapoints would be considered as outliers. (=> Mean > Median =30 > Mode)
 > - concept 'skewness': https://askinglot.com/what-does-positively-skewed-mean-in-statistics
 > https://web.ma.utexas.edu/users/mks/statmistakes/skeweddistributions.html
 > 
 
 
-1. Which value can be the possible value for the median of the below distribution?
+4. Which value can be the possible value for the median of the below distribution?
     - A) 40
     - B) 26
     - C) 16
     - D) 50
 > A4: B
 
+
 5. What is the shape of the distribution ?
 > A5: positively skewed distribution
+
 
 6. What would you consider to be the most appropriate measure of the center for this data?
 > A6: median
 
+
 7. If Y axis represents the number of individuals and X axis – salary of the individual in thousands. How many individuals have salary less than 10 thousands ?
 > A7: (maybe) 35 (the height of bars is not clear)
+
 
 8. We have a set of positive numbers. If a single value of the set is altered what must change ? 
     - A) Mean 
@@ -60,10 +64,30 @@
     - D) All of these
 > A8: D
 
-9. The chart shows hourly consultancy rate of 10 people. Calculate the standard deviation of the salaries of the 10 employees.
-> A9
 
-10.  Which of the following random variables is discrete?
+9. The chart shows hourly consultancy rate of 10 people. Calculate the standard deviation of the salaries of the 10 employees.
+> A9: 9.0138
+> 
+  ```python
+  import numpy as np
+
+  val = np.array([25, 40, 35, 50])
+  np.mean(val) #mean
+
+  def std(a): 
+      n=len(a)
+      m=sum(a)/len(a)
+      d=[e-m for e in a] # deviations from mean
+      v=0
+      for e in d:
+          v+=e**2
+      return (v/n)**.5
+
+  std(val)
+  ```
+
+
+10.   Which of the following random variables is discrete?
 
 A) the length of time a battery lasts
 B) the number of pens purchased by a student in a year
@@ -72,7 +96,8 @@ D) the distance between a pair of towns
 > A10: B
 > - "discrete variable": https://en.wikipedia.org/wiki/Continuous_or_discrete_variable
 
-11.  Which of the below normal distributions will have the greatest spread? ( mu = mean, sigma = stdev)
+
+11.   Which of the below normal distributions will have the greatest spread? ( mu = mean, sigma = stdev)
      - A) mu=5,  sigma =1.5
      - B) mu=10, sigma =1.0
      - C) mu=5,  sigma =1.65
@@ -96,7 +121,7 @@ data_all = pd.DataFrame({'sample_A': sample_A,'sample_B': sample_B,'sample_C': s
 data_all.hist()
 ```
 
-12. For a normal distribution with mu=10 & sigma =1.4, about 2.5% of the values lie above what value? (Assume that the number is above the mean value) ( mu = mean, sigma = stdev)
+12.  For a normal distribution with mu=10 & sigma =1.4, about 2.5% of the values lie above what value? (Assume that the number is above the mean value) ( mu = mean, sigma = stdev)
 > A12 : 2 (2 sigma)
 
 
