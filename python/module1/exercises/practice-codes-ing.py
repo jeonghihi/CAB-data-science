@@ -15,3 +15,10 @@ def count_substring(string, sub_string):
         if string[pos:].startswith(sub_string):
             count += 1
     return count
+
+
+
+# pandas - questions : could not solve last two questions
+df2 = df.join(df_AudienceScore_ave_Studio.set_index('Lead_Studio'), on='Lead_Studio')
+
+

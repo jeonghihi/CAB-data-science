@@ -81,21 +81,20 @@ df.head()
 df.dtypes 
 
 # replace wrong data values in columns
-  ## wrong Genre names
-  df.replace(['Comdy','comedy','Romence','romance'],['Comedy','Comedy','Romance','Romance'], inplace=True)
+## wrong Genre names
+df.replace(['Comdy','comedy','Romence','romance'],['Comedy','Comedy','Romance','Romance'], inplace=True)
 
-  ## wrong values in int64 column (Worldwide Gross)
-  world_gross_string = df["Worldwide Gross"].str.replace('$', '')
-  world_gross_number = pd.to_numeric(world_gross_string)
-  world_gross_number
-  df["Worldwide Gross"] = world_gross_number
+## wrong values in int64 column (Worldwide Gross)
+world_gross_string = df["Worldwide Gross"].str.replace('$', '')
+world_gross_number = pd.to_numeric(world_gross_string)
+world_gross_number
+df["Worldwide Gross"] = world_gross_number
 
 # convert datatypes
 df = df.astype({'Film': 'string', 'Genre': 'string','Lead Studio': 'string', 'Worldwide Gross': 'int64','Profitability': 'int64' })
 
 # check errors in values of (potential) index column 
 df.Genre.value_counts()
-df['Genre'].replace(['Comdy','comedy','romance','Romence'],['Comedy','Comedy','Romance','Romance'],inplace=True)
 
 # change column names
 columns = df.columns[:].tolist()
@@ -110,29 +109,29 @@ df.isnull().value_counts()
 df[df.duplicated()]
 
 # remove duplicates and save as df_new
-df_new = df.drop_duplicates(keep='first', inplace=True)
+df.drop_duplicates(keep='first', inplace=True)
 
 
 ```
 
 ## Show the movies with more than 70% Audience Score & greater than $350 Worldwide Gross.
 ```python
-df[(df['Audience score %'] > 70 ) & (df['Worldwide Gross' > 350])]
+df[(df['Audience_score_%'] > 70 ) & (df['Worldwide_Gross'] > 350)]
 ```
 
 ## Show the movies  produced by Disney with more than 70% Audience Score & greater than $350 Worldwide Gross .
 ```python
-df[(df['Lead Studio'] == 'Disney') & (df['Audience score %'] > 70 ) & (df['Worldwide Gross' > 350])]
+df[(df['Lead_Studio'] == 'Disney') & (df['Audience_score_%'] > 70 ) & (df['Worldwide_Gross'] > 350)]
 ```
 
 ## Count of Animation movies with more than 70% Audience Score. (Hint: use the count() function)
 ```python
 df_ani = df[df['Genre'] == 'Animation']
-df_ani_70 = df_ani[df_ani['Audience score %'] > 70 ]
+df_ani_70 = df_ani[df_ani['Audience_score_%'] > 70 ]
 df_ani_70.count()[0]
 
 ## A2 - another answer
-df[(df["Genre"] == "Animation") & (df["Audience score %"] > 70)]
+df[(df["Genre"] == "Animation") & (df["Audience_score_%"] > 70)]
 
 ```
 
@@ -145,19 +144,19 @@ first_five_movies
 
 ## Show the top 5 Comedy movies approved by the audience. (hint : Audience Score)
 ```python
-df[df["Genre"] == "Comedy"].sort_values(by=["Audience score %"], ascending=False).head(5)
+df[df["Genre"] == "Comedy"].sort_values(by=["Audience_score_%"], ascending=False).head(5)
 ```
 
 ## Which Genre is favored the most by the Audience ?
 ```python
 # calculate the average of audience scores per genre
-df_Audience_score_ave_Genre = pd.DataFrame(df.groupby('Genre')['Audience score %'].mean())
-df_Audience_score_ave_Genre.rename(columns = {'Audience score %':'Audience_Score_Ave_Genre %'}, inplace = True)
-df_Audience_score_ave_Genre['Audience_Score_Ave_Genre %'].astype('int64')
+df_Audience_score_ave_Genre = pd.DataFrame(df.groupby('Genre')['Audience_score_%'].mean())
+df_Audience_score_ave_Genre.rename(columns = {'Audience_score_%':'Audience_Score_Ave_Genre_%'}, inplace = True)
+df_Audience_score_ave_Genre['Audience_Score_Ave_Genre_%'].astype('int64')
 df_Audience_score_ave_Genre['Genre'] = df_Audience_score_ave_Genre.index
 df_Audience_score_ave_Genre
 
-print(df_Audience_score_ave_Genre.sort_values(by = 'Audience score %', ascending = False ).head(1).index.values)
+print(df_Audience_score_ave_Genre.sort_values(by = 'Audience_Score_Ave_Genre_%', ascending = False ).head(1).index.values)
 #out: ['Fantasy']
 
 ```
@@ -166,9 +165,9 @@ print(df_Audience_score_ave_Genre.sort_values(by = 'Audience score %', ascending
 ```python
 # show index of top 5 movies : df.sort_values(by = 'Rotten Tomatoes %', ascending = False ).head(5).index
 
-## A1
+## A1 - before spike
 # append indexes of top 5 movies to a list
-list_rot_5_index =  df.sort_values(by = 'Rotten Tomatoes %', ascending = False ).head(5).index.values
+list_rot_5_index =  df.sort_values(by = 'Rotten_Tomatoes_%', ascending = False ).head(5).index.values
 names_rotten_top5 = []
 
     # print names using the list of indexes
@@ -179,8 +178,11 @@ for item in list_rot_5_index:
 names_rotten_top5
 
 ## A2 - after spike
-sorted_five = df.sort_values(by = 'Rotten Tomatoes %', ascending = False ).head(5)
-sorted_five_film = sorted["Film"]
+df.sort_values(by = 'Rotten_Tomatoes_%', ascending = False ).head(5)['Film']
+
+## A3 - after spike
+sorted_five = df.sort_values(by = 'Rotten_Tomatoes_%', ascending = False ).head(5)
+sorted_five_film = sorted_five["Film"]
 
 ```
 
@@ -201,7 +203,7 @@ df.Lead_Studio.value_counts().size
 # Top 5 profitable movies produced by Disney after 2008 (measured by Profitability index)
 ```python
 df_disney = df[df['Lead_Studio'] == 'Disney']
-df_disney.sort_values(by='Profitability', ascending = False ).head(5)
+df_disney.sort_values(by='Profitability', ascending = False ).head(5)['Film']
 ```
 
 # Most & Least Frequent lead studio in the dataset in terms of occurances.
@@ -219,8 +221,13 @@ df_Profitability_ave_Studio['Profitability_Studio'].astype('int64')
 df_Profitability_ave_Studio['Lead_Studio'] = df_Profitability_ave_Studio.index
 df_Profitability_ave_Studio
 
+#most profitable lead studio
 print(df_Profitability_ave_Studio.sort_values(by='Profitability_Studio', ascending = False ).head(1).index.values)
+# Summit
+
+#least profitable lead studio
 print(df_Profitability_ave_Studio.sort_values(by='Profitability_Studio', ascending = False ).tail(1).index.values)
+# The Weinstein Company'
 
 ```
 
@@ -236,7 +243,7 @@ df_AudienceScore_ave_Studio
 df_AudienceScore_ave_Studio.sort_values(by='Audience_Score_Ave_Studio_%', ascending = False )
 df_AudienceScore_Studio_top = df_AudienceScore_ave_Studio[df_AudienceScore_ave_Studio['Audience_Score_Ave_Studio_%']>70]
 df_AudienceScore_Studio_top
-#there are only two studios with averaged audience score greater than 70%
+#there are only two studios with averaged audience score greater than 70%: Disney, Summit
 ```
 
 # Count of least Frequent Genre with Rotten Tomato score more than 50%.
@@ -254,25 +261,36 @@ df_RottenTScore_ave_Genre_over50 = df_RottenTScore_ave_Genre[df_RottenTScore_ave
 
 # print the count of genres (with the name of Genre)
 dic_genre_counts = df['Genre'].value_counts().to_dict()
-
-movies = df_RottenTScore_ave_Genre_over50.index.tolist()
-res = []
-for item in movies:
-  key = str(item)
-  val = str(dic_genre_counts[item])
-  res.append([item + ':'+ val])
-
-res
+[[str(item) + str(dic_genre_counts[item])] for item in df_RottenTScore_ave_Genre_over50['Genre']]
 
 ```
 
 # ==== ing ===
 # Ranking of Fox studio for Comedy movies based on Audience Score.
 ```python
+## A1 - calculating average and re-order (stopped)
+df2 = df.join(df_AudienceScore_ave_Studio.set_index('Lead_Studio'), on='Lead_Studio')
+df2['Lead_Studio_Rank_AudScore'] = df2['Audience_Score_Ave_Studio_%'].rank(pct=True)
+df2_comedy = df2[df2['Genre'] == 'Comedy']
+df2_comedy.sort_values(by='Lead_Studio_Rank_AudScore', ascending = False )
+# 
+
+## A2 - apply .rank (not solved)
+df.sort_values(by='Lead_Studio', ascending = False)
+df['Lead_Studio_Rank_AudScore'] = #..
+
+df.groupby('Lead_Studio')['Audience_score_%'].rank(pct=True).sort_values(by='Film', ascending = False )  #not working?
+
+df_comedy = df[df['Genre'] == 'Comedy']
+df_comedy.sort_values(by='Lead_Studio_Rank_AudScore', ascending = False ) 
 
 ```
 
 # Count of each genre of movies produced by Independent. (use groupby() )
 ```python
+
+df_Ind = df[df['Lead_Studio'] == 'Independent']
+df_Ind.groupby('Genre').value_counts()
+
 
 ```

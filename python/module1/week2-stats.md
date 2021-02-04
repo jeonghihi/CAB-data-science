@@ -68,23 +68,57 @@
 9. The chart shows hourly consultancy rate of 10 people. Calculate the standard deviation of the salaries of the 10 employees.
 > A9: 9.0138
 > 
-  ```python
-  import numpy as np
+```python
+##A1 - mistakes (ignored the number of employees)
 
-  val = np.array([25, 40, 35, 50])
-  np.mean(val) #mean
+##A2 - after Arun's answer
+import numpy as np
+dataset=[25,25,25,40,40,35,50,50,50,50]
+np.mean(dataset) #mean: 39
+np.std(dataset) #stdev: 10.4403
 
-  def std(a): 
-      n=len(a)
-      m=sum(a)/len(a)
-      d=[e-m for e in a] # deviations from mean
-      v=0
-      for e in d:
-          v+=e**2
-      return (v/n)**.5
 
-  std(val)
-  ```
+# A3 - using package math
+dataset=[25,25,25,40,40,35,50,50,50,50]
+
+def variance(data, ddof=0):
+  n = len(data)
+  mean = sum(data) / n
+  return sum((x - mean) ** 2 for x in data) / (n - ddof)
+
+def stdev(data):
+  import math
+  var = variance(data)
+  std_dev = math.sqrt(var)
+  return std_dev
+
+variance(dataset)
+stdev(dataset)
+
+# A3.1 - calculating mean, deviation without packages
+salary = np.array([25, 40, 35, 50])
+employee_nr = np.array([3,2,1,4])
+#val = np.array([[25, 40, 35, 50],[3,2,1,4]])
+
+total_sum = sum(salary*employee_nr) #sum of salary of all employees
+n = sum(employee_nr) #total number of eployee
+m = total_sum/n #mean 
+v = #variance
+d = #deviation
+
+# sample : calculating standard deviation from a list 'a'
+def std(a): 
+    n=len(a)
+    m=sum(a)/len(a)
+    d=[e-m for e in a] # deviations from mean
+    v=0
+    for e in d:
+        v+=e**2
+    return (v/n)**.5
+
+std(val)
+
+```
 
 
 10.   Which of the following random variables is discrete?
