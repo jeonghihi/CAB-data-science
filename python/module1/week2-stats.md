@@ -62,7 +62,7 @@
     - B) Median 
     - C) Mode 
     - D) All of these
-> A8: D
+> A8: A (not D)
 
 
 9. The chart shows hourly consultancy rate of 10 people. Calculate the standard deviation of the salaries of the 10 employees.
@@ -98,13 +98,15 @@ stdev(dataset)
 # A3.1 - calculating mean, deviation without packages
 salary = np.array([25, 40, 35, 50])
 employee_nr = np.array([3,2,1,4])
-#val = np.array([[25, 40, 35, 50],[3,2,1,4]])
 
-total_sum = sum(salary*employee_nr) #sum of salary of all employees
-n = sum(employee_nr) #total number of eployee
-m = total_sum/n #mean 
-v = #variance
-d = #deviation
+for number in range(len(salary)):
+  i = number
+  n = employee_nr[i]
+  print (n)
+
+  val = np.repeat(number, n))
+
+data = [25,25,25,40,40,35,50,50,50,50]
 
 # sample : calculating standard deviation from a list 'a'
 def std(a): 
@@ -116,7 +118,15 @@ def std(a):
         v+=e**2
     return (v/n)**.5
 
-std(val)
+std(data)
+
+
+total_sum = sum(salary*employee_nr) #sum of salary of all employees
+n = sum(employee_nr) #total number of eployee
+m = total_sum/n #mean 
+v = #variance
+d = #deviation
+
 
 ```
 
@@ -141,6 +151,7 @@ D) the distance between a pair of towns
 
 ```python
 import numpy as np
+import pandas as pd
 from matplotlib import pyplot as plt 
 
 # apply same codes for A-E
@@ -150,10 +161,27 @@ sample = 100
 np.random.seed(0)
 sample_E = np.random.normal(mu, sigma, sample).astype(int)
 
+def sample(a,b):
+  mu = a
+  sigma = b
+  sample = 100
+  np.random.seed(0)
+  sample = np.random.normal(mu, sigma, sample).astype(int)
+  return sample
+
+sample_A = sample(5, 1.5)
+sample_B = sample(10, 1.0)
+sample_C = sample(5, 1.65)
+sample_D = sample(8, 1.2)
+sample_E = sample(10, 1.6)
+
 # draw histogram
-data_all = pd.DataFrame({'sample_A': sample_A,'sample_B': sample_B,'sample_C': sample_C, 'sample_D': sample_D, 'sample_E': height_E})
+data_all = pd.DataFrame({'sample_A': sample_A,'sample_B': sample_B,'sample_C': sample_C, 'sample_D': sample_D, 'sample_E': sample_E})
 data_all.hist()
+
+## when one unit in sigma increase
 ```
+
 
 12.  For a normal distribution with mu=10 & sigma =1.4, about 2.5% of the values lie above what value? (Assume that the number is above the mean value) ( mu = mean, sigma = stdev)
 > A12 : 2 (2 sigma)

@@ -20,5 +20,3 @@ def count_substring(string, sub_string):
 
 # pandas - questions : could not solve last two questions
 df2 = df.join(df_AudienceScore_ave_Studio.set_index('Lead_Studio'), on='Lead_Studio')
-
-

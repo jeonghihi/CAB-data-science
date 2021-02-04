@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 'notes'
-date: "2021-01-28"
+title: 'daily-log'
+date: "2021-01-25"
 ---
 
 
@@ -232,13 +232,13 @@ Todo:
     ```
 
 [x] questions 1-3 (source: https://dsft.code-data-ai.com/stats-1/)
-[] concept of percentile / outlier  
+[x] concept of percentile / outlier  
 
 ### 2021-02-04-Thu
 Todo:
-[-] solve top 20 questions among 100 numpy questions
-[-] solve last 2 questions (pandas)
-[] statistics basics
+[x] solve top 10 questions among 100 numpy questions
+[x] solve last 2 questions (pandas)
+[x] statistics basics - mean, median, standard deviation, normal distribution, discrete/continuous variable
 
 [x] had a problem with importing library (pandas) in visual studio code, and solved this by entering two lines of codes in cmd
     ```
@@ -247,4 +247,8 @@ Todo:
     # - solution source: https://github.com/boy1dr/SpleeterGui/issues/69
 
     ```
-    
+### 2021-02-05-Fri
+Todo:
+[] solve 11-20 questions among 100 numpy questions
+[] statistics basics (summary) + R exemple
+[] pandas basic functions
