@@ -250,5 +250,13 @@ Todo:
 ### 2021-02-05-Fri
 Todo:
 [] solve 11-20 questions among 100 numpy questions
-[] statistics basics (summary) + R exemple
-[] pandas basic functions
+[x] statistics basics (summary) + R exemple
+[x] pandas basic functions
+[x] project1-wine- preprocessing dataset, concatenating dataframes, changing NaN to value
+
+### 2021-02-08-Mon
+Todo:
+[] read paper for wine project
+[] solve 11-20 questions among 100 numpy questions
+[] spike - matplotlib
+[] pandas cheetsheet

@@ -6,7 +6,6 @@
 # statistics - questions 
 - Source: https://dsft.code-data-ai.com/stats-1/
 
-
 - Q1: Given, there are 5 numbers in the data set: (8, 12, 16, 24, 4). What will be the sum of deviations of individual data points from their mean ?
 > A1: Zero.
 
@@ -51,6 +50,7 @@
 
 6. What would you consider to be the most appropriate measure of the center for this data?
 > A6: median
+> mode represents the most frequent value
 
 
 7. If Y axis represents the number of individuals and X axis – salary of the individual in thousands. How many individuals have salary less than 10 thousands ?
@@ -66,7 +66,7 @@
 
 
 9. The chart shows hourly consultancy rate of 10 people. Calculate the standard deviation of the salaries of the 10 employees.
-> A9: 9.0138
+> A9: 10.4403
 > 
 ```python
 ##A1 - mistakes (ignored the number of employees)
@@ -147,7 +147,7 @@ D) the distance between a pair of towns
      - C) mu=5,  sigma =1.65
      - D) mu=8,  sigma =1.2
      - E) mu=10, sigma =1.6
-> A11: E (or it changes depending on the population of given dataset)
+> A11: C (not E, it changes depending on the population of given dataset)
 
 ```python
 import numpy as np
@@ -184,7 +184,7 @@ data_all.hist()
 
 
 12.  For a normal distribution with mu=10 & sigma =1.4, about 2.5% of the values lie above what value? (Assume that the number is above the mean value) ( mu = mean, sigma = stdev)
-> A12 : 2 (2 sigma)
+> A12 : 12.8 (mean : 10 + 2 sigma: 1.4*2)
 
 
 ### additional info
@@ -208,3 +208,57 @@ data_all.hist()
 
     ```
 
+
+# statistics - summary
+
+- what is data 
+  - one information unit in the world.
+  - it's type/variable could be integer, string, or a list, or multi-dimensional vector space. 
+
+- where is the data and how can we identify the data
+  - left and right side of you
+
+  - left world is indecisive, right world is determinitive.
+  - left world is like a floating empty space. 
+  - any variable (written in the left) needs to be assigned to the specific values (written on the right)
+```python
+1+1=2 #You don't know if '1+1=2' is true or not, until you define/explain/assign it as it is (we consider this is True in this world)
+x = 1 + 2
+y = 1 + x
+z = 1 + 3*x
+x = y 
+
+def print(x):
+  y = 1 + 3*x
+  print(y)
+# function 'print(x)' is takes an input value 'x' and gives an output value 'y'. it does the same thing as "z = 1 + 3*x"
+#
+# why do we need a _function_? 
+# when we want to use/assign multiple variables, it is easy to keep and use those values in ons space. 
+# If we use them seperately, using for-loops, we need to run all of those for-loops individually whenever one of variables change.
+# For exeample, when there is a change by input itself or the relation between inputs from each for-loop; the order of for loops change from A->B to B->A.
+
+```
+
+- what is sample and population?
+  - A population is the collection of all items of interest to our study and is usually denoted with an uppercase N. The numbers we’ve obtained when using a population are called parameters.
+  - A sample is a subset of the population and is denoted with a lowercase n, and the numbers we’ve obtained when working with a sample are called statistics.
+    - A random sample is collected when each member of the sample is chosen from the population strictly by chance.
+    - A representative sample is a subset of the population that accurately reflects the members of the entire population.
+  - https://365datascience.com/tutorials/statistics-tutorials/population-vs-sample/
+  
+- how can we explain the data values in a given sample : descriptive statistics
+- how can we infer/predict the relationship between variables (data values) in the whole population based on the sample : inferential statistics
+
+- measure of central tendency: mean, median, mode
+- measure of frequency: count, percentage, frequency
+- measure of variation: range, variance, standard deviation
+- 
+- how and to what extent data values in the sample vary : standard deviation
+
+- correlation vs. regression
+  - which data values (variable 1) influence the other data values (variable 2) 
+    - : correlation measure shows the relationship between var1 and var2
+  - how does the change in data values (variable 1) influence the change in other data values (variable 2) 
+    - : regression measure shows the causality from var1 to var2
+  - https://365datascience.com/tutorials/statistics-tutorials/correlation-regression/
