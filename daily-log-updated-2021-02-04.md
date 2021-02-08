@@ -256,7 +256,33 @@ Todo:
 
 ### 2021-02-08-Mon
 Todo:
-[] read paper for wine project
+[-] read paper for wine project
 [] solve 11-20 questions among 100 numpy questions
-[] spike - matplotlib
+[] pandas cheetsheet
+[-] matplotlib - data visualization
+[x] spike - data exploration
+
+```python
+y = lambda x: 'low' if value <= 5 else 'medium' if value <= 7 else 'high'
+
+z = lambda x, y: x + y if x%2 == 0 else x + y + 2
+z(5,6) 
+#out: 13
+
+[x for x in list if x >5]
+
+# anatomy of a figure
+[]image
+
+```
+- ? what is difference between list comprehension and lambda function:
+- ? can we use 'df.apply.lambda[]'  to fill NaN in column wine_type 
+
+# how to transform datatype pandas
+https://stackoverflow.com/questions/34844711/convert-entire-pandas-dataframe-to-integers-in-pandas-0-17-0
+
+### 2021-02-09-Tue
+Todo:
+[] read paper for wine project
+[] matplotlib - 5 visualizations comparing white/red wine: quality, acidity, alcohol + explanations
 [] pandas cheetsheet
