@@ -275,3 +275,15 @@ plt.show();
 ```
 
 ### explore different kinds of charts and choose the appropriate ones. (at least 5 more charts with explanations)
+- observation exemples with visualization outputs
+  - distribution of 'alcohol' in red and white wine (histogram)
+  - distribution of 'alcohol' in red and white wine, and all wine (violin)
+  - distribution of 'residual sugar' in red and white wine (histogram)
+  - distribution of volatile acidity by quality (scatter, colored by quality)
+  - distribution of volatile acidity in red and white wine (violin)
+  - distribution of volatile acidity and fixed acidity per wine quality (Scatter)
+  - the distribution of wine quality in red and white wine (boxplot, colored by quality)
+  - distribution of three acidity types in each wine quality (boxplot)
+  - voltaile acidity per wine quality in red and white wine (scatter, colored by wine type)
+  - the proportion of wine quality 
+  - link: https://colab.research.google.com/drive/1Z2g2pRagbQSqrw06bLT_d4cEbwGor3iW#scrollTo=wLeFaf3rSG19

@@ -251,6 +251,8 @@ def print(x):
 - how can we infer/predict the relationship between variables (data values) in the whole population based on the sample : inferential statistics
 
 - measure of central tendency: mean, median, mode
+  - https://web.ma.utexas.edu/users/mks/statmistakes/skeweddistributions.html
+  - https://stats.libretexts.org/Bookshelves/Introductory_Statistics/Book%3A_Introductory_Statistics_%28OpenStax%29/02%3A_Descriptive_Statistics/2.07%3A_Skewness_and_the_Mean_Median_and_Mode
 - measure of frequency: count, percentage, frequency
 - measure of variation: range, variance, standard deviation
 - 
