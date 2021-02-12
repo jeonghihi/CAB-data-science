@@ -286,3 +286,39 @@ Todo:
 [] read paper for wine project
 [] matplotlib - 5 visualizations comparing white/red wine: quality, acidity, alcohol + explanations
 [] pandas cheetsheet
+
+### 2021-02-10-Wed
+```python
+import seaborn as sns
+sns.histplot(data=wines, x = "alcohol", hue="wine_type", multiple="stack");
+sns.histplot(data=wines, x = "alcohol", hue="wine_type", multiple="dodge");
+
+# ? how can we display proportion of three acidity types (Yaxis, three groups indexed by color) within 6 quality level (Xaxis), per wine_type (X axis 1st level) > catplot (x, y, hue = 'quality_label')
+sns.catplot(x = wine type, y = quality label, data = wines, kind="count");
+sns.pairplot ( data, hue = "wine_type") > shows the relationship between two variables (x/y)
+sns.scatterplot ( data, hue = "wine_type", style = "time")
+sns.boxplot(x = wine type, y = , data = wines, hue = quality)
+
+fig = g.get_figure()
+fig.savefig('filename.png', dpi=600)
+```
+
+### 2021-02-11-Thu
+[x] seaborn - setting up for the grid, position is different for each plot type 
+[x] wine-5 plots using seaborn - violin, pairplot (grid), lmplot
+
+```python
+
+# multiple plots in one view
+https://towardsdatascience.com/clearing-the-confusion-once-and-for-all-fig-ax-plt-subplots-b122bb7783ca
+
+# position of multiple subplots
+https://stackoverflow.com/questions/56788245/is-there-a-restriction-on-catplot-with-subplot
+https://stackoverflow.com/questions/35042255/how-to-plot-multiple-seaborn-jointplot-in-subplot
+
+```
+
+### 2021-02-12-Fri
+[x] wine- presentation
+[] summary of codes for plots (ipnyb)
+[] cheetsheet for pandas 
