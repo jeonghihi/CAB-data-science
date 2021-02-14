@@ -144,7 +144,7 @@ for item in list_bands:
 def find_bad_qn(url):
     URL = url
     try:
-        source_code_from_URL = urllib.request.urlopen(URL)
+        urllib.request.urlopen(URL)
     except:
         print('error happenend_' + URL)
         pass
