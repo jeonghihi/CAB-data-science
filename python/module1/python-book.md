@@ -42,3 +42,6 @@ print(6 + 4 * 9)
 # This is line 2, with a blank line above it.
 
 ```
+
+- source2: https://pymotw.com/3/
+  - PyMOTW-3 is a series of articles written by Doug Hellmann to demonstrate how to use the modules of the Python 3 standard library. It is based on the original PyMOTW series, which covered Python 2.7. See About Python Module of the Week for details including the version of Python and tools used.
