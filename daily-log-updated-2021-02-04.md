@@ -317,8 +317,19 @@ https://stackoverflow.com/questions/56788245/is-there-a-restriction-on-catplot-w
 https://stackoverflow.com/questions/35042255/how-to-plot-multiple-seaborn-jointplot-in-subplot
 
 ```
+[x] basic guideline for presenation
+- cover page - topic words
+- background and goal: why we choose this dataset, what do we want to tell
+- agenda (Catch phrase) for single big ideas/insights
+- max.2 plots per slide
+- steps of analysis
+- total max. 5-6 slides
+
 
 ### 2021-02-12-Fri
 [x] wine- presentation
-[] summary of codes for plots (ipnyb)
-[] cheetsheet for pandas 
+[x] summary of codes for plots (ipnyb)
+[-] cheetsheet for pandas 
+
+### 2021-02-12-Fri
+[] spike - basic concepts in machine learning 
