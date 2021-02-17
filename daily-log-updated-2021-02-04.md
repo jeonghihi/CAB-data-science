@@ -331,5 +331,27 @@ https://stackoverflow.com/questions/35042255/how-to-plot-multiple-seaborn-jointp
 [x] summary of codes for plots (ipnyb)
 [-] cheetsheet for pandas 
 
-### 2021-02-12-Fri
-[] spike - basic concepts in machine learning 
+### 2021-02-15-Mon
+[-] spike - basic concepts in machine learning : supervised vs. unsupervised, scikit-learn
+[-] understand basic concepts and methods
+- [-] read machine learning handbook ch.5
+- [-] try code exemple
+
+### 2021-02-16-Tue
+[x] spike - cross validation
+[-] understand basic concepts and methods
+- [x] read machine learning handbook ch.5
+- [-] try code exemple
+
+### 2021-02-17-Wed
+[-] understand basic concepts and methods
+- [x] summarized notes for basic concepts and methods
+- [x] try code exemple:  modelling - logistic regression : https://towardsdatascience.com/understanding-logistic-regression-step-by-step-704a78be7e0a
+- [x] try code exemple:  modelling - classification - k-nearest neighbors, random forest
+- [-] try code exemple:  modelling - regression - k-nearest neighbors, random forest
+ 
+[] wine project 
+  - predict the quality of white wine using all variables
+  - predict the quality of white wine using top 3/4 critical variables 
+  - compare which classifier method shows high accuracy: https://machinelearningmastery.com/compare-machine-learning-algorithms-python-scikit-learn/
+  -  
