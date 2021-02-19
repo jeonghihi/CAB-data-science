@@ -364,14 +364,18 @@ https://stackoverflow.com/questions/35042255/how-to-plot-multiple-seaborn-jointp
   - predict the quality of white wine using top 3/4 critical variables 
     - feature selection methods: VIF, PCA
       - https://www.reneshbedre.com/blog/logistic-regression.html
-  - compare which classifier method shows high accuracy: https://machinelearningmastery.com/compare-machine-learning-algorithms-python-scikit-learn/
+  - [x] compare which classifier method shows high accuracy: https://machinelearningmastery.com/compare-machine-learning-algorithms-python-scikit-learn/
 
 [x] spike - accuracy and kappa
   - one hot encoding: transforming categorical variables into using dummy variables ('dummify')
     - https://towardsdatascience.com/one-hot-encoding-multicollinearity-and-the-dummy-variable-trap-b5840be3c41a
   - Recall, precision, Accuracy
     - Recall: the ability of a classifier to find all positive instances. For each class it is defined as the ratio of true positives to the sum of true positives and false negatives.
+    - ?Recall: TP/TP+FN: how many correct answers you made from all target (positive/negative) datapoints 
     - Precision: the ability of a classifier not to label an instance positive that is actually negative. For each class, it is defined as the ratio of true positives to the sum of a true positive and false positive.
+    - ?Precision: TP /TP+FP : how many correct answers you made from all datapoints
+
+
     - Accuracy: 
       - confusion matrix gives information about TP, TF, NP, NF 
         - confusion matrix: https://en.wikipedia.org/wiki/Confusion_matrix
@@ -382,3 +386,18 @@ https://stackoverflow.com/questions/35042255/how-to-plot-multiple-seaborn-jointp
       - Support: the number of actual occurrences of the class in the specified dataset. Imbalanced support in the training data may indicate structural weaknesses in the reported scores of the classifier and could indicate the need for stratified sampling or rebalancing. Support doesn’t change between models but instead diagnoses the evaluation proces
     - You can use F1-score for performance (accuracy considering precision and recall)
   - when there is a missing value in one variable(column), calculate the median of corresponding values in other column(index)
+
+### 2021-02-18-Fri
+[] wine project
+  - preprocessing  
+  - predict the quality of white wine using top 3/4 critical variables 
+    - feature selection methods: VIF, PCA
+      - https://www.reneshbedre.com/blog/logistic-regression.html
+  - compare which classifier method shows high accuracy: https://machinelearningmastery.com/compare-machine-learning-algorithms-python-scikit-learn/
+
+[] 11.30 - spike/new mentor
+  - labelencoder: wine type (category: string > numeric)
+  - imbalanced dataset (White >>>> Red)
+    - randomundersampler (same size of W/R wine)
+  - 
+[-] new mentor - decision tree and random forest

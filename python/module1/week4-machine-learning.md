@@ -127,3 +127,19 @@ _below this : needs to be updated_
 - useful figures for understanding the general idea/concepts in machine learning
   - : https://www.researchgate.net/publication/324250573/figure/fig1/AS:612417880981504@1523023209051/Fundamental-steps-of-supervised-machine-learning-for-image-based-species-identification_W640.jpg
 
+## preprocessing
+- standardization and normalization
+  - resource: https://www.machinecurve.com/index.php/2020/11/19/how-to-normalize-or-standardize-a-dataset-in-python/
+- when to use which one
+  - use min-max normalization if you want to normalize the data while keeping some differences in scales (because units remain different)
+  - use standardization if you want to make scales comparable (through standard deviations)
+
+- feature scaling
+  - for sparse data, use MaxAbsScaler
+
+## feature selection
+- VIF
+- PCA
+- ? do we need to apply different feature selection method for different algorithm?
+- https://stackoverflow.com/questions/46285960/feature-selection-from-sklearn-logisitc-regression
+- 
