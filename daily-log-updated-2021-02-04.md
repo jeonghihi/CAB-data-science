@@ -275,7 +275,10 @@ z(5,6)
 []image
 
 ```
-- ? what is difference between list comprehension and lambda function:
+-  what is difference between list comprehension and lambda function:
+- > https://dev.to/suvhotta/python-lambda-and-list-comprehension-5128
+-  lambda used inside list comprehension
+- > https://stackoverflow.com/questions/10070477/lambdas-inside-list-comprehensions
 - ? can we use 'df.apply.lambda[]'  to fill NaN in column wine_type 
 
 # how to transform datatype pandas
@@ -350,8 +353,32 @@ https://stackoverflow.com/questions/35042255/how-to-plot-multiple-seaborn-jointp
 - [x] try code exemple:  modelling - classification - k-nearest neighbors, random forest
 - [-] try code exemple:  modelling - regression - k-nearest neighbors, random forest
  
-[] wine project 
-  - predict the quality of white wine using all variables
+[-] wine project 
+  - [x] predict the quality of white wine using all variables
   - predict the quality of white wine using top 3/4 critical variables 
   - compare which classifier method shows high accuracy: https://machinelearningmastery.com/compare-machine-learning-algorithms-python-scikit-learn/
-  -  
+
+
+### 2021-02-17-Thu
+[-] wine project 
+  - predict the quality of white wine using top 3/4 critical variables 
+    - feature selection methods: VIF, PCA
+      - https://www.reneshbedre.com/blog/logistic-regression.html
+  - compare which classifier method shows high accuracy: https://machinelearningmastery.com/compare-machine-learning-algorithms-python-scikit-learn/
+
+[x] spike - accuracy and kappa
+  - one hot encoding: transforming categorical variables into using dummy variables ('dummify')
+    - https://towardsdatascience.com/one-hot-encoding-multicollinearity-and-the-dummy-variable-trap-b5840be3c41a
+  - Recall, precision, Accuracy
+    - Recall: the ability of a classifier to find all positive instances. For each class it is defined as the ratio of true positives to the sum of true positives and false negatives.
+    - Precision: the ability of a classifier not to label an instance positive that is actually negative. For each class, it is defined as the ratio of true positives to the sum of a true positive and false positive.
+    - Accuracy: 
+      - confusion matrix gives information about TP, TF, NP, NF 
+        - confusion matrix: https://en.wikipedia.org/wiki/Confusion_matrix
+        - https://towardsdatascience.com/understanding-confusion-matrix-a9ad42dcfd62
+        - how to plot confusion matrix: https://scikit-learn.org/stable/auto_examples/miscellaneous/plot_display_object_visualization.html#sphx-glr-auto-examples-miscellaneous-plot-display-object-visualization-py
+    - Classification report
+      - F1 score: a weighted harmonic mean of precision and recall such that the best score is 1.0 and the worst is 0.0.
+      - Support: the number of actual occurrences of the class in the specified dataset. Imbalanced support in the training data may indicate structural weaknesses in the reported scores of the classifier and could indicate the need for stratified sampling or rebalancing. Support doesn’t change between models but instead diagnoses the evaluation proces
+    - You can use F1-score for performance (accuracy considering precision and recall)
+  - when there is a missing value in one variable(column), calculate the median of corresponding values in other column(index)

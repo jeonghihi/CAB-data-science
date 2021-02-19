@@ -100,6 +100,7 @@
   - how these metrics are implemented in python modules: https://scikit-learn.org/stable/modules/model_evaluation.html
   - 
 ## Cross validation
+- Cross validation is a method used to evaluate/estimate the algorithm.
 - Underfitting can result from high bias, low variance : prediction line cannot explain for the whole data (both train and test data), which means many E - errors (unexplained part)
   - predict train (bad score) and test (bad score)
 - Overfitting can : prediction line can explain for the trained data, not for test data
