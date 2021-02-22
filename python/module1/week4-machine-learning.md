@@ -138,8 +138,10 @@ _below this : needs to be updated_
   - for sparse data, use MaxAbsScaler
 
 ## feature selection
-- VIF
-- PCA
+- multicollinearity (VIF)
+- dimension reduction by PCA
+- recursive feature elimination (RFE)
+- fitting models with all variables and removing insignificant variables
+- Chi-squared test etc.
 - ? do we need to apply different feature selection method for different algorithm?
-- https://stackoverflow.com/questions/46285960/feature-selection-from-sklearn-logisitc-regression
-- 
+  - https://stackoverflow.com/questions/46285960/feature-selection-from-sklearn-logisitc-regression

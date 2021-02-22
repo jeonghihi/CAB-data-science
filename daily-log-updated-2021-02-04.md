@@ -129,7 +129,7 @@ Todo:
 
 [-] exercises in book ch.1-5
 
-
+# week2
 ### 2021-02-01-Mon
 [x] update answers for assignments
 
@@ -241,20 +241,21 @@ Todo:
 [x] statistics basics - mean, median, standard deviation, normal distribution, discrete/continuous variable
 
 [x] had a problem with importing library (pandas) in visual studio code, and solved this by entering two lines of codes in cmd
-    ```
-    cd C:\Users\Anaconda3\lib\site-packages (#a directory where pandas is installed)
-    python -m pip install --upgrade pandas
-    # - solution source: https://github.com/boy1dr/SpleeterGui/issues/69
+  ```python
+  cd C:\Users\Anaconda3\lib\site-packages (#a directory where pandas is installed)
+  python -m pip install --upgrade pandas
+  # - solution source: https://github.com/boy1dr/SpleeterGui/issues/69
 
-    ```
-### 2021-02-05-Fri
+  ```
+## 2021-02-05-Fri
 Todo:
 [] solve 11-20 questions among 100 numpy questions
 [x] statistics basics (summary) + R exemple
 [x] pandas basic functions
 [x] project1-wine- preprocessing dataset, concatenating dataframes, changing NaN to value
 
-### 2021-02-08-Mon
+# week3
+## 2021-02-08-Mon
 Todo:
 [-] read paper for wine project
 [] solve 11-20 questions among 100 numpy questions
@@ -281,16 +282,16 @@ z(5,6)
 - > https://stackoverflow.com/questions/10070477/lambdas-inside-list-comprehensions
 - ? can we use 'df.apply.lambda[]'  to fill NaN in column wine_type 
 
-# how to transform datatype pandas
+- how to transform datatype pandas
 https://stackoverflow.com/questions/34844711/convert-entire-pandas-dataframe-to-integers-in-pandas-0-17-0
 
-### 2021-02-09-Tue
+## 2021-02-09-Tue
 Todo:
 [] read paper for wine project
 [] matplotlib - 5 visualizations comparing white/red wine: quality, acidity, alcohol + explanations
 [] pandas cheetsheet
 
-### 2021-02-10-Wed
+## 2021-02-10-Wed
 ```python
 import seaborn as sns
 sns.histplot(data=wines, x = "alcohol", hue="wine_type", multiple="stack");
@@ -306,7 +307,7 @@ fig = g.get_figure()
 fig.savefig('filename.png', dpi=600)
 ```
 
-### 2021-02-11-Thu
+## 2021-02-11-Thu
 [x] seaborn - setting up for the grid, position is different for each plot type 
 [x] wine-5 plots using seaborn - violin, pairplot (grid), lmplot
 
@@ -329,24 +330,25 @@ https://stackoverflow.com/questions/35042255/how-to-plot-multiple-seaborn-jointp
 - total max. 5-6 slides
 
 
-### 2021-02-12-Fri
+## 2021-02-12-Fri
 [x] wine- presentation
 [x] summary of codes for plots (ipnyb)
 [-] cheetsheet for pandas 
 
-### 2021-02-15-Mon
+# week4
+## 2021-02-15-Mon
 [-] spike - basic concepts in machine learning : supervised vs. unsupervised, scikit-learn
 [-] understand basic concepts and methods
 - [-] read machine learning handbook ch.5
 - [-] try code exemple
 
-### 2021-02-16-Tue
+## 2021-02-16-Tue
 [x] spike - cross validation
 [-] understand basic concepts and methods
 - [x] read machine learning handbook ch.5
 - [-] try code exemple
 
-### 2021-02-17-Wed
+## 2021-02-17-Wed
 [-] understand basic concepts and methods
 - [x] summarized notes for basic concepts and methods
 - [x] try code exemple:  modelling - logistic regression : https://towardsdatascience.com/understanding-logistic-regression-step-by-step-704a78be7e0a
@@ -359,7 +361,7 @@ https://stackoverflow.com/questions/35042255/how-to-plot-multiple-seaborn-jointp
   - compare which classifier method shows high accuracy: https://machinelearningmastery.com/compare-machine-learning-algorithms-python-scikit-learn/
 
 
-### 2021-02-17-Thu
+## 2021-02-17-Thu
 [-] wine project 
   - predict the quality of white wine using top 3/4 critical variables 
     - feature selection methods: VIF, PCA
@@ -387,9 +389,9 @@ https://stackoverflow.com/questions/35042255/how-to-plot-multiple-seaborn-jointp
     - You can use F1-score for performance (accuracy considering precision and recall)
   - when there is a missing value in one variable(column), calculate the median of corresponding values in other column(index)
 
-### 2021-02-18-Fri
+## 2021-02-18-Fri
 [] wine project
-  - preprocessing  
+  - [x] preprocessing : standardization/normalization 
   - predict the quality of white wine using top 3/4 critical variables 
     - feature selection methods: VIF, PCA
       - https://www.reneshbedre.com/blog/logistic-regression.html
@@ -401,3 +403,18 @@ https://stackoverflow.com/questions/35042255/how-to-plot-multiple-seaborn-jointp
     - randomundersampler (same size of W/R wine)
   - 
 [-] new mentor - decision tree and random forest
+
+# week5
+## 2021-02-22-Mon
+[] wine project
+  - predict the quality of white wine using top 3/4 critical variables 
+    - [x] feature selection methods: VIF, PCA
+      - https://www.reneshbedre.com/blog/logistic-regression.html
+  - compare which classifier method shows high accuracy: https://machinelearningmastery.com/compare-machine-learning-algorithms-python-scikit-learn/
+
+[] spike - feature selection, KNN, decision tree (base for random forest)
+  - preprocessing: label encoder, feature engineering, minmax/standard scaler
+  - criteria of the model selection: pick the one when both accuracy and kappa score are high.
+  - decision tree
+    - f1: root node, child node, and leaf node (max_depth: 2 / the value of max_features is greater than the value of max_depth)
+    - every split decreases the impurity (informatino gain increase)
