@@ -136,6 +136,17 @@ _below this : needs to be updated_
 
 - feature scaling
   - for sparse data, use MaxAbsScaler
+  - difference between fit and fit_transform
+    - source: https://datascience.stackexchange.com/questions/12321/whats-the-difference-between-fit-and-fit-transform-in-scikit-learn-models
+    - source: https://stackoverflow.com/questions/23838056/what-is-the-difference-between-transform-and-fit-transform-in-sklearn/50904741#50904741
+    - to set customized fit order: https://stackoverflow.com/questions/51308994/python-sklearn-determine-the-encoding-order-of-labelencoder
+
+- how to check if the data matrix is sparse
+  ```python
+  import scipy
+  my_matrix = wtp_features
+  scipy.sparse.issparse(my_matrix)
+  ```
 
 ## feature selection
 - multicollinearity (VIF)

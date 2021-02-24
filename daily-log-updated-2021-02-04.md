@@ -418,3 +418,8 @@ https://stackoverflow.com/questions/35042255/how-to-plot-multiple-seaborn-jointp
   - decision tree
     - f1: root node, child node, and leaf node (max_depth: 2 / the value of max_features is greater than the value of max_depth)
     - every split decreases the impurity (informatino gain increase)
+
+## 2021-02-23-Tue
+[] wine project
+  - [x] predict the quality of white wine using random forest
+  - [x] extract top 3-5 critical variables using random forest/SelectFromModel
