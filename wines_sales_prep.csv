@@ -1,0 +1,360 @@
+,Unnamed: 0,country,designation,points,price,province,variety,winery,rating
+1,993,Portugal,Campelo,85,10,Vinho Verde,Portuguese White,Caves Campelo,2
+2,994,Portugal,Miranda,85,9,Vinho Verde,Portuguese White,Caves Campelo,2
+3,1378,Portugal,Daphne,91,9,Vinho Verde,Loureiro,Casal Paço Padreiro,0
+4,1558,Portugal,Campelo,84,10,Vinho Verde,Rosé,Caves Campelo,2
+5,1559,Portugal,Casal da Seara,84,10,Vinho Verde,Portuguese White,Caves Campelo,2
+6,1694,Portugal,Torre de Vila Nova,88,12,Vinho Verde,Portuguese White,Casa de Vila Nova,0
+7,1841,Portugal,Campelo Tinto,84,10,Vinho Verde,Portuguese Red,Caves Campelo,2
+8,2136,Portugal,Três Castas,82,10,Vinho Verde,Portuguese White,Caves Campelo,1
+9,2565,Portugal,Varanda do Conde,90,9,Vinho Verde,Portuguese White,Provam,0
+11,2947,Portugal,Dom Diogo,87,13,Vinho Verde,Arinto,Quinta da Raza,2
+12,2962,Portugal,Branco,87,12,Vinho Verde,Portuguese White,Casa do Valle,2
+13,3792,Portugal,Aphros Branco,89,9,Vinho Verde,Loureiro,Casal Paço Padreiro,0
+14,5164,Portugal,Aphros Tinto,88,9,Vinho Verde,Vinhão,Casal Paço Padreiro,0
+15,5205,Portugal,Hera Grande Escolha,86,10,Vinho Verde,Loureiro,Adega Cooperativa Ponte de Barca,2
+16,5776,Portugal,Quinta de Lourosa,88,9,Vinho Verde,Portuguese White,Dão Sul,0
+17,5800,Portugal,Las Lilas,85,9,Vinho Verde,Portuguese White,Adega Cooperativa Ponte de Barca,2
+18,6415,Portugal,Aphros Ten,87,9,Vinho Verde,Loureiro,Casal Paço Padreiro,2
+19,6440,Portugal,Paço de São Lourenço Escolha,85,12,Vinho Verde,Portuguese White,Solar de Pinheiro,2
+21,6758,Portugal,Raza,84,10,Vinho Verde,Portuguese White,Quinta da Raza,2
+23,7444,Portugal,Hera,83,9,Vinho Verde,Rosé,Adega Cooperativa Ponte de Barca,1
+24,7464,Portugal,Escolha,83,9,Vinho Verde,Portuguese White,Adega Cooperativa Ponte de Barca,1
+25,7567,Portugal,Ponte,85,10,Vinho Verde,Loureiro,Adega Cooperativa Ponte de Lima,2
+26,7775,Portugal,Casal Garcia,82,9,Vinho Verde,Portuguese White,Vidigal,1
+27,8726,Portugal,Arca Nova Colheita,86,12,Vinho Verde,Loureiro,Quinta das Arcas,2
+28,8889,Portugal,Adamado,84,10,Vinho Verde,Portuguese White,Adega Cooperativa Ponte de Lima,2
+29,8890,Portugal,Encostas do Lima,84,10,Vinho Verde,Portuguese White,Adega Cooperativa Ponte de Lima,2
+30,9664,Portugal,Casal Garcia,83,8,Vinho Verde,Rosé,Mapreco,1
+31,10001,Portugal,Casal Garcia,80,8,Vinho Verde,Portuguese White,Mapreco,1
+32,10400,Portugal,Miranda,85,10,Vinho Verde,Portuguese White,Campelo,2
+33,10626,Portugal,Casal da Seara,84,6,Vinho Verde,Portuguese White,Campelo,2
+34,10640,Portugal,Lagar,84,12,Vinho Verde,Rosé,Quintas de Melgaço,2
+35,10973,Portugal,Casal Garcia,83,10,Vinho Verde,Portuguese White,Campelo,1
+36,11269,Portugal,Casal Garcia,82,10,Vinho Verde,Portuguese Red,Campelo,1
+37,11278,Portugal,Casal Garcia,82,10,Vinho Verde,Rosé,Campelo,1
+38,12731,Portugal,Casal Garcia,91,9,Vinho Verde,Alvarinho,J. Portugal Ramos,0
+40,15208,Portugal,Casal Garcia,85,9,Vinho Verde,Rosé,Casa do Valle,2
+41,15724,Portugal,Adamado,85,9,Vinho Verde,Portuguese White,Adega Cooperativa Ponte de Lima,2
+42,15734,Portugal,Fonte,85,8,Vinho Verde,Portuguese White,Aveleda,2
+44,19673,Portugal,Via Latina,88,13,Vinho Verde,Alvarinho,Vercoope,0
+45,19735,Portugal,Casal Garcia,88,9,Vinho Verde,Loureiro,Quinta do Ameal,0
+46,19915,Portugal,Casal Garcia,87,15,Vinho Verde,Loureiro,Quinta do Tamariz,2
+47,20099,Portugal,Via Latina,86,6,Vinho Verde,Loureiro,Vercoope,2
+48,20152,Portugal,AT,86,9,Vinho Verde,Portuguese White,Borges,2
+49,20274,Portugal,Hera Grande Escolha,86,9,Vinho Verde,Portuguese White,Adega Cooperativa Ponte de Barca,2
+50,20457,Portugal,Terras de Felgueiras,85,6,Vinho Verde,Portuguese White,Vercoope,2
+51,20458,Portugal,Estreia Grande Escolha,85,13,Vinho Verde,Alvarinho,Viniverde,2
+52,20550,Portugal,Cape Roca Fisherman,85,11,Vinho Verde,Portuguese White,Casca Wines,2
+53,20554,Portugal,Via Latina,85,6,Vinho Verde,Portuguese White,Vercoope,2
+54,20579,Portugal,Pavão,84,6,Vinho Verde,Portuguese White,Vercoope,2
+55,20610,Portugal,Estreia Grande Escolha,84,9,Vinho Verde,Loureiro,Viniverde,2
+56,20613,Portugal,Hera,84,7,Vinho Verde,Portuguese White,Adega Cooperativa Ponte de Barca,2
+57,20694,Portugal,Estreia,83,8,Vinho Verde,Portuguese White,Viniverde,1
+58,20697,Portugal,Hera,83,7,Vinho Verde,Rosé,Adega Cooperativa Ponte de Barca,1
+59,20814,Portugal,Estreia,80,8,Vinho Verde,Rosé,Viniverde,1
+60,20911,Portugal,Monte Cascas Colheita,88,16,Vinho Verde,Portuguese White,Casca Wines,0
+61,21096,Portugal,Quinta do Tamariz,87,9,Vinho Verde,Loureiro,Quinta de Santa Maria,2
+62,21413,Portugal,Cape Roca Fish,86,16,Vinho Verde,Portuguese White,Casca Wines,2
+63,24692,Portugal,Casal Garcia,90,15,Vinho Verde,Loureiro,Quinta do Ameal,0
+65,24990,Portugal,Casal Garcia,89,10,Vinho Verde,Portuguese White,Casa do Valle,0
+66,25019,Portugal,Casal Garcia,89,12,Vinho Verde,Portuguese White,Solar de Pinheiro,0
+67,25252,Portugal,Clemen Reserva,88,12,Vinho Verde,Portuguese White,Wines & Winemakers,0
+68,25254,Portugal,Avesso,88,12,Vinho Verde,Portuguese White,Solar de Pinheiro,0
+69,25255,Portugal,Quinta de Simaens,88,13,Vinho Verde,Portuguese White,Borges,0
+70,25518,Portugal,Azal,87,12,Vinho Verde,Portuguese White,Solar de Pinheiro,2
+71,25648,Portugal,AT,86,9,Vinho Verde,Portuguese White,Borges,2
+72,25708,Portugal,Santola,86,7,Vinho Verde,Portuguese White,Messias,2
+73,25880,Portugal,Rei do Minho,85,9,Vinho Verde,Portuguese White,Vinicola do Norte,2
+74,25939,Portugal,Casal Garcia,85,10,Vinho Verde,Rosé,Casa do Valle,2
+75,26003,Portugal,Aliança,85,7,Vinho Verde,Portuguese White,Caves Aliança,2
+76,26045,Portugal,Azul Portugal Escolha,85,11,Vinho Verde,Portuguese White,Wines & Winemakers,2
+77,26381,Portugal,Praia,84,9,Vinho Verde,Portuguese White,Aveleda,2
+78,28458,Portugal,Torre de Menagem Escolha,89,13,Vinho Verde,Portuguese White,Quintas de Melgaço,0
+79,28566,Portugal,Varanda do Conde,90,9,Vinho Verde,Portuguese White,Provam,0
+81,28588,Portugal,Casal Garcia,90,9,Vinho Verde,Loureiro,J. Portugal Ramos,0
+82,28766,Portugal,Arca Nova Colheita,86,12,Vinho Verde,Loureiro,Quinta das Arcas,2
+83,29203,Portugal,Casal Garcia,85,8,Vinho Verde,Portuguese White,Caves Aliança,2
+84,29210,Portugal,Casal Garcia Branco,85,8,Vinho Verde,Portuguese White,Aveleda,2
+85,29676,Portugal,Casal Garcia,85,8,Vinho Verde,Portuguese White,FVine,2
+86,30260,Portugal,Xadrez,85,9,Vinho Verde,Portuguese White,Dão Sul,2
+87,30596,Portugal,Arca Nova,84,8,Vinho Verde,Portuguese White,Quinta das Arcas,2
+88,30736,Portugal,Casal Garcia,84,8,Vinho Verde,Portuguese White,Calamares,2
+89,30909,Portugal,Casal Garcia,84,8,Vinho Verde,Portuguese White,Mapreco,2
+90,31038,Portugal,Grinalda,84,9,Vinho Verde,Portuguese White,Aveleda,2
+91,31530,Portugal,Conde Villar,83,9,Vinho Verde,Rosé,Quinta das Arcas,1
+92,31556,Portugal,Casal Garcia,82,9,Vinho Verde,Portuguese White,Vinhas Altas,1
+93,32531,Portugal,Casal Garcia,83,8,Vinho Verde,Portuguese Rosé,Aveleda,1
+94,32887,Portugal,Tinto,85,9,Vinho Verde,Portuguese Red,Adega de Monção,2
+97,33158,Portugal,Muralhas de Monção,85,9,Vinho Verde,Rosé,Adega de Monção,2
+98,33177,Portugal,Padeiro,85,13,Vinho Verde,Rosé,Quinta de Gomariz,2
+99,33481,Portugal,Aveleda,85,9,Vinho Verde,Portuguese White,Aveleda,2
+100,33805,Portugal,Casal Garcia,85,9,Vinho Verde,Rosé,Vera,2
+103,34410,Portugal,Casal Garcia Branco,84,9,Vinho Verde,Portuguese White,Aveleda,2
+104,34421,Portugal,Espadeiro,84,13,Vinho Verde,Rosé,Quinta de Gomariz,2
+105,34422,Portugal,Clemens Reserva,84,9,Vinho Verde,Portuguese White,Wines & Winemakers,2
+106,34687,Portugal,Trevo,84,9,Vinho Verde,Portuguese White,Quinta do Portal,2
+107,34691,Portugal,Casal Garcia,84,9,Vinho Verde,Rosé,Aveleda,2
+108,35333,Portugal,Via Latina,88,13,Vinho Verde,Alvarinho,Vercoope,0
+109,35342,Portugal,Salsus,84,9,Vinho Verde,Portuguese White,Wines & Winemakers,2
+110,35635,Portugal,Casal Garcia,88,9,Vinho Verde,Loureiro,Quinta do Ameal,0
+111,36861,Portugal,Tres Castas,85,10,Vinho Verde,Portuguese White,Campelo,2
+113,37445,Portugal,Miranda,85,10,Vinho Verde,Portuguese White,Campelo,2
+114,37746,Portugal,Casal da Seara,84,6,Vinho Verde,Portuguese White,Campelo,2
+115,37760,Portugal,Lagar,84,12,Vinho Verde,Rosé,Quintas de Melgaço,2
+116,38063,Portugal,Casal Garcia,83,10,Vinho Verde,Portuguese White,Campelo,1
+117,38150,Portugal,Alvarinho QM,90,13,Vinho Verde,Alvarinho,Quintas de Melgaço,0
+118,38359,Portugal,Casal Garcia,82,10,Vinho Verde,Portuguese Red,Campelo,1
+119,38365,Portugal,Casal Garcia,82,10,Vinho Verde,Rosé,Campelo,1
+120,38412,Portugal,Varanda do Conde,90,9,Vinho Verde,Portuguese White,Provam,0
+124,40472,Portugal,Arca Nova Colheita,88,9,Vinho Verde,Portuguese White,Quinta das Arcas,0
+126,42168,Portugal,Casal Garcia,84,9,Vinho Verde,Portuguese White,Quinta de Lourosa,2
+128,43223,Portugal,Torre de Menagem Escolha,88,12,Vinho Verde,Portuguese White,Quintas de Melgaço,0
+129,43253,Portugal,Terra Antiga,87,10,Vinho Verde,Portuguese White,Quintas de Melgaço,2
+130,44107,Portugal,Torre de Menagem,86,10,Vinho Verde,Portuguese White,Quintas de Melgaço,2
+131,44162,Portugal,Casal Garcia,90,15,Vinho Verde,Loureiro,Quinta do Ameal,0
+133,44944,Portugal,Cruzeiro Branco,85,9,Vinho Verde,Portuguese White,Vinhos Norte,2
+134,45119,Portugal,Aphros,88,9,Vinho Verde,Loureiro,Casal Paço Padreiro,0
+135,45660,Portugal,Casal Garcia,89,10,Vinho Verde,Portuguese White,Casa do Valle,0
+136,45689,Portugal,Casal Garcia,89,12,Vinho Verde,Portuguese White,Solar de Pinheiro,0
+137,46004,Portugal,Lagar,87,15,Vinho Verde,Alvarinho,Quintas de Melgaço,2
+138,46852,Portugal,Clemen Reserva,88,12,Vinho Verde,Portuguese White,Wines & Winemakers,0
+139,46854,Portugal,Avesso,88,12,Vinho Verde,Portuguese White,Solar de Pinheiro,0
+140,46855,Portugal,Quinta de Simaens,88,13,Vinho Verde,Portuguese White,Borges,0
+142,47305,Portugal,Casal Garcia,86,12,Vinho Verde,Rosé,Casa do Valle,2
+143,48048,Portugal,Azal,87,12,Vinho Verde,Portuguese White,Solar de Pinheiro,2
+144,48183,Portugal,Dom Diogo,86,14,Vinho Verde,Rosé,Quinta da Raza,2
+145,48658,Portugal,AT,86,9,Vinho Verde,Portuguese White,Borges,2
+146,48928,Portugal,Santola,86,7,Vinho Verde,Portuguese White,Messias,2
+147,49051,Portugal,Casal Garcia Branco,85,8,Vinho Verde,Portuguese White,Aveleda,2
+148,49068,Portugal,Salsus,85,9,Vinho Verde,Portuguese White,Wines & Winemakers,2
+149,49072,Portugal,Hera,85,9,Vinho Verde,Portuguese White,Adega Cooperativa Ponte de Barca,2
+150,49350,Portugal,Lima,85,9,Vinho Verde,Loureiro,J. Portugal Ramos,2
+151,49653,Portugal,Portal da Calçada,85,14,Vinho Verde,Portuguese White,Quinta da Calçada,2
+152,49660,Portugal,Azul Portugal Escolha,85,11,Vinho Verde,Portuguese White,Wines & Winemakers,2
+153,49665,Portugal,Casal Garcia,85,9,Vinho Verde,Portuguese White,Aveleda,2
+154,49670,Portugal,Royal Palmeira,84,13,Vinho Verde,Loureiro,Ideal Drinks,2
+155,49678,Portugal,Casal Garcia,84,8,Vinho Verde,Rosé,Aveleda,2
+156,49790,Portugal,Rei do Minho,85,9,Vinho Verde,Portuguese White,Vinicola do Norte,2
+157,50089,Portugal,Casal Garcia,85,10,Vinho Verde,Rosé,Casa do Valle,2
+158,50252,Portugal,Terra Antiga,84,9,Vinho Verde,Portuguese White,Quintas de Melgaço,2
+159,50271,Portugal,Gatão Branco,84,9,Vinho Verde,Portuguese White,Borges,2
+160,50393,Portugal,Aliança,85,7,Vinho Verde,Portuguese White,Caves Aliança,2
+161,50675,Portugal,Azul Portugal Escolha,85,11,Vinho Verde,Portuguese White,Wines & Winemakers,2
+162,50858,Portugal,Ela Branco,83,9,Vinho Verde,Portuguese White,Adega Cooperativa Ponte de Barca,1
+163,50870,Portugal,Ela,83,9,Vinho Verde,Rosé,Adega Cooperativa Ponte de Barca,1
+164,53022,Portugal,Grande Reserva Bruto,87,9,Vinho Verde,Portuguese Sparkling,Casa do Valle,2
+165,58347,Portugal,Twin Vines,85,9,Vinho Verde,Portuguese White,José Maria da Fonseca,2
+166,58487,Portugal,Portal do Fidalgo,91,9,Vinho Verde,Alvarinho,Provam,0
+167,58931,Portugal,Santola,84,6,Vinho Verde,Portuguese White,Messias,2
+168,59064,Portugal,Colheita Seleccionada,90,9,Vinho Verde,Loureiro,Adega Cooperativa Ponte de Lima,0
+169,59066,Portugal,Quinta da Aveleda,90,9,Vinho Verde,Portuguese White,Aveleda,0
+170,59343,Portugal,Grande Escolha,90,9,Vinho Verde,Portuguese White,Casa do Valle,0
+171,59551,Portugal,Casal Garcia,83,8,Vinho Verde,Portuguese White,Caves Aliança,1
+172,60132,Portugal,Varanda do Conde,90,9,Vinho Verde,Portuguese White,Provam,0
+173,61837,Portugal,Casal Garcia,88,9,Vinho Verde,Loureiro,Adega Cooperativa Ponte de Lima,0
+174,63718,Portugal,Casal Garcia,85,9,Vinho Verde,Rosé,Casa do Valle,2
+175,64024,Portugal,Adamado,85,9,Vinho Verde,Portuguese White,Adega Cooperativa Ponte de Lima,2
+176,64034,Portugal,Fonte,85,8,Vinho Verde,Portuguese White,Aveleda,2
+177,64214,Portugal,Casal Garcia,84,5,Vinho Verde,Rosé,Campelo,2
+178,64543,Portugal,Casal Garcia,84,8,Vinho Verde,Rosé,Aveleda,2
+179,64555,Portugal,Casal Garcia,84,8,Vinho Verde,Portuguese White,Aveleda,2
+180,64728,Portugal,Tinto,83,5,Vinho Verde,Portuguese Red,Campelo,1
+181,64862,Portugal,Branco,83,5,Vinho Verde,Portuguese White,Campelo,1
+182,64908,Portugal,Portal do Fidalgo,90,16,Vinho Verde,Alvarinho,Provam,0
+183,64909,Portugal,Varanda do Conde,90,12,Vinho Verde,Portuguese White,Provam,0
+184,65799,Portugal,Pena de Pato,88,11,Vinho Verde,Portuguese White,Sogrape,0
+185,65947,Portugal,Clemen Reserva,88,13,Vinho Verde,Portuguese White,Touquinheiras,0
+186,66097,Portugal,Arca Nova,88,9,Vinho Verde,Portuguese White,Quinta das Arcas,0
+187,66720,Portugal,Quinta de Simaens,87,12,Vinho Verde,Portuguese White,Borges,2
+188,67642,Portugal,Casal Garcia,86,10,Vinho Verde,Portuguese White,Casa de Vila Verde,2
+189,68212,Portugal,Famega White,85,8,Vinho Verde,Portuguese White,Caves da Cerca,2
+190,68351,Portugal,Casal Garcia,85,9,Vinho Verde,Portuguese White,Broadbent,2
+191,68365,Portugal,Twin Vines,85,9,Vinho Verde,Portuguese White,José Maria da Fonseca,2
+192,68662,Portugal,Gatão,84,7,Vinho Verde,Portuguese White,Borges,2
+193,69542,Portugal,Casal Garcia,82,5,Vinho Verde,Portuguese White,Lagosta,1
+194,71992,Portugal,Casal Garcia,87,10,Vinho Verde,Portuguese White,Casa do Valle,2
+195,72095,Portugal,Dom Diogo Colheita Seleccionada,87,9,Vinho Verde,Arinto,Quinta da Raza,2
+196,72555,Portugal,Branco,86,11,Vinho Verde,Portuguese White,Conde Villar,2
+197,72622,Portugal,Lima,86,9,Vinho Verde,Loureiro,J. Portugal Ramos,2
+198,72853,Portugal,Casal Garcia,86,10,Vinho Verde,Rosé,Casa do Valle,2
+200,73135,Portugal,Lima,86,11,Vinho Verde,Loureiro,J. Portugal Ramos,2
+201,73317,Portugal,Muros Antigos Escolha,91,13,Vinho Verde,Portuguese White,Anselmo Mendes,0
+203,73662,Portugal,Grande Reserva Bruto,87,9,Vinho Verde,Portuguese Sparkling,Casa do Valle,2
+205,74219,Portugal,Casal Garcia,90,15,Vinho Verde,Loureiro,Casa de Vilacetinho,0
+206,74353,Portugal,Casal Garcia,85,12,Vinho Verde,Rosé,Casa do Valle,2
+207,74645,Portugal,Xadrez,84,7,Vinho Verde,Portuguese White,Dão Sul,2
+208,74651,Portugal,Aphros Rosé,84,9,Vinho Verde,Vinhão,Casal Paço Padreiro,2
+209,74740,Portugal,Muros Antigos,90,14,Vinho Verde,Portuguese White,Anselmo Mendes,0
+210,75027,Portugal,Azul Portugal Escolha,85,11,Vinho Verde,Portuguese White,Wines & Winemakers,2
+211,75212,Portugal,Rosé,84,9,Vinho Verde,Espadeiro,Conde Villar,2
+212,75322,Portugal,Cruzeiro,85,9,Vinho Verde,Portuguese White,Vinhos Norte,2
+213,75349,Portugal,Casal Garcia,89,15,Vinho Verde,Avesso,Casa de Vilacetinho,0
+214,75608,Portugal,Raza,84,9,Vinho Verde,Portuguese White,Quinta da Raza,2
+215,75627,Portugal,Dom Diogo Colheita Seleccionada,84,9,Vinho Verde,Rosé,Quinta da Raza,2
+217,76655,Portugal,Grande Escolha,91,15,Vinho Verde,Portuguese White,Casa do Valle,0
+219,77220,Portugal,Casal Garcia,89,10,Vinho Verde,Portuguese White,Casa do Valle,0
+220,77249,Portugal,Casal Garcia,89,12,Vinho Verde,Portuguese White,Solar de Pinheiro,0
+222,78412,Portugal,Clemen Reserva,88,12,Vinho Verde,Portuguese White,Wines & Winemakers,0
+223,78414,Portugal,Avesso,88,12,Vinho Verde,Portuguese White,Solar de Pinheiro,0
+224,78415,Portugal,Quinta de Simaens,88,13,Vinho Verde,Portuguese White,Borges,0
+225,79119,Portugal,Avesso,89,13,Vinho Verde,Avesso,Solar de Pinheiro,0
+226,79410,Portugal,Quinta da Aveleda,89,9,Vinho Verde,Portuguese White,Aveleda,0
+227,79463,Portugal,Via Latina,88,13,Vinho Verde,Alvarinho,Vercoope,0
+228,79638,Portugal,Azal,87,12,Vinho Verde,Portuguese White,Solar de Pinheiro,2
+229,79732,Portugal,Casal Garcia,89,14,Vinho Verde,Alvarinho,Casa de Vila Verde,0
+230,79765,Portugal,Casal Garcia,88,9,Vinho Verde,Loureiro,Quinta do Ameal,0
+231,80014,Portugal,Colheita Seleccionada,89,12,Vinho Verde,Loureiro,Adega Cooperativa Ponte de Lima,0
+232,80188,Portugal,AT,86,9,Vinho Verde,Portuguese White,Borges,2
+233,80488,Portugal,Santola,86,7,Vinho Verde,Portuguese White,Messias,2
+234,80625,Portugal,Vera,88,12,Vinho Verde,Portuguese White,Casa do Valle,0
+235,80665,Portugal,Casal Garcia,87,15,Vinho Verde,Loureiro,Quinta do Tamariz,2
+236,81410,Portugal,Rei do Minho,85,9,Vinho Verde,Portuguese White,Vinicola do Norte,2
+237,81539,Portugal,Via Latina,86,6,Vinho Verde,Loureiro,Vercoope,2
+239,81709,Portugal,Casal Garcia,85,10,Vinho Verde,Rosé,Casa do Valle,2
+240,81832,Portugal,AT,86,9,Vinho Verde,Portuguese White,Borges,2
+241,81852,Portugal,Casal Garcia,88,10,Vinho Verde,Portuguese White,Casa do Valle,0
+243,82073,Portugal,Aliança,85,7,Vinho Verde,Portuguese White,Caves Aliança,2
+244,82355,Portugal,Azul Portugal Escolha,85,11,Vinho Verde,Portuguese White,Wines & Winemakers,2
+245,82434,Portugal,Hera Grande Escolha,86,9,Vinho Verde,Portuguese White,Adega Cooperativa Ponte de Barca,2
+246,82756,Portugal,Azul Portugal Escolha,87,11,Vinho Verde,Portuguese White,Wines & Winemakers,2
+247,83335,Portugal,Casal Garcia,87,7,Vinho Verde,Loureiro,Adega Cooperativa Ponte de Lima,2
+248,83367,Portugal,Terras de Felgueiras,85,6,Vinho Verde,Portuguese White,Vercoope,2
+249,83368,Portugal,Estreia Grande Escolha,85,13,Vinho Verde,Alvarinho,Viniverde,2
+250,83917,Portugal,Azal,87,13,Vinho Verde,Azal,Solar de Pinheiro,2
+251,83937,Portugal,Twin Vines,86,7,Vinho Verde,Portuguese White,José Maria da Fonseca,2
+252,83940,Portugal,Cape Roca Fisherman,85,11,Vinho Verde,Portuguese White,Casca Wines,2
+253,83944,Portugal,Via Latina,85,6,Vinho Verde,Portuguese White,Vercoope,2
+254,83969,Portugal,Pavão,84,6,Vinho Verde,Portuguese White,Vercoope,2
+255,84210,Portugal,Estreia Grande Escolha,84,9,Vinho Verde,Loureiro,Viniverde,2
+256,84213,Portugal,Hera,84,7,Vinho Verde,Portuguese White,Adega Cooperativa Ponte de Barca,2
+257,84262,Portugal,Aliança,86,9,Vinho Verde,Portuguese White,Caves Aliança,2
+258,84392,Portugal,Arca Nova Colheita,88,9,Vinho Verde,Portuguese White,Quinta das Arcas,0
+259,84536,Portugal,Casal Garcia,86,10,Vinho Verde,Portuguese White,Casa de Vila Verde,2
+260,84564,Portugal,Estreia,83,8,Vinho Verde,Portuguese White,Viniverde,1
+261,84567,Portugal,Hera,83,7,Vinho Verde,Rosé,Adega Cooperativa Ponte de Barca,1
+262,85119,Portugal,Grand Escolha,86,7,Vinho Verde,Loureiro,Adega Cooperativa Ponte de Barca,2
+263,85164,Portugal,Estreia,80,8,Vinho Verde,Rosé,Viniverde,1
+264,86323,Portugal,Casal Garcia,86,12,Vinho Verde,Portuguese White,Aveleda,2
+266,94028,Portugal,Deu la Deu,90,9,Vinho Verde,Alvarinho,Adega de Monção,0
+267,94598,Portugal,Muralhas de Monção,89,9,Vinho Verde,Portuguese White,Adega de Monção,0
+269,94902,Portugal,Quinta da Aveleda,89,9,Vinho Verde,Portuguese White,Aveleda,0
+270,96091,Portugal,Casal Garcia,88,16,Vinho Verde,Alvarinho,Quinta de Gomariz,0
+271,96092,Portugal,Casal Garcia,88,16,Vinho Verde,Avesso,Quinta de Gomariz,0
+272,97872,Portugal,Casal Garcia,87,9,Vinho Verde,Alvarinho,Vera,2
+273,98759,Portugal,Casal Garcia,86,9,Vinho Verde,Portuguese White,Vera,2
+274,99050,Portugal,Fuzelo,86,9,Vinho Verde,Portuguese White,Adega de Monção,2
+275,99343,Portugal,Casal Garcia,86,13,Vinho Verde,Loureiro,Quinta de Gomariz,2
+276,100257,Portugal,Aliança,85,9,Vinho Verde,Portuguese White,Caves Aliança,2
+277,100537,Portugal,Tinto,85,9,Vinho Verde,Portuguese Red,Adega de Monção,2
+279,100838,Portugal,Muralhas de Monção,85,9,Vinho Verde,Rosé,Adega de Monção,2
+280,100857,Portugal,Padeiro,85,13,Vinho Verde,Rosé,Quinta de Gomariz,2
+281,101096,Portugal,Daphne,90,9,Vinho Verde,Loureiro,Casal Paço Padreiro,0
+282,101131,Portugal,Aveleda,85,9,Vinho Verde,Portuguese White,Aveleda,2
+283,101455,Portugal,Casal Garcia,85,9,Vinho Verde,Rosé,Vera,2
+285,102030,Portugal,Casal Garcia Branco,84,9,Vinho Verde,Portuguese White,Aveleda,2
+286,102041,Portugal,Espadeiro,84,13,Vinho Verde,Rosé,Quinta de Gomariz,2
+287,102042,Portugal,Clemens Reserva,84,9,Vinho Verde,Portuguese White,Wines & Winemakers,2
+288,102271,Portugal,Grand Escolha,90,15,Vinho Verde,Portuguese White,Casa do Valle,0
+289,102337,Portugal,Trevo,84,9,Vinho Verde,Portuguese White,Quinta do Portal,2
+290,102341,Portugal,Casal Garcia,84,9,Vinho Verde,Rosé,Aveleda,2
+291,102813,Portugal,Afros Branco,89,9,Vinho Verde,Loureiro,Casal Paço Padreiro,0
+292,102962,Portugal,Salsus,84,9,Vinho Verde,Portuguese White,Wines & Winemakers,2
+293,103458,Portugal,Silenus,89,9,Vinho Verde,Vinhão,Casal Paço Padreiro,0
+294,104346,Portugal,Quinta de Lourosa,88,8,Vinho Verde,Portuguese White,Dão Sul,0
+296,105267,Portugal,Quinta de Simaens,87,13,Vinho Verde,Portuguese White,Borges,2
+297,105568,Portugal,Aphros Ten,87,14,Vinho Verde,Loureiro,Casal Paço Padreiro,2
+298,106362,Portugal,Casal Garcia,88,8,Vinho Verde,Portuguese White,Casa de Vila Verde,0
+299,109347,Portugal,Twin Vines,85,9,Vinho Verde,Portuguese White,José Maria da Fonseca,2
+300,109878,Portugal,Portal do Fidalgo,90,16,Vinho Verde,Alvarinho,Provam,0
+301,109879,Portugal,Varanda do Conde,90,12,Vinho Verde,Portuguese White,Provam,0
+302,109931,Portugal,Santola,84,6,Vinho Verde,Portuguese White,Messias,2
+303,110521,Portugal,Casal Garcia,83,8,Vinho Verde,Portuguese White,Caves Aliança,1
+304,110717,Portugal,Portal do Fidalgo,91,9,Vinho Verde,Alvarinho,Provam,0
+305,111324,Portugal,Colheita Seleccionada,90,9,Vinho Verde,Loureiro,Adega Cooperativa Ponte de Lima,0
+306,111326,Portugal,Quinta da Aveleda,90,9,Vinho Verde,Portuguese White,Aveleda,0
+307,111603,Portugal,Grande Escolha,90,9,Vinho Verde,Portuguese White,Casa do Valle,0
+308,111639,Portugal,Pena de Pato,88,11,Vinho Verde,Portuguese White,Sogrape,0
+309,111937,Portugal,Clemen Reserva,88,13,Vinho Verde,Portuguese White,Touquinheiras,0
+310,112237,Portugal,Arca Nova,88,9,Vinho Verde,Portuguese White,Quinta das Arcas,0
+311,112512,Portugal,Varanda do Conde,90,9,Vinho Verde,Portuguese White,Provam,0
+312,113400,Portugal,Quinta de Simaens,87,12,Vinho Verde,Portuguese White,Borges,2
+313,114247,Portugal,Casal Garcia,88,9,Vinho Verde,Loureiro,Adega Cooperativa Ponte de Lima,0
+314,115102,Portugal,Casal Garcia,86,10,Vinho Verde,Portuguese White,Casa de Vila Verde,2
+315,115798,Portugal,Casal Garcia,85,9,Vinho Verde,Rosé,Casa do Valle,2
+316,115954,Portugal,Adamado,85,9,Vinho Verde,Portuguese White,Adega Cooperativa Ponte de Lima,2
+317,115964,Portugal,Fonte,85,8,Vinho Verde,Portuguese White,Aveleda,2
+318,116054,Portugal,Casal Garcia,84,5,Vinho Verde,Rosé,Campelo,2
+319,116233,Portugal,Casal Garcia,84,8,Vinho Verde,Rosé,Aveleda,2
+320,116245,Portugal,Casal Garcia,84,8,Vinho Verde,Portuguese White,Aveleda,2
+321,116328,Portugal,Tinto,83,5,Vinho Verde,Portuguese Red,Campelo,1
+322,116402,Portugal,Branco,83,5,Vinho Verde,Portuguese White,Campelo,1
+323,118378,Portugal,Casal Garcia,85,9,Vinho Verde,Rosé,Casa do Valle,2
+324,118954,Portugal,Adamado,85,9,Vinho Verde,Portuguese White,Adega Cooperativa Ponte de Lima,2
+325,118964,Portugal,Fonte,85,8,Vinho Verde,Portuguese White,Aveleda,2
+326,119174,Portugal,Casal Garcia,84,5,Vinho Verde,Rosé,Campelo,2
+327,119833,Portugal,Casal Garcia,84,8,Vinho Verde,Rosé,Aveleda,2
+328,119845,Portugal,Casal Garcia,84,8,Vinho Verde,Portuguese White,Aveleda,2
+329,120078,Portugal,Tinto,83,5,Vinho Verde,Portuguese Red,Campelo,1
+330,120212,Portugal,Casal Garcia,82,5,Vinho Verde,Portuguese White,Lagosta,1
+331,120392,Portugal,Branco,83,5,Vinho Verde,Portuguese White,Campelo,1
+332,122012,Portugal,Casal Garcia,90,15,Vinho Verde,Loureiro,Quinta do Ameal,0
+334,123570,Portugal,Casal Garcia,89,10,Vinho Verde,Portuguese White,Casa do Valle,0
+335,123599,Portugal,Casal Garcia,89,12,Vinho Verde,Portuguese White,Solar de Pinheiro,0
+336,124822,Portugal,Clemen Reserva,88,12,Vinho Verde,Portuguese White,Wines & Winemakers,0
+337,124824,Portugal,Avesso,88,12,Vinho Verde,Portuguese White,Solar de Pinheiro,0
+338,124825,Portugal,Quinta de Simaens,88,13,Vinho Verde,Portuguese White,Borges,0
+339,125988,Portugal,Azal,87,12,Vinho Verde,Portuguese White,Solar de Pinheiro,2
+340,126598,Portugal,AT,86,9,Vinho Verde,Portuguese White,Borges,2
+341,126898,Portugal,Santola,86,7,Vinho Verde,Portuguese White,Messias,2
+342,127820,Portugal,Rei do Minho,85,9,Vinho Verde,Portuguese White,Vinicola do Norte,2
+343,128059,Portugal,Casal Garcia,85,10,Vinho Verde,Rosé,Casa do Valle,2
+344,128333,Portugal,Aliança,85,7,Vinho Verde,Portuguese White,Caves Aliança,2
+345,128615,Portugal,Azul Portugal Escolha,85,11,Vinho Verde,Portuguese White,Wines & Winemakers,2
+346,132828,Portugal,Portal do Fidalgo,90,16,Vinho Verde,Alvarinho,Provam,0
+347,132829,Portugal,Varanda do Conde,90,12,Vinho Verde,Portuguese White,Provam,0
+348,134052,Portugal,Casal Garcia,88,8,Vinho Verde,Portuguese White,Casa de Vila Verde,0
+349,134083,Portugal,Casal Garcia,86,12,Vinho Verde,Portuguese White,Aveleda,2
+350,134559,Portugal,Pena de Pato,88,11,Vinho Verde,Portuguese White,Sogrape,0
+351,134917,Portugal,Clemen Reserva,88,13,Vinho Verde,Portuguese White,Touquinheiras,0
+352,135187,Portugal,Arca Nova,88,9,Vinho Verde,Portuguese White,Quinta das Arcas,0
+353,135647,Portugal,Portal do Fidalgo,91,9,Vinho Verde,Alvarinho,Provam,0
+355,136080,Portugal,Muros Antigos,91,16,Vinho Verde,Alvarinho,Anselmo Mendes,0
+356,136085,Portugal,Casal Garcia,91,13,Vinho Verde,Loureiro,Quinta do Ameal,0
+358,136254,Portugal,Colheita Seleccionada,90,9,Vinho Verde,Loureiro,Adega Cooperativa Ponte de Lima,0
+359,136256,Portugal,Quinta da Aveleda,90,9,Vinho Verde,Portuguese White,Aveleda,0
+360,136350,Portugal,Quinta de Simaens,87,12,Vinho Verde,Portuguese White,Borges,2
+361,136387,Portugal,Alvarinho Deu la Deu,90,16,Vinho Verde,Alvarinho,Adega de Monção,0
+362,136388,Portugal,Casal Garcia,90,11,Vinho Verde,Alvarinho,Aveleda,0
+363,136400,Portugal,Alvarinho Portal do Fidalgo,90,15,Vinho Verde,Alvarinho,Provam,0
+364,136533,Portugal,Grande Escolha,90,9,Vinho Verde,Portuguese White,Casa do Valle,0
+365,136689,Portugal,Casal Garcia,89,15,Vinho Verde,Alvarinho,Borges,0
+366,136700,Portugal,Varanda do Conde,89,10,Vinho Verde,Portuguese White,Provam,0
+368,136709,Portugal,Casal Garcia,89,13,Vinho Verde,Alvarinho,Quinta da Pedra,0
+369,136987,Portugal,Muralhas de Monção,89,11,Vinho Verde,Portuguese White,Adega de Monção,0
+370,136988,Portugal,Casal Garcia,89,8,Vinho Verde,Portuguese White,Aveleda,0
+371,136993,Portugal,Grande Escolha,89,8,Vinho Verde,Portuguese White,Casa de Sezim,0
+372,136996,Portugal,Morgadio da Torre,89,12,Vinho Verde,Alvarinho,Sogrape,0
+373,137067,Portugal,Twin Vines,85,9,Vinho Verde,Portuguese White,José Maria da Fonseca,2
+374,137297,Portugal,Grinalda,88,9,Vinho Verde,Portuguese White,Aveleda,0
+375,137442,Portugal,Varanda do Conde,90,9,Vinho Verde,Portuguese White,Provam,0
+376,137555,Portugal,Casal Garcia,88,15,Vinho Verde,Alvarinho,Quinta do Reguengo de Melgaco,0
+377,137681,Portugal,Santola,84,6,Vinho Verde,Portuguese White,Messias,2
+378,138172,Portugal,Casal Garcia,86,10,Vinho Verde,Portuguese White,Casa de Vila Verde,2
+379,138241,Portugal,Casal Garcia,83,8,Vinho Verde,Portuguese White,Caves Aliança,1
+380,138437,Portugal,Danaide Branco,87,9,Vinho Verde,Portuguese White,Adega de Monção,2
+381,139372,Portugal,Famega White,85,8,Vinho Verde,Portuguese White,Caves da Cerca,2
+382,139661,Portugal,Casal Garcia,85,9,Vinho Verde,Portuguese White,Broadbent,2
+383,139675,Portugal,Twin Vines,85,9,Vinho Verde,Portuguese White,José Maria da Fonseca,2
+384,139930,Portugal,Famega,85,7,Vinho Verde,Portuguese White,Caves da Cerca,2
+385,140221,Portugal,Lagosta,85,7,Vinho Verde,Portuguese White,Caves Dom Teodosio,2
+386,140222,Portugal,Casal Garcia,85,12,Vinho Verde,Alvarinho,Casa de Vila Verde,2
+387,140230,Portugal,Adamado,84,9,Vinho Verde,Portuguese White,Adega Cooperativa Ponte de Lima,2
+388,140272,Portugal,Gatão,84,7,Vinho Verde,Portuguese White,Borges,2
+389,140543,Portugal,Sezim,84,7,Vinho Verde,Portuguese White,Casa de Sezim,2
+390,140821,Portugal,Gazela,84,6,Vinho Verde,Portuguese White,Sogrape,2
+391,141129,Portugal,Casal Garcia,83,9,Vinho Verde,Portuguese White,Adega Cooperativa Ponte de Lima,1
+392,141143,Portugal,Casal Garcia,82,8,Vinho Verde,Portuguese White,Casa de Vila Verde,1
+393,141148,Portugal,Gatão,82,6,Vinho Verde,Portuguese White,Borges,1
+394,143472,Portugal,Casal Garcia,86,9,Vinho Verde,White Blend,Casa de Vila Verde,2
+395,143575,Portugal,Casal Garcia,87,15,Vinho Verde,Alvarinho,Portal do Fidalgo,2

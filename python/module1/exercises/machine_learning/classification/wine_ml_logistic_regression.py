@@ -10,6 +10,8 @@ from collections import Counter
 from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import accuracy_score
 
 
 # ======================================== prepare dataset
@@ -52,6 +54,8 @@ wines = pd.concat([red_wine, white_wine])
 # re-shuffle records just to randomize data points
 wines = wines.sample(frac=1, random_state=42).reset_index(drop=True)
 wines
+
+wines.to_csv(r'C:\Users\Jeong\CAB\CAB-data-science\python\module1\exercises\wine_project\data\wines_prep.csv') 
 
 
 # ======================================== wine type prediction
