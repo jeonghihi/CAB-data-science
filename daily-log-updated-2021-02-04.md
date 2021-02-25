@@ -423,3 +423,8 @@ https://stackoverflow.com/questions/35042255/how-to-plot-multiple-seaborn-jointp
 [] wine project
   - [x] predict the quality of white wine using random forest
   - [x] extract top 3-5 critical variables using random forest/SelectFromModel
+
+[] predictive modeling methods
+  - baggin methods
+  - boosting methods
+    - try other algorithms like KNN, SVM similarly for Wine Quality Prediction like you did for Wine Type prediction.
