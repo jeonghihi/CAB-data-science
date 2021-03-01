@@ -428,3 +428,35 @@ https://stackoverflow.com/questions/35042255/how-to-plot-multiple-seaborn-jointp
   - baggin methods
   - boosting methods
     - try other algorithms like KNN, SVM similarly for Wine Quality Prediction like you did for Wine Type prediction.
+
+## 2021-02-24-Wed
+[] wine project
+  - preprocessing - price dataset: impute missing values
+  -  
+## 2021-02-25-Thu
+[] wine project
+  - modelling - red wine (quality, price)
+  - feature importance - red wine (quality)
+  - compare algorithms - red wine (quality)
+  - 
+## 2021-02-26-Fri
+[] wine project
+  - visualization - red wine, white wine : predicted vs. actual price
+    - 
+  - wordcloud(?)
+
+# week 6
+## 2021-03-01-Mon
+[-] technical report
+  - technical report about basic concepts in machine learning: https://ficw.fsu.edu/sites/g/files/upcbnu1106/files/pdf-files/TR%20Data%20and%20Statistics%20121115.pdf
+  - guidelines for technical report
+  > http://stat.cmu.edu/~brian/701/notes/paper-structure.pdf
+  > https://www.aresearchguide.com/writing-a-technical-report.html
+
+  - examples of technical report (detailed versions)
+    - I think the index/table of contents section in these reports might be useful for having an idea about the general frame of technical report in data anlysis.
+    > https://www.nrel.gov/docs/fy18osti/68913.pdf
+    > https://www.researchgate.net/publication/342068999_Company_Data_Analysis_Summary_Safety_AI_technical_report
+    > https://www.who.int/ncds/surveillance/steps/Part4.pdf
+[] code review
+  - write codes for wine project in complete one document: connecting wine quality dataset and price dataset

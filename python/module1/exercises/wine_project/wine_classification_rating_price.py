@@ -104,7 +104,7 @@ my_df4['wine_type'] = np.where(my_df4['variety'].isin(wine_white_names), 'white'
 my_df4['wine_type'] = np.where(my_df4['variety'].isin(wine_rose_names), 'rose', my_df4.wine_type)
 
 # filter items which are not red or white wine
-my_df_fin = my_df4[my_df4.wine_type != 'rose']
+my_df_fin = my_df4[my_df4.wine_type != 'rose'] #315rows
 
 # final dataset save as csv
 my_df_fin.to_csv(r'C:\Users\Jeong\CAB\CAB-data-science\python\module1\exercises\wine_project\data\wines_sales_prep.csv') 
