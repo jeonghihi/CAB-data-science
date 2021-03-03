@@ -460,3 +460,14 @@ https://stackoverflow.com/questions/35042255/how-to-plot-multiple-seaborn-jointp
     > https://www.who.int/ncds/surveillance/steps/Part4.pdf
 [] code review
   - write codes for wine project in complete one document: connecting wine quality dataset and price dataset
+
+
+## 2021-03-02-Tue
+[] technical report
+[] code review
+
+## 2021-03-03-Wed
+[x] bike project
+  - preprocessing
+  - visualization
+[x] spike - basic - json data
