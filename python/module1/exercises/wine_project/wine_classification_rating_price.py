@@ -13,7 +13,7 @@ from sklearn.metrics import accuracy_score
 
 # ======================================== prepare dataset
 # load dataset
-wine_sales_data = pd.read_csv(r'C:\Users\Jeong\CAB\CAB-data-science\python\module1\exercises\wine_project\data\wine_sales_data.csv', sep= ',')
+wine_sales_data = pd.read_csv(r'C:\Users\Jeong\CAB\CAB-data-science\python\module1\exercises\wine_project\data\wine_sales_data.csv', sep= ',', index_col=[0])
 # check basic features of dataset
 wine_sales_data.dtypes
 wine_sales_data.describe() 
@@ -82,7 +82,7 @@ my_df4.price_bin.value_counts() #high 55, low:83, medium:221
 # source: https://machinelearningmastery.com/random-oversampling-and-undersampling-for-imbalanced-classification/
 
 
-# convert categorical variables to numeric values (raiting)
+# convert categorical variables to numeric values (rating)
 from sklearn.preprocessing import LabelEncoder
 labelencoder = LabelEncoder()
 my_df4['rating_n'] = labelencoder.fit_transform(my_df4.iloc[:, -2]) #high:0, low:1, middle:2 

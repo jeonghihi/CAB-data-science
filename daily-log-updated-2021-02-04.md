@@ -463,11 +463,28 @@ https://stackoverflow.com/questions/35042255/how-to-plot-multiple-seaborn-jointp
 
 
 ## 2021-03-02-Tue
-[] technical report
-[] code review
+[-] technical report
+[-] code review
 
 ## 2021-03-03-Wed
 [x] bike project
   - preprocessing
-  - visualization
+  - visualization: daily demand during one week
 [x] spike - basic - json data
+
+## 2021-03-04-Thu
+[x] bike project
+  - visualization: weekday/weekend demand
+
+## 2021-03-05-Fri
+[x] technical report - data preprocessing, transformation for ML analysis
+[] spike - technical report
+  - version info (ver, author, date, modification)
+  - dataset features (e.g., class imbalance)
+  - code snippet
+  - STAR methods for each section: situation, task, action, result
+[] spike - code review
+  - initial write - header: author, version, description, project 
+  - 
+
+

@@ -1,4 +1,5 @@
 {
     "git.ignoreLimitWarning": true,
-    "python.pythonPath": "C:\\Users\\Jeong\\Anaconda3\\python.exe"
+    "python.pythonPath": "c:\\Users\\Jeong\\Anaconda3\\python.exe",
+    "jupyter.jupyterServerType": "local"
 }
