@@ -17,10 +17,8 @@ I have summarized three points below based on your inquiry and suggested solutio
   >- Results: 
   >We found out that the demand of registered users is most high on wednesday and saturday, specifically during commute hours (e.g., between 6-9 AM and 16-19pm). 
   >So, we suggest you to prepare more bikes during commute hours on weekdays, and during datytime (e.g., 8am to 20pm) on saturday.
-  ![](output/hdf_mean_count_day-user.png =200x20)
-  ![](output/hdf_mean_count_hour_day-user.png =200x20)
-  <img src="output/hdf_mean_count_day-user.png" width="200">
-  <img src="output/hdf_mean_count_hour_day-user.png" width="400">
+  <img src="output/hdf_mean_count_day-user.png" width="400">
+  <img src="output/hdf_mean_count_hour_day-user.png" width="600">
 
 - Situation2: You also want to avoid the complaints from Casual users. 
   >- Task: Find out when is the highest demand of casual users. 
@@ -35,8 +33,11 @@ I have summarized three points below based on your inquiry and suggested solutio
   >- Results: We have found that the weather affects, but we need more time to provide more reliable suggestions. Currently we are training the model to predict the relationship between the (expected) weather during upcoming days and the demand based on previous usage history. 
 
 Thank you for taking time to check these details. 
+
 Please feel free to contact me if any information is missing/unclear and/or you have any question. 
+
 Hope you have a good start of this week !
 
 Best,
+
 Jay
