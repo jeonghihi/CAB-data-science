@@ -19,6 +19,8 @@ I have summarized three points below based on your inquiry and suggested solutio
   >So, we suggest you to prepare more bikes during commute hours on weekdays, and during datytime (e.g., 8am to 20pm) on saturday.
   ![](output/hdf_mean_count_day-user.png =200x20)
   ![](output/hdf_mean_count_hour_day-user.png =200x20)
+  <img src="output/hdf_mean_count_day-user.png" width="200">
+  <img src="output/hdf_mean_count_hour_day-user.png" width="400">
 
 - Situation2: You also want to avoid the complaints from Casual users. 
   >- Task: Find out when is the highest demand of casual users. 
