@@ -488,3 +488,9 @@ https://stackoverflow.com/questions/35042255/how-to-plot-multiple-seaborn-jointp
   - 
 
 
+## 2021-03-09-Tue
+[] bike project
+  - reply to email: general pattern of bike demand for users.
+  - statistic models for detailed analysis
+[] markdown formatting
+  - https://daringfireball.net/projects/markdown/syntax#html
