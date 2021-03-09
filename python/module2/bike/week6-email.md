@@ -17,13 +17,14 @@ I have summarized three points below based on your inquiry and suggested solutio
   >- Results: 
   >We found out that the demand of registered users is most high on wednesday and saturday, specifically during commute hours (e.g., between 6-9 AM and 16-19pm). 
   >So, we suggest you to prepare more bikes during commute hours on weekdays, and during datytime (e.g., 8am to 20pm) on saturday.
-  ![](output/hdf_mean_count_day-user.png)
+  ![](output/hdf_mean_count_day-user.png =200x20)
+  ![](output/hdf_mean_count_hour_day-user.png =200x20)
 
 - Situation2: You also want to avoid the complaints from Casual users. 
   >- Task: Find out when is the highest demand of casual users. 
   >- Action: We analyzed the average demand of registered bike users (with its range, std) 
   >- Results: We found out that the pattern of casual users usage is similar to registered users, except that there is no peak of demand during commute hours. So we suggest you to prepare more bikes during weekdays and during datytime (e.g., 8am to 20pm) on saturday.
-  ![](output/hdf_mean_count_hour_day-user.png)
+
 
 
 - Situations3: There are a few important factors influencing the actual usage of users, such as "weathers (rainy days)" and "pollution", and "traffic" situations. 
