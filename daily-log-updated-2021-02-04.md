@@ -461,7 +461,6 @@ https://stackoverflow.com/questions/35042255/how-to-plot-multiple-seaborn-jointp
 [] code review
   - write codes for wine project in complete one document: connecting wine quality dataset and price dataset
 
-
 ## 2021-03-02-Tue
 [-] technical report
 [-] code review
@@ -485,10 +484,21 @@ https://stackoverflow.com/questions/35042255/how-to-plot-multiple-seaborn-jointp
   - STAR methods for each section: situation, task, action, result
 [] spike - code review
   - initial write - header: author, version, description, project 
-  - 
 
-
+# week7
 ## 2021-03-09-Tue
-[] bike project
+[-] bike project
   - reply to email: general pattern of bike demand for users.
+    - exploartory analysis : visualization using custom dataset (h/d/membertype/count)
   - statistic models for detailed analysis
+
+## 2021-03-10-Wed
+[] bike project
+  - preprocessing - timeseries dataset
+  - visualization - timeseries using datetime(index)
+  - ? how to convert values of duration from datetime dtype to numeric
+
+## 2021-03-11-Thu
+[] bike proejct
+  - modeling - regression - custom dataset 
+  - research - timeseries : add more relevant infos (e.g., rider types ~ duration/length of trips, frequent route of trips ~ weather)

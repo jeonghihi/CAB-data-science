@@ -22,9 +22,10 @@ I have summarized three points below based on your inquiry and suggested solutio
   <figcaption>The average demand of bike users (members vs. casual users) during last week</figcaption>
 </figure>
 
+
 <figure>
 <img src="output/hdf_mean_count_hour_day-user.png" width="800">
-  <figcaption>The average demand of bike users (members vs. casual users) at each time point (e.g.hour) during last week</figcaption>
+  <figcaption>The average demand of bike users (members vs. casual users) for each hour of each day during last week</figcaption>
 </figure>
 
 - Situation2: You also want to avoid the complaints from Casual users. 
