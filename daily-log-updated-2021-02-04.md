@@ -493,12 +493,19 @@ https://stackoverflow.com/questions/35042255/how-to-plot-multiple-seaborn-jointp
   - statistic models for detailed analysis
 
 ## 2021-03-10-Wed
-[] bike project
+[x] bike project
   - preprocessing - timeseries dataset
   - visualization - timeseries using datetime(index)
   - ? how to convert values of duration from datetime dtype to numeric
 
 ## 2021-03-11-Thu
-[] bike proejct
+[x] bike proejct
   - modeling - regression - custom dataset 
-  - research - timeseries : add more relevant infos (e.g., rider types ~ duration/length of trips, frequent route of trips ~ weather)
+  - research - timeseries : add more relevant infos (e.g., rider types ~ duration/length of trips, frequent route of trips ~ weather ~ location of stations?)
+[] ML background
+  - summary - bagging vs. boosting algorithms for RF model
+
+## 2021-03-12-Fri
+[x] bike project
+  - modeling - regression - UCI dataset (2011+2012, 2011)
+  - draft for presentation

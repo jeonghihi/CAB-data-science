@@ -15,6 +15,9 @@
     - XGBoost (Extreme Gradient Boosting)
 
 - difference between these methods: https://www.analyticsvidhya.com/blog/2020/02/4-boosting-algorithms-machine-learning/
+- https://www.analyticsvidhya.com/blog/2015/11/quick-introduction-boosting-algorithms-machine-learning/
+- https://en.wikipedia.org/wiki/Boosting_%28machine_learning%29#Boosting_for_binary_categorization
+
 
 - difference between bagging and bossting: https://www.pluralsight.com/guides/ensemble-methods:-bagging-versus-boosting
 

@@ -15,7 +15,12 @@
 
   - barplot - color scale by rank : https://stackoverflow.com/questions/36271302/changing-color-scale-in-seaborn-bar-plot
   - barplot (seaborn) - annotation : https://stackoverflow.com/questions/39519609/annotate-bars-with-values-on-pandas-on-seaborn-factorplot-bar-plot
-  - basics - multiple plots (seaborn) : https://towardsdatascience.com/a-step-by-step-guide-for-creating-advanced-python-data-visualizations-with-seaborn-matplotlib-1579d6a1a7d0
+
+  - multiple plots (seaborn) : https://towardsdatascience.com/a-step-by-step-guide-for-creating-advanced-python-data-visualizations-with-seaborn-matplotlib-1579d6a1a7d0
+  - subplots 
+    - https://towardsdatascience.com/a-step-by-step-guide-for-creating-advanced-python-data-visualizations-with-seaborn-matplotlib-1579d6a1a7d0
+    - https://jakevdp.github.io/PythonDataScienceHandbook/04.08-multiple-subplots.html
+
 
 
 
