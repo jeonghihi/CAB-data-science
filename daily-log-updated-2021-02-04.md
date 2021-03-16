@@ -509,3 +509,11 @@ https://stackoverflow.com/questions/35042255/how-to-plot-multiple-seaborn-jointp
 [x] bike project
   - modeling - regression - UCI dataset (2011+2012, 2011)
   - draft for presentation
+
+## 2021-03-15-Mon
+[] bike project
+  - modeling - regression - encoding category variables (with different characteristics, e.g., seasonality)
+
+## 2021-03-16-Tue
+[] bike project
+  - modeling - regression - forecast modeling
