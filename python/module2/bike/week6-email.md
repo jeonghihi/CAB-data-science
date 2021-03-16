@@ -25,6 +25,13 @@ I have summarized three points below based on your inquiry and suggested solutio
 
 .
 <figure>
+<img src="output/hdf_mean_count_hour_day-user.png" width="600">
+  <figcaption>The trend of bike users demand in weekdays and weekend during last week</figcaption>
+</figure>
+
+
+.
+<figure>
 <img src="output/hdf_mean_count_hour-user.png" width="600">
   <figcaption>The average demand of bike users (members vs. casual users) for each hour of each day during last week</figcaption>
 </figure>
@@ -35,11 +42,6 @@ I have summarized three points below based on your inquiry and suggested solutio
   >- Action: We analyzed the average demand of registered bike users.
   >- Results: We found out that the pattern of casual users usage is similar to registered users, except that there is no peak of demand during commute hours. So we suggest you to prepare more bikes during weekdays and during datytime (e.g., 8am to 20pm) on saturday.
 
-
-<figure>
-<img src="output/hdf_mean_count_hour_day-user.png" width="400">
-  <figcaption>The average demand of bike users in weekdays and weekend during last week</figcaption>
-</figure>
 
 
 .
