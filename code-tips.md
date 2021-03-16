@@ -21,6 +21,8 @@
     - https://towardsdatascience.com/a-step-by-step-guide-for-creating-advanced-python-data-visualizations-with-seaborn-matplotlib-1579d6a1a7d0
     - https://jakevdp.github.io/PythonDataScienceHandbook/04.08-multiple-subplots.html
 
+  - nice visualizations: https://drawingfromdata.com/seaborn/matplotlib/visualization/rotate-axis-labels-matplotlib-seaborn.html
+
 
 
 
