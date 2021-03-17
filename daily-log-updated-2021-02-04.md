@@ -517,3 +517,5 @@ https://stackoverflow.com/questions/35042255/how-to-plot-multiple-seaborn-jointp
 ## 2021-03-16-Tue
 [] bike project
   - modeling - regression - forecast modeling
+
+[] reset vs code environment
