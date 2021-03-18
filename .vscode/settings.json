@@ -1,3 +1,5 @@
 {
-    "python.pythonPath": "C:\\Users\\Jeong\\Anaconda3\\envs\\CAB\\python.exe"
+   "python.pythonPath": "C:\\Users\\Jeong\\Anaconda3\\envs\\CAB\\python.exe"
+    "jupyter.jupyterServerType": "local"
+    "terminal.integrated.cwd": "C:\\Users\\Jeong\\Anaconda3\\envs\\CAB"
 }

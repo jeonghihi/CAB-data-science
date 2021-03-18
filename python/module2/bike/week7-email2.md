@@ -30,12 +30,13 @@
 
         - What are the start stations where the demand of regular users is high (What is the proportion of regular users in the station)? & what are the end stations where regular users leave bikes
         - What are the start stations where the demand of casual users is high & how many bikes are left at the station (The rank as an end station)
+        - What are the number of available free bikes at top10 start stations (if possible, visualize the available number of bikes at those stations at each hour)
     -> by providing more bikes during XX hours , at XX stations
 
 
     -? future points: how is the return rate of bikes for both users:
         if casual users tend to use bike one-way trip, how can we relocate those bikes to popular stations (?)  
-        if regular users tend to use bike round-way trips (if return rate is high), how can we prepare bikes for those who didn't bring bikes to their end station (?)
+        if regular users tend to use bike round-way trips (if returnin rate is high), how can we prepare bikes for those who didn't bring bikes to their end station (?)
         - track the rental routes and ride ID : 
 
     - You want to ride a bike in a good condition
