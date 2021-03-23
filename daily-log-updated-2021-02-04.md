@@ -515,7 +515,30 @@ https://stackoverflow.com/questions/35042255/how-to-plot-multiple-seaborn-jointp
   - modeling - regression - encoding category variables (with different characteristics, e.g., seasonality)
 
 ## 2021-03-16-Tue
-[] bike project
+[x] bike project
   - modeling - regression - forecast modeling
 
-[] reset vs code environment
+[x] reset vs code environment for jupyter notebook
+
+## 2021-03-17-Wed
+[x] bike project - timeseries visualization
+
+## 2021-03-18-Thu
+[x] bike project - timeseries modelling - stationary, additional dataset
+
+## 2021-03-19-Fri
+[x] bike project - timeseries modelling - arima/sarima
+[] spike - flask app
+
+## 2021-03-22-Mon
+[x] bike project - presentation
+
+## 2021-03-23-Tue
+[] spike - kick off - project3(electronics - e-commerce)
+[x] reinstall vscode
+
+[] wine - tech report
+[] bike - tech report
+[] bike - final folder - index.md, code (functions.py, plots.py), data (raw/preprocessed), output (figures)
+[] bike - flask app, location (size) on the map (red/green based on availability), planned stations (json data)
+[] ecommerce - reading materials
