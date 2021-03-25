@@ -510,6 +510,7 @@ https://stackoverflow.com/questions/35042255/how-to-plot-multiple-seaborn-jointp
   - modeling - regression - UCI dataset (2011+2012, 2011)
   - draft for presentation
 
+# week8
 ## 2021-03-15-Mon
 [] bike project
   - modeling - regression - encoding category variables (with different characteristics, e.g., seasonality)
@@ -530,15 +531,30 @@ https://stackoverflow.com/questions/35042255/how-to-plot-multiple-seaborn-jointp
 [x] bike project - timeseries modelling - arima/sarima
 [] spike - flask app
 
+# week9
 ## 2021-03-22-Mon
 [x] bike project - presentation
 
 ## 2021-03-23-Tue
 [] spike - kick off - project3(electronics - e-commerce)
 [x] reinstall vscode
+[x] ecommerce - reading materials
+
+## 2021-03-24-Wed
+[x] ecommerce - email1, task1 - webscrap using bs4
+[] ecommerce - plan
+    week4: search data, get insights about products
+      - 1) search results (nr of title, ratings)  e.g., search 2000 products
+      - 2) read books/links => tech report 
+      - 3) select product we like instead of iphone (synth)
+    week5: create database frame
+    week6: analyze product sales data (using SQL), visualize (using python)
+    presentation Friday 16 April
 
 [] wine - tech report
 [] bike - tech report
 [] bike - final folder - index.md, code (functions.py, plots.py), data (raw/preprocessed), output (figures)
 [] bike - flask app, location (size) on the map (red/green based on availability), planned stations (json data)
-[] ecommerce - reading materials
+
+## 2021-03-25-Thu
+[] ecommerce - email2, task2 - webscrap Amazon 
