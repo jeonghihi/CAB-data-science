@@ -558,3 +558,4 @@ https://stackoverflow.com/questions/35042255/how-to-plot-multiple-seaborn-jointp
 
 ## 2021-03-25-Thu
 [] ecommerce - email2, task2 - webscrap Amazon 
+[x] spike - difference between array and list

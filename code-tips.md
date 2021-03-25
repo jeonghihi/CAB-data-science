@@ -24,13 +24,17 @@
   - nice visualizations: https://drawingfromdata.com/seaborn/matplotlib/visualization/rotate-axis-labels-matplotlib-seaborn.html
 
 
-
-
 [] pandas
   - multiple group by: https://www.statology.org/pandas-groupby-aggregate-multiple-columns/
   - drop column pandas : https://stackoverflow.com/questions/13411544/delete-column-from-pandas-dataframe
 
 # code crumbs
+
+## string transformation 
+- https://www.askpython.com/python/string/python-remove-spaces-from-string
+
+- https://stackoverflow.com/questions/15129567/csv-writer-writing-each-character-of-word-in-separate-column-cell
+
 
 ## write a method that takes an array of consecutive (increasing) letters as input and that returns the missing letter in the array.
 ```python
