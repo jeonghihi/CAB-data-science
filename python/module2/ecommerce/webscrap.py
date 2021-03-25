@@ -27,7 +27,21 @@ if type(raw_contents.text) == str:
     webpage = raw_contents
     soup = BeautifulSoup(webpage.content,  "html.parser")
 
-    # scrap the target object(contents)
+    title = soup.find("span", attrs={"id":'productTitle'})
+
+    # Inner NavigableString Object
+    title_value = title.string
+
+    # Title as a string value
+    title_string = title_value.strip()
+
+    # Printing types of values for efficient understanding
+    print(type(title))
+    print(type(title_value))
+    print(type(title_string))
+    print()
+
+    # scrap the target object(more contents)
     features = soup.find("div", attrs={"id":'detail-bullets_feature_div'})
     rows = features.find_all('span')
 
@@ -59,4 +73,6 @@ with open(output_path, "w", newline='') as f:
     write = csv.writer(f, quotechar =',',quoting=csv.QUOTE_MINIMAL)
     write.writerow([my_URL])
     write.writerow([webpage.status_code])
+    write.writerow([title_string])
     write.writerows([features_text])
+# %%

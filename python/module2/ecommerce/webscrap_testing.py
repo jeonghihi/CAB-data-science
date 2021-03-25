@@ -1,5 +1,6 @@
 webscrap.py
 
+
 #%%
 # data extraction and cleaning
 
@@ -11,6 +12,7 @@ HEADERS = ({'User-Agent':
 URL = 'https://www.amazon.de/-/en/Raspberry-ARM-Cortex-A72-WLAN-ac-Bluetooth-Micro-HDMI-Single/dp/B07TC2BK1X/ref=sr_1_3?dchild=1&keywords=Raspberry+Pi&qid=1616587962&sr=8-3'
 webpage = requests.get(URL, headers=HEADERS)
 soup = BeautifulSoup(webpage.content,  "html.parser")
+# soup.prettify()
 
 # Outer Tag Object
 title = soup.find("span", attrs={"id":'productTitle'})
