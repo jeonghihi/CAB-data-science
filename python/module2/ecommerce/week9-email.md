@@ -3,21 +3,7 @@
 # date : "2021-03-24"
 # tags : [python, ecommerce]
 ---
-
-# competitive analysis
-
-- research on competitors (start-up, mid/big ones)
-    - identify competitors and evaluate their strategies to determine their strengths (e.g. popular products, ADs strategy) and weaknesses (e.g. when sales volume is low, high shiping cost for some regions) compared to your own business, product and service.
-- to gather insights necessary to find/develop go-to-market strategy.
-
-# webscrap
-- try the package "beautifulsoup" and follow [this tutorial](https://www.pluralsight.com/guides/web-scraping-with-beautiful-soup) and [this](https://realpython.com/beautiful-soup-web-scraper-python/). 
-- xpath [tutorial](https://www.zyte.com/blog/an-introduction-to-xpath-with-examples/#:~:text=XPath%20is%20a%20powerful%20language,extract%20web%20data%20using%20Scrapy.&text=Just%20paste%20the%20HTML%20samples,and%20play%20with%20the%20expressions.)
-
-- more details about python webscraping in this [book](https://yanfei.site/docs/dpsa/references/PyWebScrapingBook.pdf)
-- another [resource] about web scraping(https://automatetheboringstuff.com/2e/chapter12/)
-
-- task: extract basic information - Name of the product, size, review count and rating etc.
+- Task: extract basic information - Name of the product, size, review count and rating etc. [link](./webscrap.py)
 
 - Answer questions (for learning report).
 ## Briefly describe the differences between the webbrowser, requests, bs4. (hint : You can choose to elaborate your understanding visually by making diagrams)
