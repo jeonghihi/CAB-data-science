@@ -12,8 +12,9 @@
 - bs4(beautifulsoup4) is used to translate/parses the HTML text and allow the user to search/access to elements within HTML text. (i.e. read html page).
 
 ## How web scraping is related / not-related to Data Mining and API ?
+- Web scraping and API are used to access the data on web.
 - The accuracy of web-scraping could influences the quality of database (across all steps, from the data pre-processing and to the application).
-- The efficiency of web-scraping could facilitate/hinder the development of API.
+- The efficiency of web-scraping could facilitate/hinder the development of APP.
 - Depending on the type of database (e.g., static/dynamic), the role of web-scraping could be less important once the collected (& preprocessed) data via web scraping is implemented.
 
 ## Do you think if you send huge number of requests to a web page, there is a good chance the server denies your further request.
