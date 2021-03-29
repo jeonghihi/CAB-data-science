@@ -559,3 +559,5 @@ https://stackoverflow.com/questions/35042255/how-to-plot-multiple-seaborn-jointp
 ## 2021-03-25-Thu
 [] ecommerce - email2, task2 - webscrap Amazon 
 [x] spike - difference between array and list
+  - https://towardsdatascience.com/python-list-numpy-and-pandas-3a32f1aee948
+[x] spike - webscrap using bs4

@@ -1,21 +1,99 @@
 webscrap.py
 
+#%%
+tuple = {}
+tuple[(1,2,4)]=8
+tuple[(4,2,1)]=10
+tuple[(1,2)]=12
+_sum = 0
+for k in tuple:
+    _sum + tuple[k]
+
+print(len(tuple)+_sum)
+
+#%% plans
+# relative/absolute path: https://stackoverflow.com/questions/918154/relative-paths-in-python
+
+# base: 'https://www.amazon.de/s?k=Monitor&ref=nb_sb_noss'
+
+# pages:
+# "/-/en/s?k=Monitor&amp;qid=1616750311&amp;ref=sr_pg_1
+# "/-/en/s?k=Monitor&amp;page=2&amp;qid=1616750311&amp;ref=sr_pg_2"
+# "/-/en/s?k=Monitor&amp;page=2&amp;qid=1616750311&amp;ref=sr_pg_3"
+# "/-/en/s?k=Monitor&amp;page=3&amp;qid=1616750311&amp;ref=sr_pg_4"
+
+#1 - at main: links to first10pages 
+Create search.yml
+
+#2 - at each page: title, ratingNr, price of products listed in each page and links to product-pages
+title: (span: "a-size-medium a-color-base a-text-normal" ), raingNr (span class="a-size-base") 
+(span class="a-icon-alt") in (div class="a-row-a-size-small")
+, price (span:"a-price-whole")
+#3 - at each product page: ratings + freq combi (?),  similar items (ratings stars/nr)
+(span: "a-size-base") in (table: "histogramTable") 
+in (div: "a-fixed-left-grid-col a-col-left") in (div: reviewsMedley)
+
+#%% read yaml
+import yaml 
+filepath = 'envs/CAB/CAB-data-science/CAB-data-science/python/module2/ecommerce/pipe/search.yml'
+with open(filepath, 'r') as file:
+    # The FullLoader parameter handles the conversion from YAML
+    # scalar values to Python the dictionary format
+    products = yaml.load(file, Loader=yaml.FullLoader)
+    print(products)
+
+# what is different between 'r' and 'w+' : w+ is writing in a new file (if file did not exist before)
+# jsonlint - to check json file
+
+#%% write and read yaml 
+
+import yaml
+import pprint
+ 
+def read_yaml():
+    """ A function to read YAML file"""
+    with open('configs.yml') as f:
+        config = list(yaml.safe_load_all(f))
+ 
+    return config
+ 
+def write_yaml(data):
+    """ A function to write YAML file"""
+    with open('toyaml.yml', 'a') as f:
+        yaml.dump_all(data, f, default_flow_style=False)
+ 
+if __name__ == "__main__":
+ 
+    # read the config yaml
+    my_config = read_yaml()
+ 
+    # pretty print my_config
+    pprint.pprint(my_config)
+ 
+    # write A python object to a file
+    write_yaml(my_config)
+
+# dict basic: https://www.programiz.com/python-programming/nested-dictionary
+# convert between yaml and dict: https://cyruslab.net/2020/02/05/python-convert-dictionary-to-yaml-and-vice-versa/
+# save dict to csv/json : https://pythonspot.com/save-a-dictionary-to-a-file/
 
 #%%
 # data extraction and cleaning
 
 # codesource: https://www.journaldev.com/44473/scrape-amazon-product-information-beautiful-soup
 HEADERS = ({'User-Agent':
-            'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36',
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36",
             'Accept-Language': 'en-US, en;q=0.5'})
 
-URL = 'https://www.amazon.de/-/en/Raspberry-ARM-Cortex-A72-WLAN-ac-Bluetooth-Micro-HDMI-Single/dp/B07TC2BK1X/ref=sr_1_3?dchild=1&keywords=Raspberry+Pi&qid=1616587962&sr=8-3'
-webpage = requests.get(URL, headers=HEADERS)
+base_url = 'https://www.amazon.de/'
+item_url = '-/en/Portable-Monitor-Corprit-Mini-HDMI-Protective/dp/B089LNM5HP/ref=sr_1_20?dchild=1&amp;keywords=Monitor&amp;qid=1616750441&amp;sr=8-20'
+full_url = base_url + item_url
+webpage = requests.get(full_url, headers=HEADERS)
 soup = BeautifulSoup(webpage.content,  "html.parser")
 # soup.prettify()
 
 # Outer Tag Object
-title = soup.find("span", attrs={"id":'productTitle'})
+title = soup.find("span", attrs={"class":'a-size-medium a-color-bas a-text-normal'})
 
 # Inner NavigableString Object
 title_value = title.string
@@ -34,7 +112,7 @@ print("Product Title = ", title_string)
 # %% scrap product size & review counts 
 
 HEADERS = ({'User-Agent':
-            'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36',
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36",
             'Accept-Language': 'en-US, en;q=0.5'})
 
 URL = 'https://www.amazon.de/-/en/Raspberry-ARM-Cortex-A72-WLAN-ac-Bluetooth-Micro-HDMI-Single/dp/B07TC2BK1X/ref=sr_1_3?dchild=1&keywords=Raspberry+Pi&qid=1616587962&sr=8-3'
@@ -194,3 +272,14 @@ if code == 200:
 else:
     print(f'Error to load Twitter: {code}')
 # %%
+
+
+each product page has sdifferent structure:
+product summary
+product detail
+product info > technical details
+
+#https://www.amazon.de/-/en/Acer-Nitro-23-8Zoll-Schwarz-Computerbildschirm/dp/B07C5H9NDT/ref=cm_cr_arp_d_product_top?ie=UTF8&th=1
+
+#https://www.amazon.de/Samsung-T35F-IPS-Monitor-1080p-Randlos/dp/B08C7VBC81/ref=sr_1_26?dchild=1&keywords=Monitor&qid=1617015152&sr=8-26
+

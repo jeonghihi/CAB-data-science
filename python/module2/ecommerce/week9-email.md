@@ -26,6 +26,7 @@
 
 ## Can you think of few other business models which are based on web scraping.
 - web scraping tool/software e.g., paid web-scraping [services][3] 
+- price comparison websites, e.g., check24, skyscanner
 
 ## What type of object is returned by requests.get()? How can you access the downloaded content as a string value ?
 - the object returned by requests.get() is _response_ : "requests.models.Response". 
