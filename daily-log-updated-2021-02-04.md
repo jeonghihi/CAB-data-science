@@ -561,3 +561,14 @@ https://stackoverflow.com/questions/35042255/how-to-plot-multiple-seaborn-jointp
 [x] spike - difference between array and list
   - https://towardsdatascience.com/python-list-numpy-and-pandas-3a32f1aee948
 [x] spike - webscrap using bs4
+
+## 2021-03-29-Mon
+[x] ecommerce - webscrap search_output, product_output for 6 categories using yml/py
+
+## 2021-03-30-Tue
+[-] ecommerce - data cleaning for 6 categories: jsonl format
+
+## 2021-03-31-Wed
+[] spike - sql basics
+  - https://sqlzoo.net/
+[-] ecommerce - data cleaening (missing values)

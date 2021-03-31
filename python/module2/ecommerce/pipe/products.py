@@ -78,7 +78,7 @@ def scrape(url):
 
 def create_product_output(item):
     # product_data = []
-    with open("product_urls_" + item + ".txt",'r') as urllist, open('product_output_' + item + '.jsonl','w+') as outfile:
+    with open("product_urls_" + item + "_add1.txt",'r') as urllist, open('product_output_' + item + '_add1.jsonl','w+') as outfile:
         for url in urllist.read().splitlines():
             data = scrape(url) 
             if data:
@@ -101,4 +101,8 @@ category = ['DSLR+Camera','smartphone','laptop', 'mouse', 'keyboard','headphones
 
 for item in category:
     create_product_output(item)
+# %%
+item = 'smartphone'
+create_product_output(item)
+
 # %%
