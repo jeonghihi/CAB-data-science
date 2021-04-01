@@ -562,6 +562,7 @@ https://stackoverflow.com/questions/35042255/how-to-plot-multiple-seaborn-jointp
   - https://towardsdatascience.com/python-list-numpy-and-pandas-3a32f1aee948
 [x] spike - webscrap using bs4
 
+# week10 
 ## 2021-03-29-Mon
 [x] ecommerce - webscrap search_output, product_output for 6 categories using yml/py
 
@@ -572,3 +573,9 @@ https://stackoverflow.com/questions/35042255/how-to-plot-multiple-seaborn-jointp
 [] spike - sql basics
   - https://sqlzoo.net/
 [-] ecommerce - data cleaening (missing values)
+
+## 2021-04-01-Thu
+[] ecommerce - data cleaning (missing values, asin)
+  - source: https://github.com/scrapehero-code/amazon-scraper
+  - source2: https://www.loginworks.com/blogs/amazon-scraper/, https://github.com/ian-kerins/amazon-python-scrapy-scraper, https://www.worthwebscraping.com/scraping-amazon-reviews-using-python/
+

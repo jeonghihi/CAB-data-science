@@ -35,6 +35,13 @@
 
 - https://stackoverflow.com/questions/15129567/csv-writer-writing-each-character-of-word-in-separate-column-cell
 
+```python
+#%% split text string: partition vs. split
+my_test = "url/dp/string1/string2" # / = %2F
+left_text = my_text.partition(r"/dp/")[0]
+mid_text = my_text.partition(r"/dp/")[1]
+right_text = my_text.partition(r"/dp/")[2]
+```
 
 ## write a method that takes an array of consecutive (increasing) letters as input and that returns the missing letter in the array.
 ```python

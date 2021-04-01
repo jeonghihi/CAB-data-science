@@ -1,5 +1,0 @@
-URL,StatusCode,Response
-https://www.amazon.de/-/en/Raspberry-ARM-Cortex-A72-WLAN-ac-Bluetooth-Micro-HDMI-Single/dp/B07TC2BK1X/ref=sr_1_3?dchild=1&keywords=Raspberry+Pi&qid=1616587962&sr=8-3
-200
-,Raspberry Pi 4 Model B; 4 GB,, ARM-Cortex-A72 4 x,, 1.50 GHz,, 4 GB RAM,, WLAN-ac,, Bluetooth 5,, LAN,, 4 x USB,, 2 x Micro-HDMI,
-Colour:Single,Product Dimensions:10 x 7 x 3 cm; 50 Grams,Product Dimensions:,10 x 7 x 3 cm; 50 Grams,Date First Available:24 Jun. 2019,Date First Available:,24 Jun. 2019,Manufacturer:Raspberry Pi 4B,Manufacturer:,Raspberry Pi 4B,ASIN:B07TC2BK1X,ASIN:,B07TC2BK1X,Item model number:RAS-4-4G,Item model number:,RAS-4-4G,Best Sellers Rank:156 in Computer & Accessories (See Top 100 in Computer & Accessories) 1 in Desktop PCs,Best Sellers Rank:, 1 in Desktop PCs,,Customer reviews:4.8 out of 5 stars10,,360 ratings,,Customer reviews:,4.8 out of 5 stars,4.8 out of 5 stars,4.8 out of 5 stars,4.8 out of 5 stars,,,,10,,360 ratings,,,10,,360 ratings,
