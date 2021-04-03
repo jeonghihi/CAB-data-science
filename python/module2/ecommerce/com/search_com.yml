@@ -23,7 +23,7 @@ product_info:
             type: Attribute
             attribute: aria-label
         price:
-            css: 'span.a-price:nth-of-type(1) span.a-offscreen'
+            css: 'span.a-price:nth-of-type(1) span.a-offscreen'  #'div.a-row.a-size-base.a-color-base span.a-price'
             xpath: null
             type: Text
         asin:

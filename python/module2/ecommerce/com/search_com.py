@@ -96,7 +96,6 @@ def create_product_urls(item):
 
                         json.dump(product, outfile)
                         outfile.write(", \n")
-                        # sleep(5)
 #                    for product in data['product_asin']:
 #                        if product:
 #                            json.dump(product, outfile)
@@ -110,6 +109,9 @@ def create_product_urls(item):
 # item = ['laptop']
 # category = ['DSLR+Camera','smartphone','laptop', 'mouse', 'keyboard','headphones'] 
 
+# monitor_2 = 'Monitor' :https://www.amazon.com/s?k=Monitor&i=computers&page=2&ref=sr_pg_2 
+# monitor_3 = 'monitor' :https://www.amazon.com/s?k=monitor&i=computers&rh=n%3A1292115011&page=2&ref=sr_pg_2
+# monitor_4 = 'Monitor' : url_monitor
 category = ['Monitor', 'Headphones'] 
 for item in category:
     create_product_urls(item)

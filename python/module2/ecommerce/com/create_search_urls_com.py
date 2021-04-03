@@ -25,6 +25,19 @@ for item in category_computers:
         f.write('\n')
     f.close()
 
+#%% all items in one category "monitor" under "computer accesary"
+category_computers = ['monitor'] #'laptop', 'mouse', 'keyboard' 
+
+for item in category_computers:
+
+    f = open('search_urls_com_3_' + item + '.txt', 'w+')
+    for i in range(1,251):
+        page_url = 'https://www.amazon.com/s?k=' + item + '&i=computers&rh=n%3A1292115011&page=' + str(i) + '&ref=sr_pg_' + str(i)
+        f.write(page_url)
+        f.write('\n')
+    f.close()
+
+
 #%% all items in one category "electronics"
 category_electronics = ['Headphones'] #'DSLR+Camera','smartphone'
 
