@@ -1,0 +1,84 @@
+name:
+    css: '#productTitle'
+    type: Text
+
+product_overview:
+    css: '#productOverview_feature_div tr'
+    multiple: true
+    type: Text
+    children:
+        info: 
+            css: 'td.a-span3 .a-size-base.a-text-bold'
+            type: Text
+        value:
+            css: 'td.a-span9 .a-size-base' #.a-size-base'
+            type: Text
+
+product_tech_spec:
+    css: '#productDetails_techSpec_section_1 tr'
+    multiple: true
+    type: Text
+    children:
+        info:
+            css: th
+            type: Text
+        value:
+            css: td
+            type: Text
+
+product_tech_spec2:
+    css: '#productDetails_techSpec_section_2 tr'
+    multiple: true
+    type: Text
+    children:
+        info:
+            css: th
+            type: Text
+        value:
+            css: td
+            type: Text
+
+product_info:
+    css: '#prodDetails tr'
+    multiple: true
+    type: Text
+    children:
+        info:
+            css: 'th.a-size-base.prodDetSectionEntry'
+            type: Text
+        value:
+            css: 'td.a-size-base.prodDetAttrValue'
+            type: Text
+
+            
+seller:
+    css: '#sellerProfileTriggerId'
+    type: Text
+
+seller_link:
+    css: '#sellerProfileTriggerId'
+    type: Link
+
+seller2:
+    css: '#bylineInfo'
+    type: Text
+seller_link2:
+    css: '#bylineInfo'
+    type: Link
+
+    
+freq_bought:
+    css: '#sims-fbt-form .a-size-base.a-link-normal' #'#sims-fbt-checkbox-label span' 
+    type: Text
+
+freq_bought_link:
+    css: '#sims-fbt-form .a-size-base.a-link-normal'
+    type: Link
+
+link_to_all_reviews:
+    css: '#cr-pagination-footer-0 .a-text-bold' #'div.card-padding a.a-link-emphasis'
+    type: Link
+
+link_to_all_reviews2:
+    css: 'div.review-medley-footer .a' #'div.card-padding a.a-link-emphasis'
+    type: Link

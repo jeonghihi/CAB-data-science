@@ -575,7 +575,14 @@ https://stackoverflow.com/questions/35042255/how-to-plot-multiple-seaborn-jointp
 [-] ecommerce - data cleaening (missing values)
 
 ## 2021-04-01-Thu
-[] ecommerce - data cleaning (missing values, asin)
+[-] ecommerce - data cleaning (missing values, asin)
   - source: https://github.com/scrapehero-code/amazon-scraper
   - source2: https://www.loginworks.com/blogs/amazon-scraper/, https://github.com/ian-kerins/amazon-python-scrapy-scraper, https://www.worthwebscraping.com/scraping-amazon-reviews-using-python/
 
+## 2021-04-02-Fri
+[-] ecommerce - create-db:table - summary_output - monitor
+
+# week11
+## 2021-04-05-Mon
+[] ecommerce - webscrap - product_output - monitor (scrap-full-start. 16.12-)
+[] ecommerce - create-db:table - product_output - monitor
