@@ -7,10 +7,12 @@ df.head()
 # %% initial check with data 
 # check missing values:
 # Monitor - rating/review:1309, price:1747
+# Headphones - rating/review:311, price:488
 print(df.isnull().sum()) 
 
 # number of unique items: 
 # Monitor - 5553
+# Headphones - 5688
 print(len(set(df.title)))
 print(df.isnull().sum()/len(set(df.title)))
 

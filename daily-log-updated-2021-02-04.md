@@ -580,9 +580,21 @@ https://stackoverflow.com/questions/35042255/how-to-plot-multiple-seaborn-jointp
   - source2: https://www.loginworks.com/blogs/amazon-scraper/, https://github.com/ian-kerins/amazon-python-scrapy-scraper, https://www.worthwebscraping.com/scraping-amazon-reviews-using-python/
 
 ## 2021-04-02-Fri
-[-] ecommerce - create-db:table - summary_output - monitor
+[x] ecommerce - create-db:table - summary_output - monitor, headphones
 
 # week11
 ## 2021-04-05-Mon
-[] ecommerce - webscrap - product_output - monitor (scrap-full-start. 16.12-)
+[x] ecommerce - webscrap - product_output - monitor (scrap-full)
+
+## 2021-04-06-Tue
+[x] ecommerce - webscrap - product_output - headphones (scrap-full)
+
+
+## 2021-04-07-Wed
+[x] ecommerce - webscrap - product_output - headphones (scrap-full)
+
+## 2021-04-08-Thu
+[x] ecommerce- webscrap - product_output (seller-rank, link-reviews) - headphones 
+[] ecommerce - create-db:table - customer-reviews - monitor,headphone
 [] ecommerce - create-db:table - product_output - monitor
+[] ecommerce - sql-basics

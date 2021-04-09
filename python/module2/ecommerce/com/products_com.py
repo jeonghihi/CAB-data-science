@@ -78,7 +78,7 @@ def scrape(url):
 
 def create_product_output(item):
     # product_data = []
-    with open("./output/product_urls_com_" + item + "_4.txt",'r') as urllist, open('./output/product_output_com_' + item + '_4.jsonl','w+') as outfile:
+    with open("./output/product_urls_com_" + item + "_5.txt",'r') as urllist, open('./output/product_output_com_' + item + '_5.jsonl','w+') as outfile:
         for url in urllist.read().splitlines():
             data = scrape(url) 
             if data:
@@ -95,15 +95,35 @@ def create_product_output(item):
 
             sleep(.200)
     return outfile
+#%%
+import datetime
+item = "Headphones"
+
+now = datetime.datetime.now()
+print("Start date and time: ")
+print(str(now))
+
+create_product_output(item)
+
+print('all_finished')
+finished_time = datetime.datetime.now()
+print("Finish date and time: ")
+print(str(finished_time))
+
+#sleep(2.500)
+#%% 
+# after - Downloading https://www.amazon.com/beyerdynamic-880-Premium-600-Headphones/dp/B0024NK35S/ref=sr_1_4627?dchild=1&keywords=Headphones&qid=1617474090&s=electronics&sr=1-4627
+# occurred - SSLError: HTTPSConnectionPool(host='www.amazon.com', port=443): Max retries exceeded with url: /beyerdynamic-880-Premium-600-Headphones/dp/B0024NK35S/ref=sr_1_4627?dchild=1&keywords=Headphones&qid=1617474090&s=electronics&sr=1-4627 (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:852)'),))
+
+# after - Downloading https://www.amazon.com/VEC-ELECTRONICS-SP-USB-Spectra-Transcription/dp/B000MQEHCO/ref=sr_1_4700?dchild=1&keywords=Headphones&qid=1617474095&s=electronics&sr=1-4700
 
 #%%
-item = "Monitor"
-create_product_output(item)
-sleep(2.500)
-
-
-
-
+# headphones_1 (2000 items): 2021-04-06 16:26:51.653729 - 2021-04-06 17:54:59.497064
+# headphones_2: 2021-04-06 19:06:53.733203 - 2021-04-06 20:41:07.652777
+# headphones_3: 2021-04-06 21:35:43.563364 
+# headphones_4: 2021-04-06 00:49:04.226314 - 2021-04-07 01:03:14.748869 /re: 2021-04-07 12:21:03.896673 - 2021-04-07 12:34:48.244152
+# headphones_5: 2021-04-07 13:48:11.984224
+  
 #%% 
 # item = ['laptop']
 category = ['DSLR+Camera','smartphone','laptop', 'mouse', 'keyboard','headphones'] 

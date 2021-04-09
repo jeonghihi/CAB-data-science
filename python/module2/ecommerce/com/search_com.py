@@ -85,7 +85,7 @@ def create_product_urls(item):
         f = open('./output/product_urls_com_' + item + '.txt','w+')
         item = item
         for url in urllist.read().splitlines():
-            data = scrape(url, item)
+            data = scrape(url)
        
             if data:
                 try:

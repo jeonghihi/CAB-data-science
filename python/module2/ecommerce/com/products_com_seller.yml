@@ -1,0 +1,31 @@
+seller_link_new:
+    css: '#sellerProfileTriggerId'
+    multiple: true
+    type: Text
+    children:
+        info:
+            css: ''
+            type: Text
+        value:
+            css: ''
+            type: Link
+
+product_info:
+    css: '#prodDetails tr'
+    multiple: true
+    type: Text
+    children:
+        info: 
+            css: 'th.a-size-base.prodDetSectionEntry'
+            type: Text
+        value:
+            css: 'td span'
+            type: Text
+
+link_to_all_reviews:
+    css: '#cr-pagination-footer-0 .a-text-bold' #'div.card-padding a.a-link-emphasis'
+    type: Link
+
+link_to_all_reviews2:
+    css: 'div.review-medley-footer div.a-row.a-spacing-medium.a' #'div.card-padding a.a-link-emphasis'
+    type: Link
