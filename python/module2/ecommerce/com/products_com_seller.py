@@ -77,10 +77,10 @@ def scrape(url):
     sleep(.100)
     return e.extract(r.text)
 
-
+#%%
 def create_product_output_seller(item):
     # product_data = []
-    with open("./output/product_urls_com_" + item + "_seller2.txt",'r') as urllist, open('./output/product_output_com_' + item + '_seller2.jsonl','w+') as outfile:
+    with open("./output/product_urls_com_" + item + "_seller5.txt",'r') as urllist, open('./output/product_output_com_' + item + '_seller5.jsonl','w+') as outfile:
         for url in urllist.read().splitlines():
             data = scrape(url) 
             if data:
@@ -93,25 +93,22 @@ def create_product_output_seller(item):
                 except:
                     json.dump(data,outfile)
                     outfile.write("\n")
-            else:
-                continue
-            sleep(.100)
+            sleep(.200)
     return outfile
 
 #%%
-# done1: 2021-04-08 19:03:11.485115
-# done2; 2021-04-08 23.35-
+# seller_rank + asin
+# done - headphone: 2021-04-10 16:32:29.429083 / 2021-04-10 17:18:10.367503 - 2021-04-10 19:14:18.497348
+# done - monitor: 2021-04-10 19:26:43.378997  / 2021-04-10 21:08:02.427339 / 2021-04-10 21:58:50.123627 / 2021-04-10 22:50:43.695568 / 2021-04-11 10:00:11.097522 - 2021-04-11 11:21:03.761514
+
 import datetime 
 
 item = "Monitor"
-create_product_output_seller(item)
-print('all_finished')
-finished_time = datetime.datetime.now()
-print("Finish date and time: ")
-print(str(finished_time))
+start_time = datetime.datetime.now()
+print(str(start_time))
 
-# %%
-import datetime
+create_product_output_seller(item)
+
 print('all_finished')
 finished_time = datetime.datetime.now()
 print("Finish date and time: ")

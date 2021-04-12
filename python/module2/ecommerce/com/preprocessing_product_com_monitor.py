@@ -2,7 +2,7 @@
 item = 'Monitor' #Headphones
 
 import pandas as pd
-df = pd.read_json('./output/product_output_com_' + item +'.jsonl')
+df = pd.read_json('./output/product_output_com_' + item +'_1.jsonl')
 df.head()
 
 # %% initial check with data 

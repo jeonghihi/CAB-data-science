@@ -9,7 +9,11 @@ seller_link_new:
         value:
             css: ''
             type: Link
-
+asin:
+    css: '#averageCustomerReviews' #_feature_div
+    type: Attribute
+    attribute: data-asin
+    
 product_info:
     css: '#prodDetails tr'
     multiple: true
