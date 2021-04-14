@@ -45,7 +45,7 @@ def random_header():
 
 def scrape(url):
     # load yml for data extraction
-    e = Extractor.from_yaml_file('products_com_seller.yml')
+    e = Extractor.from_yaml_file('products_com_add.yml')
 
     # load random header info using  function random_header()
     random_header_info = random_header()
@@ -78,9 +78,9 @@ def scrape(url):
     return e.extract(r.text)
 
 #%%
-def create_product_output_seller(item):
+def create_product_output_add(item):
     # product_data = []
-    with open("./output/product_urls_com_" + item + "_seller5.txt",'r') as urllist, open('./output/product_output_com_' + item + '_seller5.jsonl','w+') as outfile:
+    with open("./output/product_urls_com_" + item + "_add2.txt",'r') as urllist, open('./output/product_output_com_' + item + '_add2.jsonl','w+') as outfile:
         for url in urllist.read().splitlines():
             data = scrape(url) 
             if data:
@@ -93,7 +93,6 @@ def create_product_output_seller(item):
                 except:
                     json.dump(data,outfile)
                     outfile.write("\n")
-            sleep(.200)
     return outfile
 
 #%%
@@ -107,7 +106,7 @@ item = "Monitor"
 start_time = datetime.datetime.now()
 print(str(start_time))
 
-create_product_output_seller(item)
+create_product_output_add(item)
 
 print('all_finished')
 finished_time = datetime.datetime.now()

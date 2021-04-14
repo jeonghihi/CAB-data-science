@@ -87,3 +87,30 @@ a
 for i in range(0,len(df2)):
   temp = datetime.datetime.strptime(str(df2.iloc[i][1]).replace('.0',''),'%H')
   df2.iloc[i,1] = temp.strftime('%I%p')
+
+# convert dict.keys to column names
+- from: preprocessing_product_detail.py
+- keys to cols  (error: col_list is made from duplicates of all products)
+
+```python
+for item in data_new:
+    col_list = [] 
+    val_list = []
+    if item is not None:
+        for feature in item_dict:
+            col = list(feature.keys())[0]
+            val = list(feature.values())[0]
+            col_list.append(col)
+            val_list.append(val)
+    else:
+        None
+    print(col_list)
+    print(val_list)
+
+    item_df = pd.DataFrame(val_list,columns = col_list)
+    print(item_df.head())
+
+# create dataframe (product_info)        
+pt= pd.DataFrame([['NaN']*len(col_list)], columns=col_list)
+pt
+```
