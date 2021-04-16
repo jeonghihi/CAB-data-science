@@ -25,3 +25,7 @@ temp_product_summary_0_dict_values = list(temp_product_summary_0_dict.values())[
 
 # replace with new_dict
 temp_product_summary_0_dict_new = dict(zip(temp_product_summary_0_dict_values,temp_product_summary_0_dict_keys))
+
+#%% dictionary - dataframe tips
+# https://appdividend.com/2020/03/06/python-how-to-add-append-key-value-pairs-in-dictionary/
+# https://stackoverflow.com/questions/20638006/convert-list-of-dictionaries-to-a-pandas-dataframe

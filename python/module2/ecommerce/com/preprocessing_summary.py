@@ -31,8 +31,10 @@ def clean(df):
     df_temp['review_count'] = df['review_count'].apply(lambda a: str(a).replace(',',''))  
         #df_temp.loc[i,'price'] = df.loc[i,'price'].replace(',','')
         #print('Sorry lets move on')
+    df_temp = df_temp.replace("NaN",'')
     df_cleaned = df_temp
     return df_cleaned
+    
 #%%
 df_cleaned = clean(df)
 
