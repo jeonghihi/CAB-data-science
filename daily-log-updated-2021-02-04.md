@@ -598,3 +598,27 @@ https://stackoverflow.com/questions/35042255/how-to-plot-multiple-seaborn-jointp
 [] ecommerce - create-db:table - customer-reviews - monitor,headphone
 [] ecommerce - create-db:table - product_output - monitor
 [] ecommerce - sql-basics
+
+## 2021-04-09-Fri
+[-] ecommerce - created-db = product_details - scrap addictional info (review/seller.yml)
+
+# week12
+## 2021-04-12-Mon
+[-] ecommerce - created-db = product_details - clean/convert dataframe
+
+## 2021-04-13-Tue
+[-] ecommerce - created-db = product_details - convert dict/dataframe
+
+## 2021-04-14-Wed
+[-] ecommerce - created-db = product_details - mergind df,overlapping columns
+
+## 2021-04-15-Thu
+[x] ecommerce - created-db = product_details - complete
+
+## 2021-04-16-Fri
+[] ecommerce - product_summary - merge, email(w5-1)
+[] ecommerce - salesdata - merge, email(w6-1)
+
+[] ecommerce - sql-install-error
+
+# week13

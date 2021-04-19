@@ -38,8 +38,18 @@ def clean(df):
 #%%
 df_cleaned = clean(df)
 
+# s['rating'] = s['rating'].map(lambda x: x.strip('')[0:3])
+# s[['review_count']] = s[['review_count']].fillna(value= '0')
+# s['review_count'] = s['review_count'].replace(',','', regex=True)
+
+# s['price'] = s['price'].replace(',','', regex=True)
+# s.price = s.price.astype('float')
+
 print(df_cleaned.isnull().sum())
 # %% save preprocessed data
+df_cleaned.columns = ['title', 'url', 'rating', 'review_count', 'price', 'ASIN', 'prod_type']
+df_cleaned = df_cleaned[['ASIN', 'title', 'price', 'rating', 'review_count', 'url', 'prod_type']]
+
 df_cleaned.to_csv('./output/summary_headphones_com.csv', index= None)
 
 #%% =================== other functions ===================
