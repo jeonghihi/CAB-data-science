@@ -27,6 +27,7 @@
 [] pandas
   - multiple group by: https://www.statology.org/pandas-groupby-aggregate-multiple-columns/
   - drop column pandas : https://stackoverflow.com/questions/13411544/delete-column-from-pandas-dataframe
+  - reshape tables : https://pandas.pydata.org/docs/user_guide/reshaping.html
 
 # code crumbs
 
@@ -63,6 +64,27 @@ def count_substring(string, sub_string):
 ```
 df2 = df.join(df_AudienceScore_ave_Studio.set_index('Lead_Studio'), on='Lead_Studio')
 ```
+
+# datetime 
+from datetime import datetime
+
+def days_between(d1, d2):
+    d1 = datetime.strptime(d1, "%Y-%m-%d")
+    d2 = datetime.strptime(d2, "%Y-%m-%d")
+    return abs((d2 - d1).days)
+    
+df_fun_stock.info()
+
+
+# based on value_counts() in one specific column 
+https://stackoverflow.com/questions/17709270/create-column-of-value-counts-in-pandas-dataframe#17709453
+
+# difference between timedata
+https://www.plus2net.com/python/pandas-dt-timedelta64.php
+
+# stacked barchart with timeseries data
+https://stackoverflow.com/questions/42044299/stacked-histogram-with-time-series-data-with-gnuplot
+
 
 # bike project - df2 (customized dataset) - add index column for later processing
 ```python

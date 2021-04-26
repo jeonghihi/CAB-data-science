@@ -105,3 +105,69 @@ df_asin = get_asin(df_cleaned)
 
 print(df_asin.dtypes)
 print(df_asin.isnull().sum())
+
+
+#%% edit
+import pandas as pd
+import numpy as np 
+
+#%%
+my_file = pd.read_csv('./data/ecom-sales/sales_summary.csv')
+
+temp = my_file[:1000]
+temp_out = get_asin(temp)
+
+#%% new_get_asin_updated2021-04-22
+
+def get_asin(my_df):
+    # make a temporary df with url
+    temp_url_df = pd.DataFrame(my_df.loc[:,'url'])
+    temp_url_df = temp_url_df.reset_index()
+    data = temp_url_df.copy()
+    
+    #data_origin = data.copy()
+    print(data)
+
+    for row in range(len(data)):
+        if type(data.loc[row,'url']) is str:
+            # divide the full url into three parts using the function partition()
+            my_text = data.loc[row, 'url'] 
+            division_tag1 = str(r"%2Fdp%2F")
+            division_tag2 = str('/dp/')
+            if division_tag1 in my_text:
+                right_text = my_text.partition(division_tag1)[2] 
+            else:
+                right_text = my_text.partition(division_tag2)[2] 
+            data.loc[row, 'right_text'] = right_text
+
+            # divide the target part ('right_text') into three parts using the function partition()
+            my_text2 = data.loc[row, 'right_text'] 
+            division_tag1 = str(r"%2F")
+            division_tag2 = str('/')
+            if division_tag1 in my_text2:
+                target_text = my_text2.partition(division_tag1)[0] 
+            else:
+                target_text = my_text2.partition(division_tag2)[0] 
+            # add the final target ('asin') in the new column 'ASIN'
+            data.loc[row, 'ASIN'] = target_text
+        else:
+            print('url does not exist',row)
+            # add numpy NaN value in the new column 'ASIN'
+            data.loc[row, 'ASIN'] = np.nan
+
+    # check if ASIN is correctly added to the dataframe
+    fin_url_df = data[['ASIN','index']]
+    fin_url_df = fin_url_df.set_index('index')
+    print(fin_url_df.head())
+
+    out_df = pd.concat([my_df, fin_url_df], axis=1)
+
+    return out_df 
+# %%
+# function get_asin with 566781 rows
+# started at: 20.51, arrived at 26000 lines until 01:00.
+
+# drop rows with unknown countries
+test = temp_out.loc[temp_out.Country == 'SteelSeries QcK Gaming Surface - XL RGB Prism Cloth - Best Selling Mouse Pad of All Time - Sized to Cover Desks']
+test2 = temp_out.loc[temp_out.Country == 'Unknown']
+test3 = temp_out.loc[temp_out.Country == 'European Community']

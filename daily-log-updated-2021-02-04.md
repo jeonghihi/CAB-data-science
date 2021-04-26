@@ -622,3 +622,37 @@ https://stackoverflow.com/questions/35042255/how-to-plot-multiple-seaborn-jointp
 [] ecommerce - sql-install-error
 
 # week13
+## 2021-04-19-Mon
+[] ecommerce - sql-server connection, basic concepts
+
+## 2021-04-20-Tue
+[] ecommerce - sql-basic functions, normalization(?)
+
+## 2021-04-21-Wed
+[] ecommerce - clean product_details
+[-] ecommerce - email2
+
+## 2021-04-22-Thu
+[] ecommerce - sql-functions with sales data
+[-] ecommerce - email2 - using sql, timedata
+
+## 2021-04-23-Fri
+[x] ecommerce - email2 - using sql (joining multiple tables, averaging/filtering values)
+[x] ecommerce - customer buying pattern analysis - timedata, category variables
+
+# week14
+## 2021-04-26-Mon
+[x] ecommerce - presentation - basic analysis (to add: customer feedback/service related contents)
+[] summary - sql basic functions
+[] github - update codes (final version)
+[] ecommerce - afterthought:
+    ? how important is the presentation when you work as a data analyst/engineer
+    : data preprocessing-cleaning, writing-reading your/their codes, making presentations (visualization)
+
+    ? how do you track the progress of individual persons
+    : each person think independently and report their own problem/issues (& search solutions in their way).
+    : but how can we progress when similar problem/issues are repeated and do not know how to change the direction/pattern?
+    : how do we perceive/keep our own path/traces for specific skills. e.g., coding style, project-time management, organizing skills (setting priorities and assign time/deadlines for each task).
+    : we need a regular review time.
+
+

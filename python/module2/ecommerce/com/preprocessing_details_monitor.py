@@ -113,7 +113,7 @@ for col in cols:
 # merge cols one by one
 df_filtered_temp = df_filtered.replace(np.nan, '', regex=True)
 df_filtered["ASIN"] = df_filtered_temp["ASIN"] +" "+ df_filtered_temp["ASIN_3"] +" "+ df_filtered_temp["ASIN_4"]
-df_filtered["ASIN"] = df_filtered['ASIN'].apply(lambda a: str(a)[:10])
+df_filtered["ASIN"] = df_filtered['ASIN'].apply(lambda a: str(a)[:11])
 df_filtered["ASIN"] = df_filtered["ASIN"].replace(r'^\s*$', np.nan, regex=True)
 
 df_filtered["Brand Name_5"] = df_filtered_temp["Brand Name_5"] +" "+ df_filtered_temp["Brand Name_6"]
@@ -128,7 +128,7 @@ df_filtered['Package Dimensions_3'] = df_filtered_temp['Package Dimensions_3'] +
 
 # remove merged columns
 df_dropped = df_filtered.drop(columns = cols_to_be_merged)
-df_dropped = df_dropped.drop(columns='Best Sellers Rank') # this info will be available from other df
+#df_dropped = df_dropped.drop(columns='Best Sellers Rank') # this info will be available from other df
 
 df1_fin = df_dropped
 print(df1_fin.head())
@@ -254,7 +254,7 @@ df_list3_new2.columns = ['ASIN', 'freq_bought_info', 'customer_reviews',
        'Manufacturer_Part_Number', 'Material_Type', 'Max_Screen_Resolution',
        'Number_of_Items', 'Number_of_USB_2.0_Ports', 'Number_of_USB_3.0_Ports',
        'Operating_System', 'Package_Dimensions', 'Power_Source',
-       'Processor_Brand', 'Processor_Count', 'product_dimensions', 'RAM',
+       'Processor_Brand', 'Processor_Count', 'product_dimensions2', 'RAM',
        'Screen_Resolution', 'Series', 'Size', 'Standing_screen_display_size',
        'Voltage', 'Wireless_Type', 'info', 'seller', 'seller_link']
 
@@ -265,15 +265,46 @@ col_order = ['ASIN', 'asin', 'brand', 'brand_name','seller', 'seller_link',
        'Size', 'Standing_screen_display_size',
        'color', 'colour', 'computer_memory_Type', 'date_first_available',
        'department', 'graphics_coprocessor', 'hardware_platform',
-       'Package_Dimensions', 'product_dimensions','product_weight', 
+       'Package_Dimensions', 'product_dimensions','product_dimensions2', 'product_weight', 
        'Item_model_number', 'Language', 
        'Manufacturer_Part_Number', 'Material_Type', 'Max_Screen_Resolution',
        'Number_of_Items', 'Number_of_USB_2.0_Ports', 'Number_of_USB_3.0_Ports',
        'Operating_System', 'Power_Source',
-       'Processor_Brand', 'Processor_Count', 'product_dimensions', 'RAM',
+       'Processor_Brand', 'Processor_Count', 'RAM',
        'Series', 'Voltage', 'Wireless_Type', 'info']
 
 df_list3_fin = df_list3_new2[col_order]
+
+df_list3_fin_temp = df_list3_fin.replace(np.nan, '', regex=True)
+df_list3_fin["ASIN"] = df_list3_fin_temp["ASIN"] +" "+ df_list3_fin_temp["asin"]
+df_list3_fin["ASIN"] = df_list3_fin['ASIN'].apply(lambda a: str(a)[:11])
+df_list3_fin["ASIN"] = df_list3_fin["ASIN"].apply(lambda a: str(a).rstrip())    # Apply rstrip function
+
+# df_list3_fin.loc[df_list3_fin['brand_name'].notnull() & df_list3_fin['brand'].isnull() ]
+
+# convert all Nonetype to np.nan
+df_list3_fin_temp = df_list3_fin.fillna('').astype(str)
+df_list3_fin_temp2 = df_list3_fin_temp.replace('', np.nan, regex=True)
+
+temp = df_list3_fin_temp2.copy()
+
+#target_col = 'color' 
+#use_col = 'colour' 
+target_col = 'product_dimensions'
+use_col = 'product_dimensions2'
+
+for i in range(len(temp)):
+    if type(temp[target_col][i]) is float:
+        try:
+            temp.loc[i,target_col] = temp.loc[i, use_col] 
+        except:
+            pass
+
+# drop all unnecessary cols
+df_list3_fin = temp.drop(columns = ['asin','brand_name','colour','product_dimensions2'])
+
+#%%
+df_list3_fin.shape
 
 df3_fin = df_list3_fin
 print(df3_fin.head())
@@ -282,9 +313,9 @@ df3_fin.shape
 
 #%% ============================================= check final df
 
-df1_fin.head()
-df2_fin.head()
-df3_fin.head()
+print(df1_fin.shape) #7452
+print(df2_fin.shape) #7452
+print(df3_fin.shape) #7436
 
 df_details = pd.concat([df1_fin, df2_fin], axis=1)
 df_details.columns = ['ASIN', 'Batteries', 'Batteries Required?', 'Date First Available',
@@ -302,25 +333,28 @@ for item in list(df_details.columns):
 df_details.columns = temp
 
 df_details.columns = ['ASIN', 'batteries', 'batteries_required?', 'date_first_available',
-       'discontinued_by_mfg  ', 'item_model_number',
+       'discontinued_by_mfg', 'item_model_number',
        'package_dimensions', 'product_dimensions', 'product_name', 'seller',
        'seller_link', 'seller2', 'seller_link2', 'freq_bought',
        'freq_bought_link', 'link_to_all_reviews']
 
 col_order = ['ASIN', 'product_name', 'seller', 'seller_link', 'seller2', 'seller_link2',
        'batteries', 'batteries_required?', 'date_first_available',
-       'discontinued_by_mfg  ', 'item_model_number',
+       'discontinued_by_mfg', 'item_model_number',
        'package_dimensions', 'product_dimensions', 'freq_bought',
        'freq_bought_link', 'link_to_all_reviews']
 
 df_details = df_details[col_order]
+df_details_fin = df_details.loc[df_details['ASIN'].notnull()]
 
 df_add = df3_fin
+df_add_fin = df_add.loc[df_add['ASIN'].notnull()]
+
 
 # save as csvfile
-item = 'Monitor'
+item = 'monitor'
 
-df_details.to_csv('./output/product_output/' + item +'_details.csv')
-df_add.to_csv('./output/product_output/' + item +'_add.csv')
+df_details_fin.to_csv('./output/product_output/' + item +'_details.csv')
+df_add_fin.to_csv('./output/product_output/' + item +'_add.csv')
 
 

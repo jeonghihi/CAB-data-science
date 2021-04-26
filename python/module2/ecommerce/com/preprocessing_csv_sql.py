@@ -16,12 +16,15 @@ import pymysql
 # load dataset
 item = 'headphones'
 #item = 'monitor'
-s = pd.read_csv('./output/search_output/' + item + '_summary.csv')
-p = pd.read_csv('./output/product_output/' + item + '_details.csv')
+s = pd.read_csv('./data/ecom-web/' + item + '_summary.csv')
+p = pd.read_csv('./data/ecom-web/' + item + '_details.csv')
+
+# my_file = pd.read_csv('./data/ecom-sales/sales_summary.csv')
+# my_file.to_sql('sales_summary', engine, if_exists='append', index=False)  
 
 s.head()
 
-# login setting for sql
+#%% login setting for sql
 passwrd = 'hellomysql!'
 db_name = 'ecom'
 db_data = 'mysql+mysqldb://' + 'root' + ':' + passwrd + '@' + 'localhost' + ':3306/' \
@@ -40,9 +43,32 @@ connection = pymysql.connect(host='localhost',
 
 # create cursor
 cursor=connection.cursor()
+
+#%%
 # Execute the to_sql for writting DF into SQL
 s.to_sql('headphones_s', engine, if_exists='append', index=False)    
 p.to_sql('headphones_p', engine, if_exists='append', index=False)   
+
+# load more datasets
+dslr = pd.read_csv('./data/ecom-sales/dslr.csv')
+keyboard = pd.read_csv('./data/ecom-sales/keyboard.csv')
+monitor = pd.read_csv('./data/ecom-sales/monitor.csv')
+mouse = pd.read_csv('./data/ecom-sales/mouse.csv') 
+processor = pd.read_csv('./data/ecom-sales/processor.csv')
+sales = pd.read_csv('./data/ecom-sales/sales.csv') 
+smartphone = pd.read_csv('./data/ecom-sales/smartphone.csv')
+product_summary = pd.read_csv('./data/ecom-web/product_summary.csv')
+
+# import these to sql
+dslr.to_sql('dslr_sales', engine, if_exists='append', index=False)   
+keyboard.to_sql('keyboard_sales', engine, if_exists='append', index=False)   
+monitor.to_sql('monitor_sales', engine, if_exists='append', index=False)   
+mouse.to_sql('mouse_sales', engine, if_exists='append', index=False)   
+processor.to_sql('processor_sales', engine, if_exists='append', index=False)   
+sales.to_sql('sales', engine, if_exists='append', index=False)   
+smartphone.to_sql('smartphone_sales', engine, if_exists='append', index=False)   
+product_summary.to_sql('product_summary', engine, if_exists='append', index=False)   
+
 
 engine.dispose()
 connection.close()

@@ -16,7 +16,7 @@ Hope you find these information useful to expect which infomation will be includ
 
 # Situation/Goal: 
 - provide a report on ecommerce market (amazon) for electronic product categories
-
+d
 ## Task1:
 - provide a brief statistics/overview of ecommerce market (amazon.com)
     ### Action: 
