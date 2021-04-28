@@ -92,7 +92,7 @@ fig, ax = plt.subplots(nrows=1, ncols=3, figsize=(12, 8), constrained_layout = T
 pie_labels = list(df_stat_price_per_category.index)
 
 theme = plt.get_cmap('bwr')
-cs = cm.Set1(np.arange(8)/8.)
+
 # color: https://stackoverflow.com/questions/16006572/plotting-different-colors-in-matplotlib
 
 pie_price = df.groupby("product_type")["price"].sum()

@@ -74,6 +74,11 @@ SET SQL_SAFE_UPDATES=1;
 
 select * from sales;
 
+ALTER TABLE sales
+ALTER TABLE tablename MODIFY columnname INTEGER;
+
+-- ALTER COLUMN InvoiceDate DATETIME;
+
 
 ALTER TABLE sales 
 	ADD COLUMN InvoiceStatus
@@ -101,6 +106,15 @@ ALTER TABLE sales
 		  WHEN (InvoiceNo like "C%") THEN 'Cancelled'
 		  ELSE 'Not_cancelled'
 		END
+
+
+
+-- datetime
+SELECT SUBDATE("2019-06-15", INTERVAL 7 DAY);
+
+SELECT SUBDATE(InvoiceDate, INTERVAL 7 DAY)
+From sales;
+
 
 --
 

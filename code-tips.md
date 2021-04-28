@@ -4,9 +4,24 @@
 # tags : [python, exemple, stats]
 ---
 
+# essential python libraries
+
+## data cleaning/transformation
+pandas
+numpy
+## modeling
+sklearn
+
+## visualization
+seaborn
+matplotlib
 
 [] markdown formatting
   - https://daringfireball.net/projects/markdown/syntax#html
+  - TOC 
+    - https://stackoverflow.com/questions/11948245/markdown-to-create-pages-and-table-of-contents/33433098#33433098
+    - https://stackoverflow.com/questions/21151450/how-can-i-add-a-table-of-contents-to-a-jupyter-jupyterlab-notebook
+
 [] figure
   - subplots : https://stackoverflow.com/questions/55767312/how-to-position-suptitle
   - stacked barplot (plt) : https://www.weirdgeek.com/2018/11/plotting-stacked-bar-graph/, https://www.python-graph-gallery.com/13-percent-stacked-barplot, https://stackoverflow.com/questions/63906653/how-to-add-annotations-to-stack-percentage-barplot-in-matplotlib
@@ -28,7 +43,8 @@
   - multiple group by: https://www.statology.org/pandas-groupby-aggregate-multiple-columns/
   - drop column pandas : https://stackoverflow.com/questions/13411544/delete-column-from-pandas-dataframe
   - reshape tables : https://pandas.pydata.org/docs/user_guide/reshaping.html
-
+  - sql: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_sql.html?highlight=read_sql#pandas.read_sql
+  - 
 # code crumbs
 
 ## string transformation 

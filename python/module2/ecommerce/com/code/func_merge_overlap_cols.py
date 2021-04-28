@@ -109,50 +109,92 @@ for col in cols:
         cols_uni.append(col)
 
 
-######### trials ###########
+######### trials with different methods to combine/merge columns###########
+#%%
+# ref: https://www.journaldev.com/33320/pandas-concat-examples
+# ref: https://queirozf.com/entries/pandas-dataframe-union-and-concat-examples
+
+import pandas as pd 
+import numpy as np 
+
+#test1
+d1 = {"Name": ["Jia", "Lisa"], "ID": [1, 2], "Date" : [np.nan,'2021-04-10'], "Type" : ['A', 'B'], "Age" : [34, 27]}
+d2 = {"Name": ["Alex","Max",''], "ID": [1, 3, 4], "Date": ['2021-04-10','','2021-04-09'], "Type": ['B','O','AB'], "Age" : [28, 20, 25]}
+
+df1 = pd.DataFrame(d1, index={1, 2})
+df2 = pd.DataFrame(d2, index={1, 3, 4})
+
+#test2 
+
+df_1 = pd.DataFrame(
+	[['Tom', 68, 84, 78, 96],
+	['Lina', 74, 56, 88, 85],
+	['Jin', 77, 73, 82, 87]],
+	columns=['name', 'physics', 'chemistry','algebra','calculus'])
+
+df_2 = pd.DataFrame(
+	[['Ameli', 72, 67, 91, 83],
+	['Lin', 78, 69, 87, 92]],
+	columns=['name', 'physics', 'algebra','history','literature'])	
+
+#concatenate dataframes
+df = pd.concat([df_1, df_2], sort=False)
+#reset index
+df.reset_index(drop=True, inplace=True)
+#print dataframe 
+print(df)
+
+#%%
+
+#  concat(objs, axis=0, join='outer', join_axes=None, ignore_index=False,
+#            keys=None, levels=None, names=None, verify_integrity=False,
+#            sort=None, copy=True)
+
+# concatenate dataframes with 
+    # same indexes
+    # similar columns
+    # while keeping the duplicates 
 
 
 # merge columns
-test12_concat = pd.concat([test1, test2], axis=1)
+df12_concat = pd.concat([df1, df2], axis=1)
 # concat() makes two columns with same name
 
-test12_join = test1.join(test2, lsuffix="_1", rsuffix="_2")
+df12_join = df1.join(df2, lsuffix="_1", rsuffix="_2")
 # join() makes two columns with suffix
 
-test12_merge = pd.merge(test1, test2, how = "outer")
+df12_merge = pd.merge(df1, df2, how = "outer")
 # merge() makes one column, by adding rows instead of merging two columns with same name based on the original index
 
-test12_merge2 = pd.merge(test1, test2, how = "outer", left_index=True, right_index=True)
-# same as test12_join
+df12_merge2 = pd.merge(df1, df2, how = "outer", left_index=True, right_index=True)
+# same as df12_join
 
-test12_merge3 = pd.merge(test1, test2, how = "outer", left_on=test1.index)
-# this doesn't work because test1 and test2 have different size 
+df12_merge3 = pd.merge(df1, df2, how = "outer", left_on=df1.index)
+# this doesn't work because df1 and df2 have different size 
 
-test12_append = test1.append(test2)
-# this replace the string values from test1 with nan values from test2
+df12_append = df1.append(df2)
+# this replace the string values from df1 with nan values from df2
 
-test12_combine = test1.copy()
-test12_combine['Color_fin'] = test1['Color'].combine_first(test2['Color'])
+df12_combine = df1.copy()
+df12_combine['Color_fin'] = df1['Color'].combine_first(df2['Color'])
 
-# merge method2: = pd.concat(test1, test4), axis=1) 
+# merge method2: = pd.concat(df1, test4), axis=1) 
 # but when I used pd.merge (index is reset; original index is lost)
 # and couldn't find how to remove overlapping columns after concatenation, e.g. 'Brand' 
 
+# merge method1
+# df1: merge/join non overlapping columns
+# df2: additional dataframe with overlapping columns
 
+# compare overlapping column in two df 
+# if the value is not None, 
+# take it as a value for target_column
 
-# method1
-df1: merge/join non overlapping columns
-df2: additional dataframe with overlapping columns
+# df12_merge = pd.merge(df1,df2, how = "outer", left_index=True, right_index=True)
+# df123_merge = pd.merge(df12_merge,test3, how = "outer", left_index=True, right_index=True)
 
-compare overlapping column in two df 
-if the value is not None, 
-take it as a value for target_column
+# intersection1 = list(set(list(df1.columns)) & set(list(df2.columns)))
 
-test12_merge = pd.merge(test1,test2, how = "outer", left_index=True, right_index=True)
-test123_merge = pd.merge(test12_merge,test3, how = "outer", left_index=True, right_index=True)
-
-intersection1 = list(set(list(test1.columns)) & set(list(test2.columns)))
-
-# merge values in those columns
-df_temp = df.replace(np.nan, '', regex=True)
-df["ASIN"] = df_temp["ASIN"] + df_temp["ASIN_3"] + df_temp["ASIN_4"]
+## merge values in those columns
+# df_temp = df.replace(np.nan, '', regex=True)
+# df["ASIN"] = df_temp["ASIN"] + df_temp["ASIN_3"] + df_temp["ASIN_4"]

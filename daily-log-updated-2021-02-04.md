@@ -655,4 +655,15 @@ https://stackoverflow.com/questions/35042255/how-to-plot-multiple-seaborn-jointp
     : how do we perceive/keep our own path/traces for specific skills. e.g., coding style, project-time management, organizing skills (setting priorities and assign time/deadlines for each task).
     : we need a regular review time.
 
+## 2021-04-27-Tue
+[] ecommerce - sql practices (join, timedata)
+[] ecommerce - organize codes (webscrap, preprocessing, customer score analysis)
+[] bikeshare - organize codes (preprocessing, timeseries modeling, flaskapp)
 
+[] organization - git
+    - git commit check : https://stackoverflow.com/questions/1314950/git-get-all-commits-and-blobs-they-created/1318854#1318854
+[] code - examples using merge/join/concat
+
+## 2021-04-28-Wed
+[-] bluewinery - organize codes (preprocessing, machine learning modeling)
+[-] orgnization - pipeline for predictive analytics

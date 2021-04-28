@@ -2,11 +2,22 @@
 import os
 import shutil
 
-#%%
-source_dir = r''
+#%% all filenames within source_dir (all children dir)
+source_dir = r'C:\Users\Jeong'
 filenames_list = []
 
 for root, dirs, filenames in os.walk(source_dir):
+     for filename in filenames:
+        filenames_list.append(filename)
+
+filenames_list
+
+#%% all filenames at source_dir
+
+source_dir = r'C:\Users\Jeong'
+filenames_list = []
+
+for filenames in os.walk(source_dir):
      for filename in filenames:
         filenames_list.append(filename)
 
