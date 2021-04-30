@@ -1,8 +1,4 @@
-this is test
+This is a repository for the course material and the codes written as a part of data science course at codeacademy.
 
-test push
-update test.md page
-"Added another line to README.md" 
-test authentication between vscode and github
-
-need to fix connection between vscode and jupyter - 11Mar2021
+- 2021-01-25 : course started
+- 2021-03-11 : fixed connection between vscode and jupyter notebook
