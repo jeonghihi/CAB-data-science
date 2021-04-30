@@ -4,9 +4,8 @@ title: 'daily-log'
 date: "2021-01-25"
 ---
 
-
 - CAB settings
-- dir: Users\Jeong\CAB\test
+- dir: Users\Anaconda3\envs\CAB\CAB-DATA-SCIENCE
 
 # week1
 ## 2021-01-25
@@ -667,3 +666,6 @@ https://stackoverflow.com/questions/35042255/how-to-plot-multiple-seaborn-jointp
 ## 2021-04-28-Wed
 [-] bluewinery - organize codes (preprocessing, machine learning modeling)
 [-] orgnization - pipeline for predictive analytics
+
+## 2021-04-28-Thu
+[] orgnization - divide big codes into small chunks - preprocessing/EDA/modeling - wine, bike 
