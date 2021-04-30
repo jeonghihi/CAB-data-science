@@ -1,3 +1,5 @@
+- contents will be written following STAR method
+
 # Project overview
 - (situation) a description about the Project
 - (task/action) plan: 
@@ -8,7 +10,8 @@
 
 ## Dataset
 - source:
-- features:
+- dataset1 : wine_features for red & white wine
+- dataset2 : wine_sales for red & white wine
 
 ## Analysis
 - Prepare setting/environment
