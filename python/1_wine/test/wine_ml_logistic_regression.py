@@ -133,3 +133,11 @@ wpr_train_X, wpr_test_X, wpr_train_y, wpr_test_y = train_test_split(X,y, test_si
 print(Counter(wpr_train_y), Counter(wpr_test_y))
 # Counter({2: 130, 1: 53, 0: 37}) Counter({2: 65, 1: 17, 0: 13}) #high:0, low:1, middle:2 
 print('IV:', df_feature_names, '/ DV: high:0, low:1, middle:2' )
+
+
+# ----------------------------
+### pipeline
+- ref: https://medium.com/analytics-vidhya/ml-pipelines-using-scikit-learn-and-gridsearchcv-fe605a7f9e05
+- ref: https://analyticsindiamag.com/hands-on-tutorial-on-machine-learning-pipelines-with-scikit-learn/
+- ref: https://towardsdatascience.com/a-simple-example-of-pipeline-in-machine-learning-with-scikit-learn-e726ffbb6976
+- ref: https://iaml.it/blog/optimizing-sklearn-pipelines
