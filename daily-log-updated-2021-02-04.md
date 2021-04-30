@@ -4,55 +4,131 @@ title: 'daily-log'
 date: "2021-01-25"
 ---
 
-- CAB settings
-- dir: Users\Anaconda3\envs\CAB\CAB-DATA-SCIENCE
+- [week1](#week1)
+  - [2021-01-25-Mon](#2021-01-25-mon)
+  - [2021-01-26-Tue](#2021-01-26-tue)
+  - [2021-01-27-Wed](#2021-01-27-wed)
+  - [2021-01-28-Thu](#2021-01-28-thu)
+  - [2021-01-29-Fri](#2021-01-29-fri)
+- [week2](#week2)
+    - [2021-02-01-Mon](#2021-02-01-mon)
+    - [2021-02-02-Tue](#2021-02-02-tue)
+    - [2021-02-03-Wed](#2021-02-03-wed)
+    - [2021-02-04-Thu](#2021-02-04-thu)
+  - [2021-02-05-Fri](#2021-02-05-fri)
+- [week3](#week3)
+  - [2021-02-08-Mon](#2021-02-08-mon)
+  - [2021-02-09-Tue](#2021-02-09-tue)
+  - [2021-02-10-Wed](#2021-02-10-wed)
+  - [2021-02-11-Thu](#2021-02-11-thu)
+  - [2021-02-12-Fri](#2021-02-12-fri)
+- [week4](#week4)
+  - [2021-02-15-Mon](#2021-02-15-mon)
+  - [2021-02-16-Tue](#2021-02-16-tue)
+  - [2021-02-17-Wed](#2021-02-17-wed)
+  - [2021-02-17-Thu](#2021-02-17-thu)
+  - [2021-02-18-Fri](#2021-02-18-fri)
+- [week5](#week5)
+  - [2021-02-22-Mon](#2021-02-22-mon)
+  - [2021-02-23-Tue](#2021-02-23-tue)
+  - [2021-02-24-Wed](#2021-02-24-wed)
+  - [2021-02-25-Thu](#2021-02-25-thu)
+  - [2021-02-26-Fri](#2021-02-26-fri)
+- [week 6](#week-6)
+  - [2021-03-01-Mon](#2021-03-01-mon)
+  - [2021-03-02-Tue](#2021-03-02-tue)
+  - [2021-03-03-Wed](#2021-03-03-wed)
+  - [2021-03-04-Thu](#2021-03-04-thu)
+  - [2021-03-05-Fri](#2021-03-05-fri)
+- [week7](#week7)
+  - [2021-03-09-Tue](#2021-03-09-tue)
+  - [2021-03-10-Wed](#2021-03-10-wed)
+  - [2021-03-11-Thu](#2021-03-11-thu)
+  - [2021-03-12-Fri](#2021-03-12-fri)
+- [week8](#week8)
+  - [2021-03-15-Mon](#2021-03-15-mon)
+  - [2021-03-16-Tue](#2021-03-16-tue)
+  - [2021-03-17-Wed](#2021-03-17-wed)
+  - [2021-03-18-Thu](#2021-03-18-thu)
+  - [2021-03-19-Fri](#2021-03-19-fri)
+- [week9](#week9)
+  - [2021-03-22-Mon](#2021-03-22-mon)
+  - [2021-03-23-Tue](#2021-03-23-tue)
+  - [2021-03-24-Wed](#2021-03-24-wed)
+  - [2021-03-25-Thu](#2021-03-25-thu)
+- [week10](#week10)
+  - [2021-03-29-Mon](#2021-03-29-mon)
+  - [2021-03-30-Tue](#2021-03-30-tue)
+  - [2021-03-31-Wed](#2021-03-31-wed)
+  - [2021-04-01-Thu](#2021-04-01-thu)
+  - [2021-04-02-Fri](#2021-04-02-fri)
+- [week11](#week11)
+  - [2021-04-05-Mon](#2021-04-05-mon)
+  - [2021-04-06-Tue](#2021-04-06-tue)
+  - [2021-04-07-Wed](#2021-04-07-wed)
+  - [2021-04-08-Thu](#2021-04-08-thu)
+  - [2021-04-09-Fri](#2021-04-09-fri)
+- [week12](#week12)
+  - [2021-04-12-Mon](#2021-04-12-mon)
+  - [2021-04-13-Tue](#2021-04-13-tue)
+  - [2021-04-14-Wed](#2021-04-14-wed)
+  - [2021-04-15-Thu](#2021-04-15-thu)
+  - [2021-04-16-Fri](#2021-04-16-fri)
+- [week13](#week13)
+  - [2021-04-19-Mon](#2021-04-19-mon)
+  - [2021-04-20-Tue](#2021-04-20-tue)
+  - [2021-04-21-Wed](#2021-04-21-wed)
+  - [2021-04-22-Thu](#2021-04-22-thu)
+  - [2021-04-23-Fri](#2021-04-23-fri)
+- [week14](#week14)
+  - [2021-04-26-Mon](#2021-04-26-mon)
+  - [2021-04-27-Tue](#2021-04-27-tue)
+  - [2021-04-28-Wed](#2021-04-28-wed)
+  - [2021-04-28-Thu](#2021-04-28-thu)
 
 # week1
-## 2021-01-25
+## 2021-01-25-Mon
 
-## Task1
-1. prepare settings (for windows)
-- install "anaconda" 
-- install "visual studio code"
-- install "git"
+- Task1
+  1. prepare settings (for windows)
+  - install "anaconda" 
+  - install "visual studio code"
+  - install "git"
 
-2. prepare directory (at github & laptop)
-- create repository "test" on github ("/username_on_github/test.git" ; "git link")
-- create a directory on laptop ("C:\Users\test")
+  2. prepare directory (at github & laptop)
+  - create repository "test" on github ("/username_on_github/test.git" ; "git link")
+  - create a directory on laptop ("C:\Users\test")
 
-3. Authentification (to allow access from laptop to repo at github)
-- Press *"control + R"* to open cmd prompt
-- go to the directory on laptop
-```
-cd "C:\Users\test"
-```
-- clone (copy and paste) the repo from github to laptop
-
-```
-    git clone "git link"
-```
-or
-```
-    git init
-    git remote add origin "git link"
-    git config user.name "__"
-    git config user.email "__"
-    git clone "git link"
-```
-
-- difference between *git clone* and git remote add* : https://stackoverflow.com/questions/4855561/difference-between-git-remote-add-and-git-clone
+  3. Authentification (to allow access from laptop to repo at github)
+  - Press *"control + R"* to open cmd prompt
+  - go to the directory on laptop
+  ```
+  cd "C:\Users\test"
+  ```
+  - clone (copy and paste) the repo from github to laptop
+  ```
+      git clone "git link"
+  ```
+    or
+  ```
+      git init
+      git remote add origin "git link"
+      git config user.name "__"
+      git config user.email "__"
+      git clone "git link"
+  ```
+  - difference between *git clone* and git remote add* : https://stackoverflow.com/questions/4855561/difference-between-git-remote-add-and-git-clone
 
 
-4. open directory on visual studio code
-- click the directory (where you cloned repo)
+  4. open directory on visual studio code
+     - click the directory (where you cloned repo)
 
-## Task2
-- assignments (first 5): https://dsft.code-data-ai.com/python-workshops/
+- Task2
+  - assignments (first 5): https://dsft.code-data-ai.com/python-workshops/
+  - install python extension in VisualStudioCode, e.g. markdown preview
 
-- install python extension in VisualStudioCode, e.g. markdown preview
 
-
-## 2021-01-26
+## 2021-01-26-Tue
 Todo:
 - data types, operators
 
@@ -69,7 +145,7 @@ Todo:
 
 - variable(object)s in python: https://www.golinuxcloud.com/python-type-of-variable/
 
-## 2021-01-27
+## 2021-01-27-Wed
 Todo:
 - loops, conditionals, functions
 - understand basic concepts (e.g. list, set, dict, tuple, string, int, float, boolean) (conditions & loops) (functions)
@@ -105,7 +181,7 @@ Todo:
 - function - arguments: https://www.w3schools.com/python/gloss_python_function_arguments.asp
     
 
-### 2021-01-28
+## 2021-01-28-Thu
 Todo:
 - assignments (intermediate 5-10)
 - assignment (intermediate 3,6)
@@ -120,7 +196,7 @@ Todo:
 
 > - https://www.programiz.com/python-programming/list-comprehension
 
-### 2021-01-28
+## 2021-01-29-Fri
 [x] solve assignments-int-3,6
 [x] review assignments (w. Ottavia)
 - use a clear terms (variable names) for the other readers (including future yourself)
