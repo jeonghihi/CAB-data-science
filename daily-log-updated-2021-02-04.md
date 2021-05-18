@@ -84,7 +84,22 @@ date: "2021-01-25"
   - [2021-04-26-Mon](#2021-04-26-mon)
   - [2021-04-27-Tue](#2021-04-27-tue)
   - [2021-04-28-Wed](#2021-04-28-wed)
-  - [2021-04-28-Thu](#2021-04-28-thu)
+  - [2021-04-29-Thu](#2021-04-29-thu)
+  - [2021-04-30-Fri](#2021-04-30-fri)
+- [week15](#week15)
+  - [2021-05-03-Mon](#2021-05-03-mon)
+  - [2021-05-04-Tue](#2021-05-04-tue)
+  - [2021-05-05-Wed](#2021-05-05-wed)
+  - [2021-05-07-Fri](#2021-05-07-fri)
+- [week16](#week16)
+  - [2021-05-10-Mon](#2021-05-10-mon)
+  - [2021-05-11-Tue](#2021-05-11-tue)
+  - [2021-05-12-Wed](#2021-05-12-wed)
+  - [2021-05-13-Thu](#2021-05-13-thu)
+  - [2021-05-14-Fri](#2021-05-14-fri)
+- [week17](#week17)
+  - [2021-05-17-Mon](#2021-05-17-mon)
+  - [2021-05-18-Tue](#2021-05-18-tue)
 
 # week1
 ## 2021-01-25-Mon
@@ -743,5 +758,44 @@ https://stackoverflow.com/questions/35042255/how-to-plot-multiple-seaborn-jointp
 [-] bluewinery - organize codes (preprocessing, machine learning modeling)
 [-] orgnization - pipeline for predictive analytics
 
-## 2021-04-28-Thu
+## 2021-04-29-Thu
 [] orgnization - divide big codes into small chunks - preprocessing/EDA/modeling - wine, bike 
+
+## 2021-04-30-Fri
+[] spike: github (?)
+
+# week15
+## 2021-05-03-Mon
+[] spike: github profile basics 
+
+## 2021-05-04-Tue
+[] spike: Tableau basic1
+
+## 2021-05-05-Wed
+[] spike: Tableau basic2
+
+## 2021-05-07-Fri
+[] code review
+
+# week16
+## 2021-05-10-Mon
+[] Tableau, SQL
+
+## 2021-05-11-Tue
+[] SQL Hackathon
+
+## 2021-05-12-Wed
+[] Tableau, SQL
+
+## 2021-05-13-Thu
+[] CAB holiday
+
+## 2021-05-14-Fri
+[] CAB holiday
+
+# week17
+## 2021-05-17-Mon
+[] spike: apache kafka
+
+## 2021-05-18-Tue
+[] apache kafka - install, basic (create topic)
