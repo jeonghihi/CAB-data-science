@@ -8,11 +8,11 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-from google.colab import drive
+#from google.colab import drive
 
 
 # %%
-drive.mount('/content/drive/')
+# drive.mount('/content/drive/')
 
 # %% [markdown]
 # ### Importing the dataset.
@@ -42,7 +42,31 @@ for i in range(0,len(paths)):
 
 products.head(20)
 
+#%%
+import pandas as pd
+# > make this for-loop as function
+#%% function
 
+def create_data_frame(path, *therest):
+    for i in range(0,len(paths)):
+        df= pd.read_csv(paths[i])
+    products= products.append(df, ignore_index=True)
+
+    return products
+
+#%%
+source_dir = '../python/3_ecommerce/com/output/search_output'
+filenames_list = []
+
+for filenames in os.walk(source_dir):
+    print(filenames)
+    for filename in filenames:
+        print(filename)
+        filenames_list.append(filename)
+
+filenames_list
+#%%
+products = create_data_frame(path_list)
 # %%
 products.shape
 
