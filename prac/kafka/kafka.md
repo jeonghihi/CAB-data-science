@@ -22,8 +22,8 @@ c:\ > cd kafka_2.12-2.7.0
 
 ## run zookeeper & kafka on the seperate cmd
 ```
-bin\windows\zookeeper-server-start.bat config\zookeeper.properties
-bin\windows\kafka-server-start.bat config\server.properties
+c:kafka_2.12-2.7.0> bin\windows\zookeeper-server-start.bat config\zookeeper.properties
+c:kafka_2.12-2.7.0> bin\windows\kafka-server-start.bat config\server.properties
 ```
 
 # step3 - create contents
@@ -53,8 +53,22 @@ kafka-topics -zookeeper localhost:2181 -describe --topic quickstart-event
 (mac) $ bin/kafka-console-consumer.sh --topic quickstart-events --from-beginning --bootstrap-server localhost:9092
 (win) kafka-console-consumer -bootstrap-server localhost:9092 -topic quickstart-events
 
-# in the visual studio code
+# install kafka-python in the visual studio code (check conda/interpreter setting before installation)
 pip install kafka-python
+
+
+# check online-stream udpates (source: meetup)
+bin\windows\kafka-console-consumer.bat --topic meetup --from-beginning --bootstrap-server localhost:9092
+
+# check rockset integration
+```
+c:\> .\Kafka_2.12-2.7.0\bin\windows\connect-standalone.bat .\connect-standalone.properties .\connect-rockset-sink.properties
+```
+
+# check current brokers 
+C:Kafka_2.12-2.7.0> bin\windows\zookeeper-shell.bat localhost:2181 ls /brokers/ids 
+# check details of current brokers
+C:Kafka_2.12-2.7.0> bin\windows\zookeeper-shell.bat localhost:2181 get /brokers/ids 
 
 
 #===========tips ===============

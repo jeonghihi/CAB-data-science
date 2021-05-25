@@ -100,6 +100,12 @@ date: "2021-01-25"
 - [week17](#week17)
   - [2021-05-17-Mon](#2021-05-17-mon)
   - [2021-05-18-Tue](#2021-05-18-tue)
+  - [2021-05-19-Wed](#2021-05-19-wed)
+  - [2021-05-20-Thu](#2021-05-20-thu)
+  - [2021-05-21-Fri](#2021-05-21-fri)
+- [week18](#week18)
+  - [2021-05-25-Tue](#2021-05-25-tue)
+  - [2021-05-26-Wed](#2021-05-26-wed)
 
 # week1
 ## 2021-01-25-Mon
@@ -799,3 +805,22 @@ https://stackoverflow.com/questions/35042255/how-to-plot-multiple-seaborn-jointp
 
 ## 2021-05-18-Tue
 [] apache kafka - install, basic (create topic)
+
+## 2021-05-19-Wed
+
+## 2021-05-20-Thu
+[] check workshops google I/O 
+[] apache kafka - localhost/broker issue
+
+## 2021-05-21-Fri
+[] sql hackathoon feedbacks (use proper terms;  row, record instead of column,field)
+[] send application for Twitter developer account
+[] apache kafka - connect with rockset - error at last step (because of different naming for topic/stream)
+
+# week18
+## 2021-05-25-Tue
+[] apache kafka - connect with rockset
+[] spike: google cloud
+[] twitter developer account confirmed (after two emails explaining the analysis plans in detail)
+
+## 2021-05-26-Wed
